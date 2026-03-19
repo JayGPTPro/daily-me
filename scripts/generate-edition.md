@@ -229,7 +229,7 @@ Copy to `docs/`:
 4. **Quality over quantity** - 3 great stories > 5 mediocre ones
 5. **Premium feel** - Every detail matters, proper formatting
 6. **Real data only** - Don't make up news, quotes, or stats
-7. **OG Images** - Try to get og:image from source articles for visual richness
+7. **OG Images from REAL articles ONLY** - For every news story, fetch the source URL and extract the og:image meta tag. Use ONLY real images from the actual articles. NEVER use placeholder images, stock photos, or Unsplash. If an article has no og:image, the card appears without an image (that's fine). Use onerror="this.style.display='none'" on all img tags so missing images fail gracefully.
 8. **Translate, don't transliterate** - Natural Hebrew, not word-by-word translation
 9. **STRICTLY TODAY'S NEWS ONLY** - This is the #1 rule of Daily Me. The whole point is a FRESH newspaper.
    - Morning edition: news from the last ~12 hours (overnight + early morning)
