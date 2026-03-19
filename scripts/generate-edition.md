@@ -28,13 +28,16 @@ For EACH data source below, use web search to find the latest information:
 #### 3.1 Weather (always)
 - Search: "weather in Ra'anana Israel today"
 - Extract: temperature, conditions, min/max, rain chance
-- Generate clothing recommendation in Hebrew based on conditions:
-  - Hot (>28°): "חולצה קצרה ומשקפי שמש"
-  - Warm (22-28°): "חולצה קלה, אפשר שרוול קצר"
-  - Mild (16-22°): "סוודר קל או חולצה ארוכה"
-  - Cool (10-16°): "מעיל קל וסוודר"
-  - Cold (<10°): "מעיל חורף וצעיף"
-  - Rain: add "לקחת מטריה!"
+- Generate clothing recommendation based on Jay's ACTUAL wardrobe:
+  - Hot (>26°): "👕 חולצה קצרה"
+  - Warm (20-26°): "👕 חולצה קצרה, אולי סוודר לערב"
+  - Mild (15-20°): "🧶 סוודר"
+  - Cool (10-15°): "🧥 ג'קט"
+  - Cold (<10°): "🧥 מעיל"
+  - Rain (any temp): "🌧️ מעיל גשם" (replaces jacket/coat)
+  - Rain + cold: "🌧️ מעיל גשם + סוודר מתחת"
+  - ONLY these items exist in Jay's closet: חולצה קצרה, סוודר, ג'קט, מעיל, מעיל גשם
+  - Never suggest items he doesn't have (no scarves, no hats, no sunglasses, etc.)
 
 #### 3.2 Dollar Rate (always)
 - Search: "dollar shekel exchange rate today"

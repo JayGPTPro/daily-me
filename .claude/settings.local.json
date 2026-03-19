@@ -13,7 +13,9 @@
       "WebFetch(domain:www.aljazeera.com)",
       "WebFetch(domain:www.newsweek.com)",
       "WebFetch(domain:www.cbsnews.com)",
-      "WebFetch(domain:www.cnn.com)"
+      "WebFetch(domain:www.cnn.com)",
+      "Bash(gh repo:*)",
+      "Bash(gh api:*)"
     ]
   }
 }
