@@ -22,7 +22,10 @@
       "mcp__scheduled-tasks__list_scheduled_tasks",
       "WebFetch(domain:ppc.land)",
       "WebFetch(domain:www.gearpatrol.com)",
-      "WebFetch(domain:techstartups.com)"
+      "WebFetch(domain:techstartups.com)",
+      "WebFetch(domain:ca.sports.yahoo.com)",
+      "WebFetch(domain:www.algemeiner.com)",
+      "WebFetch(domain:www.imdb.com)"
     ]
   }
 }

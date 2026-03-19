@@ -255,6 +255,83 @@ img { max-width: 100%; height: auto; display: block; }
 .sparkline { margin-right: auto; opacity: 0.7; }
 .count-up { display: inline-block; }
 
+/* ---- Daily Summary ---- */
+.daily-summary {
+    max-width: 1000px;
+    margin: 24px auto 0;
+    padding: 0 24px;
+}
+.daily-summary-box {
+    background: var(--bg-secondary);
+    border: 1px solid var(--border);
+    border-radius: var(--card-radius);
+    padding: 20px 24px;
+    box-shadow: var(--shadow);
+    animation: fadeInUp 0.5s ease 0.2s both;
+}
+.daily-summary-title {
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--text-tertiary);
+    margin-bottom: 8px;
+}
+.daily-summary-text {
+    font-size: 0.95rem;
+    line-height: 1.7;
+    color: var(--text-secondary);
+}
+
+/* ---- Category Filter ---- */
+.category-filter {
+    max-width: 1000px;
+    margin: 20px auto 0;
+    padding: 0 24px;
+    display: flex;
+    gap: 6px;
+    flex-wrap: wrap;
+}
+.filter-btn {
+    padding: 6px 14px;
+    border-radius: 20px;
+    border: 1px solid var(--border);
+    background: transparent;
+    font-family: 'Heebo', sans-serif;
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--text-tertiary);
+    cursor: pointer;
+    transition: all var(--transition);
+}
+.filter-btn:hover { background: var(--bg-tertiary); color: var(--text-primary); }
+.filter-btn.active {
+    background: var(--accent);
+    color: var(--bg-primary);
+    border-color: var(--accent);
+}
+.news-section.hidden-by-filter { display: none; }
+
+/* ---- Share Button ---- */
+.share-btn {
+    background: transparent;
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 3px 10px;
+    height: 28px;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 3px;
+    font-size: 0.68rem;
+    font-family: 'Heebo', sans-serif;
+    color: var(--text-tertiary);
+    opacity: 0.4;
+    transition: all var(--transition);
+    margin-right: 4px;
+}
+.share-btn:hover { opacity: 1; }
+
 /* ---- Calendar ---- */
 .section-block { max-width: 1000px; margin: 28px auto; padding: 0 24px; }
 .section-header { display: flex; align-items: center; gap: 8px; margin-bottom: 16px; }

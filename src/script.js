@@ -256,6 +256,61 @@
 
     initRatings();
 
+    // ---- Category Filter ----
+    var filterContainer = document.querySelector('.category-filter');
+    if (filterContainer) {
+        var filterBtns = filterContainer.querySelectorAll('.filter-btn');
+        filterBtns.forEach(function(btn) {
+            btn.addEventListener('click', function() {
+                var cat = btn.getAttribute('data-filter');
+                if (cat === 'all') {
+                    filterBtns.forEach(function(b) { b.classList.remove('active'); });
+                    btn.classList.add('active');
+                    document.querySelectorAll('.news-section').forEach(function(s) {
+                        s.classList.remove('hidden-by-filter');
+                    });
+                } else {
+                    filterContainer.querySelector('[data-filter="all"]').classList.remove('active');
+                    btn.classList.toggle('active');
+                    var activeFilters = [];
+                    filterBtns.forEach(function(b) {
+                        if (b.classList.contains('active') && b.getAttribute('data-filter') !== 'all') {
+                            activeFilters.push(b.getAttribute('data-filter'));
+                        }
+                    });
+                    if (activeFilters.length === 0) {
+                        filterContainer.querySelector('[data-filter="all"]').classList.add('active');
+                        document.querySelectorAll('.news-section').forEach(function(s) {
+                            s.classList.remove('hidden-by-filter');
+                        });
+                    } else {
+                        document.querySelectorAll('.news-section').forEach(function(s) {
+                            if (activeFilters.indexOf(s.id) >= 0) {
+                                s.classList.remove('hidden-by-filter');
+                            } else {
+                                s.classList.add('hidden-by-filter');
+                            }
+                        });
+                    }
+                }
+            });
+        });
+    }
+
+    // ---- Share to WhatsApp ----
+    document.querySelectorAll('.share-btn').forEach(function(btn) {
+        btn.addEventListener('click', function(e) {
+            e.preventDefault();
+            e.stopPropagation();
+            var card = btn.closest('.news-card');
+            if (!card) return;
+            var title = card.querySelector('.card-title') ? card.querySelector('.card-title').textContent : '';
+            var link = card.querySelector('.read-more') ? card.querySelector('.read-more').href : window.location.href;
+            var text = '📰 ' + title + '\n\n' + link + '\n\nvia Daily Me';
+            window.open('https://wa.me/?text=' + encodeURIComponent(text), '_blank');
+        });
+    });
+
     // ---- Preferences Profile from Ratings ----
     function buildPreferences() {
         var ratings = getRatings();
