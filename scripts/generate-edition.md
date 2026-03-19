@@ -163,7 +163,15 @@ Every news card must include rating buttons:
 ```
 Also add `data-article-id` and `data-category` attributes to the `.news-card` div.
 
-Before generating, read localStorage ratings (if accessible) from `docs/ratings.json` to understand user preferences and prioritize similar content.
+Before generating, check if `docs/index.html` contains a `<script id="dailyme-preferences">` element with JSON data. This contains the user's preference profile built from their ratings:
+```json
+{"war": {"up": 5, "down": 1, "score": 4}, "ai": {"up": 8, "down": 0, "score": 8}}
+```
+Use this to:
+- Put categories with higher scores earlier in the page
+- Search more broadly for high-score categories (find more stories)
+- Search less for low/negative-score categories (fewer stories)
+- If a category has a negative score, consider hiding it or showing only 1-2 items
 
 ### Step 5: Generate Main Dashboard HTML
 
@@ -213,13 +221,27 @@ Copy to `docs/`:
 - `assets/logo.svg` → `docs/assets/logo.svg`
 - `assets/icons/` → `docs/assets/icons/`
 
-### Step 7: Save & Push
+### Step 7: Save, Archive & Push
 
 1. Save generated HTML as `docs/index.html`
 2. Save article pages in `docs/articles/`
-3. Git add all changes in `docs/`
-4. Git commit with message: "📰 Daily Me - מהדורת [בוקר/ערב] [DATE]"
-5. Git push to origin
+3. **Archive this edition:**
+   - Copy `docs/index.html` to `docs/archive/YYYY-MM-DD-morning.html` or `docs/archive/YYYY-MM-DD-evening.html`
+   - Create/update `docs/archive/editions.json` with the list of all archived editions:
+     ```json
+     [
+       {"date": "2026-03-19", "edition": "morning", "file": "2026-03-19-morning.html"},
+       {"date": "2026-03-19", "edition": "evening", "file": "2026-03-19-evening.html"}
+     ]
+     ```
+   - Keep newest first in the array
+4. **Update edition navigation links** in index.html:
+   - "בוקר" → links to current morning edition in archive (or # if current)
+   - "ערב" → links to current evening edition in archive (or # if current)
+   - "אתמול" → links to yesterday's latest edition in archive
+5. Git add all changes in `docs/`
+6. Git commit with message: "📰 Daily Me - מהדורת [בוקר/ערב] [DATE]"
+7. Git push to origin
 
 ## Important Rules
 

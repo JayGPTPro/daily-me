@@ -16,7 +16,8 @@
       "WebFetch(domain:www.cnn.com)",
       "Bash(gh repo:*)",
       "Bash(gh api:*)",
-      "Bash(find /Users/jacobmargaliot/Downloads/Claude/ -maxdepth 2 -name *jay* -o -name *daily*me* -type f)"
+      "Bash(find /Users/jacobmargaliot/Downloads/Claude/ -maxdepth 2 -name *jay* -o -name *daily*me* -type f)",
+      "Bash(\"/Users/jacobmargaliot/Downloads/Claude/הדיילי מי/docs/archive/editions.json\")"
     ]
   }
 }

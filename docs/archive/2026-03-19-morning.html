@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Me - מהדורת בוקר · יום חמישי, 19 במרץ 2026</title>
+    <meta name="description" content="Daily Me - My world, every day. הדשבורד האישי שלך.">
+    <meta property="og:title" content="Daily Me - מהדורת בוקר · 19 במרץ 2026">
+    <meta property="og:description" content="העולם שלך, כל יום. דשבורד חדשות אישי עם AI, מלחמה, פוליטיקה, ספורט ועוד.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://jaygptpro.github.io/daily-me/">
+    <meta property="og:locale" content="he_IL">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="Daily Me">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#6C5CE7">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/svg+xml" href="assets/logo.svg">
+</head>
+<body data-theme="light">
+
+    <!-- Breaking News Ticker -->
+    <div class="breaking-banner">
+        <div class="ticker-wrap">
+            <div class="ticker">
+                <span class="ticker-item">🔴 יום 19 למלחמה: איראן שיגרה מטח שמיני מחצות - נזק במרכז הארץ</span>
+                <span class="ticker-item">⚡ סעודיה שומרת זכות לפעולה צבאית נגד איראן</span>
+                <span class="ticker-item">📈 ברנט זינק ל-$116, גז באירופה +24%</span>
+                <span class="ticker-item">🇶🇦 קטאר גירשה דיפלומטים איראניים אחרי תקיפת מתקן גז</span>
+                <span class="ticker-item">🇺🇸 טראמפ מאיים לפוצץ שדה גז איראני</span>
+                <span class="ticker-item">🤖 OpenAI השיקה GPT-5.4 עם חלון מיליון טוקנים</span>
+                <span class="ticker-item">💰 OpenAI עברה $25 מיליארד הכנסות שנתיות</span>
+                <span class="ticker-item">🏀 אבדיה פוצץ: 32 נקודות מול פייסרס</span>
+                <span class="ticker-item">⚽ מסי הגיע ל-900 שערים בקריירה</span>
+                <span class="ticker-item">🇨🇺 מפגינים הציתו מטה המפלגה הקומוניסטית בקובה</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="header-inner">
+            <div class="header-right">
+                <img src="assets/logo.svg" alt="Daily Me" class="header-logo">
+                <div class="header-info">
+                    <h1 class="header-title">Daily Me</h1>
+                    <span class="header-subtitle">מהדורת בוקר ☀️ · יום חמישי, 19 במרץ 2026</span>
+                </div>
+            </div>
+            <div class="header-left">
+                <nav class="edition-nav">
+                    <a href="#" class="edition-link active">בוקר ☀️</a>
+                    <a href="#" class="edition-link">ערב 🌙</a>
+                    <a href="#" class="edition-link">אתמול</a>
+                </nav>
+                <button class="theme-toggle" id="themeToggle" aria-label="החלף ערכת נושא">
+                    <span class="theme-toggle-icon" id="themeIcon">☀️</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <!-- Hero -->
+        <section class="hero" id="hero">
+            <div class="hero-bg" style="background-image: url('assets/hero/hero-1.png')"></div>
+            <div class="hero-overlay"></div>
+            <div class="hero-inner">
+                <h2 class="hero-greeting">בוקר טוב, ג'יי ☀️</h2>
+                <div class="hero-surprise">
+                    <span class="surprise-label">📜 היום בהיסטוריה</span>
+                    <p class="surprise-content">ב-19 במרץ 1918 אישר הקונגרס האמריקאי את חוק שעון הקיץ לראשונה. היום גם א' ניסן - ראש חודש ניסן, חודש הגאולה והאביב 🌸</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quick Info Bar -->
+        <section class="quick-bar" id="quickBar">
+            <div class="quick-bar-inner">
+                <div class="quick-card weather-card">
+                    <div class="quick-card-icon">☀️</div>
+                    <div class="quick-card-info">
+                        <span class="quick-card-value count-up">21°</span>
+                        <span class="quick-card-label">שמשי ונעים, 15°-22°</span>
+                    </div>
+                    <div class="weather-recommendation">👕 חולצה קצרה, אולי סוודר לערב</div>
+                </div>
+                <div class="quick-card dollar-card">
+                    <div class="quick-card-icon">💵</div>
+                    <div class="quick-card-info">
+                        <span class="quick-card-value count-up">₪3.10</span>
+                        <span class="quick-card-label quick-card-change negative">↓ 0.16%</span>
+                    </div>
+                    <canvas class="sparkline" id="dollarSparkline" width="100" height="40"></canvas>
+                </div>
+            </div>
+        </section>
+
+        <!-- Calendar -->
+        <section class="section-block" id="calendar">
+            <div class="section-header">
+                <span class="section-icon">📅</span>
+                <h2 class="section-title">היום</h2>
+            </div>
+            <div class="holiday-banner">
+                <span class="holiday-icon">🌙</span>
+                <span class="holiday-name">ראש חודש ניסן · א' ניסן תשפ"ו</span>
+            </div>
+            <div class="calendar-events">
+                <div class="calendar-event">
+                    <span class="event-time">17:00</span>
+                    <span class="event-title">מפגש רשת אביבי :)</span>
+                    <span class="event-attendees">Outstand · 44 משתתפים</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- News Grid -->
+        <div class="news-grid">
+
+            <!-- WAR & SECURITY -->
+            <section class="section-block news-section" id="warSecurity">
+                <div class="section-header">
+                    <span class="section-icon">⚔️</span>
+                    <h2 class="section-title">מלחמה וביטחון · יום 19</h2>
+                </div>
+                <div class="news-cards">
+                    <div class="news-card" data-article-id="iran-barrage" data-category="war">
+                        <img src="https://static.timesofisrael.com/www/uploads/2026/03/AP26076547131498-e1741865954498.jpg" alt="" class="card-image" loading="lazy" onerror="this.style.display='none'">
+                        <div class="card-content">
+                            <span class="card-category">מלחמה וביטחון</span>
+                            <h3 class="card-title">איראן שיגרה מטח שמיני מחצות: נזק במרכז הארץ</h3>
+                            <p class="card-summary">צפירות ברחבי ישראל, נזק למבנה באזור תל אביב. עובד זר נהרג במושב אדנים ליד הוד השרון.</p>
+                            <div class="card-footer">
+                                <a href="articles/2026-03-19-iran-8th-barrage.html" class="read-more">קרא עוד ←</a>
+                                <div class="rating-buttons">
+                                    <button class="rating-btn" data-article-id="iran-barrage" data-rating="up" title="מעניין">✨ מעניין</button>
+                                    <button class="rating-btn" data-article-id="iran-barrage" data-rating="down" title="פחות מעניין">💤 פחות</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="news-card" data-article-id="qatar-gas" data-category="war">
+                        <img src="https://images.unsplash.com/photo-1518709766631-a6a7f45921c3?w=600&h=300&fit=crop" alt="" class="card-image" loading="lazy" onerror="this.style.display='none'"><div class="card-content">
+                            <span class="card-category">מלחמה וביטחון</span>
+                            <h3 class="card-title">איראן תקפה מתקן גז בקטאר - קטאר גירשה דיפלומטים</h3>
+                            <p class="card-summary">טילים פגעו במתקן ראס לפאן שמספק חמישית מהגז העולמי. קטאר הורתה לנספחים איראניים לעזוב תוך 24 שעות.</p>
+                            <div class="card-footer">
+                                <a href="articles/2026-03-19-qatar-gas-attack.html" class="read-more">קרא עוד ←</a>
+                                <div class="rating-buttons">
+                                    <button class="rating-btn" data-article-id="qatar-gas" data-rating="up">✨ מעניין</button>
+                                    <button class="rating-btn" data-article-id="qatar-gas" data-rating="down">💤 פחות</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="news-card" data-article-id="oil-surge" data-category="war">
+                        <img src="https://images.unsplash.com/photo-1611273426858-450d8e3c9fce?w=600&h=300&fit=crop" alt="" class="card-image" loading="lazy" onerror="this.style.display='none'"><div class="card-content">
+                            <span class="card-category">מלחמה וביטחון</span>
+                            <h3 class="card-title">ברנט זינק ל-<span class="count-up">$116</span>, גז באירופה +24%</h3>
+                            <p class="card-summary">חסימת מצר הורמוז חותכת 20% מהנפט העולמי. אנליסטים מזהירים ממחיר של $130+ אם המשבר ימשיך.</p>
+                            <div class="card-footer">
+                                <a href="articles/2026-03-19-oil-prices-surge.html" class="read-more">קרא עוד ←</a>
+                                <div class="rating-buttons">
+                                    <button class="rating-btn" data-article-id="oil-surge" data-rating="up">✨ מעניין</button>
+                                    <button class="rating-btn" data-article-id="oil-surge" data-rating="down">💤 פחות</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="news-card" data-article-id="trump-iran" data-category="war">
+                        <img src="https://images.unsplash.com/photo-1501466044931-62695aada8e9?w=600&h=340&fit=crop" alt="" class="card-image" loading="lazy" onerror="this.style.display='none'">
+                        <div class="card-content">
+                            <span class="card-category">מלחמה וביטחון</span>
+                            <h3 class="card-title">טראמפ: "נפוצץ את שדה הגז של איראן" אם תתקוף שוב</h3>
+                            <p class="card-summary">איום ב-Truth Social על שדה South Pars. טראמפ גם טען שארה"ב "לא ידעה" על תקיפת ישראל בשדה.</p>
+                            <div class="card-footer">
+                                <a href="articles/2026-03-19-trump-threatens-iran.html" class="read-more">קרא עוד ←</a>
+                                <div class="rating-buttons">
+                                    <button class="rating-btn" data-article-id="trump-iran" data-rating="up">✨ מעניין</button>
+                                    <button class="rating-btn" data-article-id="trump-iran" data-rating="down">💤 פחות</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="news-card" data-article-id="saudi-action" data-category="war">
+                        <img src="https://images.unsplash.com/photo-1466611653911-95081537e5b7?w=600&h=340&fit=crop" alt="" class="card-image" loading="lazy" onerror="this.style.display='none'">
+                        <div class="card-content">
+                            <span class="card-category">מלחמה וביטחון</span>
+                            <h3 class="card-title">סעודיה שומרת זכות לפעולה צבאית - 12 מדינות מגנות את איראן</h3>
+                            <p class="card-summary">שרי החוץ של 12 מדינות ערב ואסלאם קראו לאיראן להפסיק. סעודיה: "האמון באיראן התנפץ".</p>
+                            <div class="card-footer">
+                                <a href="articles/2026-03-19-saudi-military-action.html" class="read-more">קרא עוד ←</a>
+                                <div class="rating-buttons">
+                                    <button class="rating-btn" data-article-id="saudi-action" data-rating="up">✨ מעניין</button>
+                                    <button class="rating-btn" data-article-id="saudi-action" data-rating="down">💤 פחות</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- AI NEWS -->
+            <section class="section-block news-section" id="aiNews">
+                <div class="section-header">
+                    <span class="section-icon">🤖</span>
+                    <h2 class="section-title">חדשות AI</h2>
+                </div>
+                <div class="news-cards">
+                    <div class="news-card" data-article-id="gpt54" data-category="ai">
+                        <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?w=600&h=340&fit=crop" alt="" class="card-image" loading="lazy" onerror="this.style.display='none'">
+                        <div class="card-content">
+                            <span class="card-category">חדשות AI</span>
+                            <h3 class="card-title">OpenAI השיקה GPT-5.4: חלון מיליון טוקנים ו-<span class="count-up">75</span>% ב-OSWorld</h3>
+                            <p class="card-summary">המודל החדש עובר את הבסיס האנושי (72.4%) במשימות דסקטופ. יכול להריץ workflows אוטונומיים על מחשב.</p>
+                            <div class="card-footer">
+                                <a href="articles/2026-03-19-gpt54-release.html" class="read-more">קרא עוד ←</a>
+                                <div class="rating-buttons">
+                                    <button class="rating-btn" data-article-id="gpt54" data-rating="up">✨ מעניין</button>
+                                    <button class="rating-btn" data-article-id="gpt54" data-rating="down">💤 פחות</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="news-card" data-article-id="anthropic-pentagon" data-category="ai">
+                        <img src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=600&h=340&fit=crop" alt="" class="card-image" loading="lazy" onerror="this.style.display='none'">
+                        <div class="card-content">
+                            <span class="card-category">חדשות AI</span>
+                            <h3 class="card-title">הפנטגון חסם את Anthropic - מאות חברות תובעות</h3>
+                            <p class="card-summary">קבוצות תעשייה דורשות הקפאה. Anthropic תובעת את הפנטגון. דיון בצו זמני ב-24 במרץ.</p>
+                            <div class="card-footer">
+                                <a href="articles/2026-03-19-anthropic-pentagon.html" class="read-more">קרא עוד ←</a>
+                                <div class="rating-buttons">
+                                    <button class="rating-btn" data-article-id="anthropic-pentagon" data-rating="up">✨ מעניין</button>
+                                    <button class="rating-btn" data-article-id="anthropic-pentagon" data-rating="down">💤 פחות</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="news-card" data-article-id="openai-revenue" data-category="ai">
+                        <img src="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=600&h=340&fit=crop" alt="" class="card-image" loading="lazy" onerror="this.style.display='none'">
+                        <div class="card-content">
+                            <span class="card-category">חדשות AI</span>
+                            <h3 class="card-title">OpenAI עברה $<span class="count-up">25</span> מיליארד הכנסות - שוקלת הנפקה</h3>
+                            <p class="card-summary">700 מיליון משתמשים חודשיים. דיווחים על תחילת תהליך IPO לסוף 2026.</p>
+                            <div class="card-footer">
+                                <a href="articles/2026-03-19-openai-25b-revenue.html" class="read-more">קרא עוד ←</a>
+                                <div class="rating-buttons">
+                                    <button class="rating-btn" data-article-id="openai-revenue" data-rating="up">✨ מעניין</button>
+                                    <button class="rating-btn" data-article-id="openai-revenue" data-rating="down">💤 פחות</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="news-card" data-article-id="atlassian-ai" data-category="ai">
+                        <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=600&h=340&fit=crop" alt="" class="card-image" loading="lazy" onerror="this.style.display='none'">
+                        <div class="card-content">
+                            <span class="card-category">חדשות AI</span>
+                            <h3 class="card-title">Atlassian פיטרה <span class="count-up">1600</span> עובדים כדי להתמקד ב-AI</h3>
+                            <p class="card-summary">10% מכוח העבודה. משאבים מופנים לפיתוח AI ו-enterprise. המניה עלתה 8%.</p>
+                            <div class="card-footer">
+                                <a href="articles/2026-03-19-atlassian-ai-layoffs.html" class="read-more">קרא עוד ←</a>
+                                <div class="rating-buttons">
+                                    <button class="rating-btn" data-article-id="atlassian-ai" data-rating="up">✨ מעניין</button>
+                                    <button class="rating-btn" data-article-id="atlassian-ai" data-rating="down">💤 פחות</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- POLITICS -->
+            <section class="section-block news-section" id="politics">
+                <div class="section-header">
+                    <span class="section-icon">🏛️</span>
+                    <h2 class="section-title">פוליטיקה ישראלית</h2>
+                </div>
+                <div class="news-cards">
+                    <div class="news-card" data-article-id="ben-gvir" data-category="politics">
+                        <img src="https://images.unsplash.com/photo-1529107386315-e1a2ed48a620?w=600&h=340&fit=crop" alt="" class="card-image" loading="lazy" onerror="this.style.display='none'">
+                        <div class="card-content">
+                            <span class="card-category">פוליטיקה</span>
+                            <h3 class="card-title">בית המשפט לבן גביר: קדם את רנ"צ סבן תוך 5 ימים</h3>
+                            <p class="card-summary">השר מעכב קידום קצינה. בית המשפט המחוזי: אם לא תקדם - נקדם בלעדיך.</p>
+                            <div class="card-footer">
+                                <a href="articles/2026-03-19-ben-gvir-court.html" class="read-more">קרא עוד ←</a>
+                                <div class="rating-buttons">
+                                    <button class="rating-btn" data-article-id="ben-gvir" data-rating="up">✨ מעניין</button>
+                                    <button class="rating-btn" data-article-id="ben-gvir" data-rating="down">💤 פחות</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="news-card" data-article-id="trump-advisor" data-category="politics">
+                        <img src="https://images.unsplash.com/photo-1501466044931-62695aada8e9?w=600&h=340&fit=crop" alt="" class="card-image" loading="lazy" onerror="this.style.display='none'">
+                        <div class="card-content">
+                            <span class="card-category">פוליטיקה</span>
+                            <h3 class="card-title">ראש מרכז הטרור של טראמפ התפטר: "ישראל שיקרה ודחפה למלחמה"</h3>
+                            <p class="card-summary">מכתב התפטרות מאשים את ישראל בהטעיית ארה"ב. הבית הלבן הכחיש. הקונגרס דורש חקירה.</p>
+                            <div class="card-footer">
+                                <a href="articles/2026-03-19-trump-advisor-resign.html" class="read-more">קרא עוד ←</a>
+                                <div class="rating-buttons">
+                                    <button class="rating-btn" data-article-id="trump-advisor" data-rating="up">✨ מעניין</button>
+                                    <button class="rating-btn" data-article-id="trump-advisor" data-rating="down">💤 פחות</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="news-card" data-article-id="arab-ministers" data-category="politics">
+                        <img src="https://images.unsplash.com/photo-1529107386315-e1a2ed48a620?w=600&h=340&fit=crop" alt="" class="card-image" loading="lazy" onerror="this.style.display='none'">
+                        <div class="card-content">
+                            <span class="card-category">פוליטיקה</span>
+                            <h3 class="card-title">12 מדינות ערב ואסלאם בהצהרה משותפת נגד איראן</h3>
+                            <p class="card-summary">סעודיה, טורקיה, מצרים ועוד דורשים מאיראן להפסיק תקיפות מיד ולכבד את החוק הבינלאומי.</p>
+                            <div class="card-footer">
+                                <a href="articles/2026-03-19-arab-foreign-ministers.html" class="read-more">קרא עוד ←</a>
+                                <div class="rating-buttons">
+                                    <button class="rating-btn" data-article-id="arab-ministers" data-rating="up">✨ מעניין</button>
+                                    <button class="rating-btn" data-article-id="arab-ministers" data-rating="down">💤 פחות</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- WORLD NEWS -->
+            <section class="section-block news-section" id="worldNews">
+                <div class="section-header">
+                    <span class="section-icon">🌍</span>
+                    <h2 class="section-title">חדשות העולם</h2>
+                </div>
+                <div class="news-cards">
+                    <div class="news-card" data-article-id="cuba-protest" data-category="world">
+                        <img src="https://images.unsplash.com/photo-1591189863345-b2b3d4aa82f8?w=600&h=340&fit=crop" alt="" class="card-image" loading="lazy" onerror="this.style.display='none'">
+                        <div class="card-content">
+                            <span class="card-category">עולם</span>
+                            <h3 class="card-title">מפגינים הציתו מטה המפלגה הקומוניסטית בקובה - ירי נשמע</h3>
+                            <p class="card-summary">מהומות חריגות בקובה. מפגינים תקפו את מטה המפלגה, צילומים תיעדו ירי. המשטר מגיב בכוח.</p>
+                            <div class="card-footer">
+                                <a href="articles/2026-03-19-cuba-protest.html" class="read-more">קרא עוד ←</a>
+                                <div class="rating-buttons">
+                                    <button class="rating-btn" data-article-id="cuba-protest" data-rating="up">✨ מעניין</button>
+                                    <button class="rating-btn" data-article-id="cuba-protest" data-rating="down">💤 פחות</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="news-card" data-article-id="zelensky-warn" data-category="world">
+                        <img src="https://images.unsplash.com/photo-1646547508467-661d6c90e93c?w=600&h=340&fit=crop" alt="" class="card-image" loading="lazy" onerror="this.style.display='none'">
+                        <div class="card-content">
+                            <span class="card-category">עולם</span>
+                            <h3 class="card-title">זלנסקי מזהיר: המלחמה באיראן מאיימת על המאבק של אוקראינה</h3>
+                            <p class="card-summary">נשיא אוקראינה חושש שהעולם יסיט תשומת לב מהמלחמה ברוסיה. פגישה בדאונינג סטריט.</p>
+                            <div class="card-footer">
+                                <a href="articles/2026-03-19-zelensky-warning.html" class="read-more">קרא עוד ←</a>
+                                <div class="rating-buttons">
+                                    <button class="rating-btn" data-article-id="zelensky-warn" data-rating="up">✨ מעניין</button>
+                                    <button class="rating-btn" data-article-id="zelensky-warn" data-rating="down">💤 פחות</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SPORTS -->
+            <section class="section-block news-section" id="sports">
+                <div class="section-header">
+                    <span class="section-icon">⚽</span>
+                    <h2 class="section-title">ספורט</h2>
+                </div>
+                <div class="news-cards">
+                    <div class="news-card" data-article-id="avdija-32" data-category="sports">
+                        <img src="https://images.unsplash.com/photo-1546519638-68e109498ffc?w=600&h=340&fit=crop" alt="" class="card-image" loading="lazy" onerror="this.style.display='none'">
+                        <div class="card-content">
+                            <span class="card-category">🏀 דני אבדיה</span>
+                            <h3 class="card-title">אבדיה פוצץ: <span class="count-up">32</span> נקודות מול אינדיאנה פייסרס</h3>
+                            <p class="card-summary">הישראלי הראשון שנבחר לאול-סטאר ממשיך עונה מטורפת עם ממוצע 24.1 נק'. פורטלנד ניצחה.</p>
+                            <div class="card-footer">
+                                <a href="articles/2026-03-19-avdija-32-points.html" class="read-more">קרא עוד ←</a>
+                                <div class="rating-buttons">
+                                    <button class="rating-btn" data-article-id="avdija-32" data-rating="up">✨ מעניין</button>
+                                    <button class="rating-btn" data-article-id="avdija-32" data-rating="down">💤 פחות</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="news-card" data-article-id="messi-900" data-category="sports">
+                        <img src="https://images.unsplash.com/photo-1574629810360-7efbbe195018?w=600&h=340&fit=crop" alt="" class="card-image" loading="lazy" onerror="this.style.display='none'">
+                        <div class="card-content">
+                            <span class="card-category">⚽ מסי</span>
+                            <h3 class="card-title">מסי הגיע ל-<span class="count-up">900</span> שערים - אך מיאמי הודחה מהגביע</h3>
+                            <p class="card-summary">שער היסטורי בדקה ה-7 מול נאשוויל, אבל 1-1 סופי ומיאמי בחוץ. זומן לפינליסימה מול ספרד ב-27.3.</p>
+                            <div class="card-footer">
+                                <a href="articles/2026-03-19-messi-900-nashville.html" class="read-more">קרא עוד ←</a>
+                                <div class="rating-buttons">
+                                    <button class="rating-btn" data-article-id="messi-900" data-rating="up">✨ מעניין</button>
+                                    <button class="rating-btn" data-article-id="messi-900" data-rating="down">💤 פחות</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ENTERTAINMENT (shows + celebrities) -->
+            <section class="section-block news-section" id="shows">
+                <div class="section-header">
+                    <span class="section-icon">📺</span>
+                    <h2 class="section-title">סדרות ובידור</h2>
+                </div>
+                <div class="news-cards">
+                    <div class="news-card" data-article-id="gadot-genesis" data-category="entertainment">
+                        <img src="https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?w=600&h=340&fit=crop" alt="" class="card-image" loading="lazy" onerror="this.style.display='none'">
+                        <div class="card-content">
+                            <span class="card-category">גל גדות</span>
+                            <h3 class="card-title">פרס ג'נסיס של גל גדות יוכפל ל-$2 מיליון לטובת נפגעי טראומה</h3>
+                            <p class="card-summary">יוזמת התרמה תגדיל את הפרס ל-$2M. הכסף ילך לארגונים שמסייעים לישראלים להתמודד עם טראומה.</p>
+                            <div class="card-footer">
+                                <a href="articles/2026-03-19-gadot-genesis-prize.html" class="read-more">קרא עוד ←</a>
+                                <div class="rating-buttons">
+                                    <button class="rating-btn" data-article-id="gadot-genesis" data-rating="up">✨ מעניין</button>
+                                    <button class="rating-btn" data-article-id="gadot-genesis" data-rating="down">💤 פחות</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="news-card" data-article-id="gadot-ruin" data-category="entertainment">
+                        <img src="https://images.unsplash.com/photo-1440404653325-ab127d49abc1?w=600&h=340&fit=crop" alt="" class="card-image" loading="lazy" onerror="this.style.display='none'">
+                        <div class="card-content">
+                            <span class="card-category">גל גדות</span>
+                            <h3 class="card-title">גל גדות תככב בתרילר מלחמת העולם השנייה "Ruin"</h3>
+                            <p class="card-summary">סרט חדש על ניצולת שואה שמקימה ברית עם חייל גרמני כדי לנקום ביחידת SS. לצד מתיאס שונארטס.</p>
+                            <div class="card-footer">
+                                <a href="articles/2026-03-19-gadot-ruin-movie.html" class="read-more">קרא עוד ←</a>
+                                <div class="rating-buttons">
+                                    <button class="rating-btn" data-article-id="gadot-ruin" data-rating="up">✨ מעניין</button>
+                                    <button class="rating-btn" data-article-id="gadot-ruin" data-rating="down">💤 פחות</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-inner">
+            <p class="footer-text">Daily Me · My world, every day.</p>
+            <a href="https://github.com" class="footer-link" target="_blank" rel="noopener">GitHub ↗</a>
+        </div>
+    </footer>
+
+    <script>
+        var dollarHistory = [3.148, 3.135, 3.077, 3.095, 3.112, 3.121, 3.097];
+    </script>
+    <script src="js/script.js"></script>
+</body>
+</html>

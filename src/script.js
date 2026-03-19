@@ -147,6 +147,35 @@
         heroEl.style.backgroundImage = "url('assets/hero/hero-" + heroNum + ".png')";
     }
 
+    // ---- Edition Archive Navigation ----
+    var editionNav = document.querySelector('.edition-nav');
+    if (editionNav && !window.location.pathname.includes('/archive/')) {
+        fetch('archive/editions.json')
+            .then(function(r) { return r.json(); })
+            .then(function(editions) {
+                if (!editions || editions.length < 2) return;
+                // Clear existing nav
+                editionNav.innerHTML = '';
+                // Add "current" link
+                var currentLink = document.createElement('a');
+                currentLink.href = 'index.html';
+                currentLink.className = 'edition-link active';
+                currentLink.textContent = '📰 עכשיו';
+                editionNav.appendChild(currentLink);
+                // Add last few editions (up to 5)
+                var shown = Math.min(editions.length, 5);
+                for (var i = 0; i < shown; i++) {
+                    var ed = editions[i];
+                    var link = document.createElement('a');
+                    link.href = 'archive/' + ed.file;
+                    link.className = 'edition-link';
+                    link.textContent = ed.label || (ed.date + ' ' + (ed.edition === 'morning' ? '☀️' : '🌙'));
+                    editionNav.appendChild(link);
+                }
+            })
+            .catch(function() {}); // Silent fail if no archive yet
+    }
+
     // ---- Scroll Position Memory ----
     // Restore scroll position when coming back from article
     var savedScroll = sessionStorage.getItem('dailyme-scroll');
@@ -227,9 +256,35 @@
 
     initRatings();
 
-    // ---- Export ratings for scheduled task ----
-    window.dailyMeGetRatings = function() {
-        return getRatings();
-    };
+    // ---- Preferences Profile from Ratings ----
+    function buildPreferences() {
+        var ratings = getRatings();
+        var prefs = {}; // category -> {up: count, down: count, score: number}
+
+        Object.keys(ratings).forEach(function(key) {
+            var r = ratings[key];
+            var cat = r.category || 'unknown';
+            if (!prefs[cat]) prefs[cat] = { up: 0, down: 0, score: 0 };
+            if (r.rating === 'up') prefs[cat].up++;
+            else prefs[cat].down++;
+            prefs[cat].score = prefs[cat].up - prefs[cat].down;
+        });
+
+        return prefs;
+    }
+
+    // Export for scheduled task to read
+    window.dailyMeGetRatings = function() { return getRatings(); };
+    window.dailyMeGetPreferences = function() { return buildPreferences(); };
+
+    // Save preferences to a visible element so the task can scrape it
+    var prefsData = buildPreferences();
+    if (Object.keys(prefsData).length > 0) {
+        var prefsEl = document.createElement('script');
+        prefsEl.type = 'application/json';
+        prefsEl.id = 'dailyme-preferences';
+        prefsEl.textContent = JSON.stringify(prefsData);
+        document.head.appendChild(prefsEl);
+    }
 
 })();
