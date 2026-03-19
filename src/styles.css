@@ -30,6 +30,8 @@
     --world-accent: #059669;
     --sports-accent: #d97706;
     --shows-accent: #db2777;
+    --amazon-accent: #ff9900;
+    --gadgets-accent: #06b6d4;
     --rating-bg: #f5f5f5;
     --section-border: #e5e5e5;
     --ticker-bg: #dc2626;
@@ -302,6 +304,8 @@ img { max-width: 100%; height: auto; display: block; }
 .news-section[id="worldNews"]::before { background: var(--world-accent); }
 .news-section[id="sports"]::before { background: var(--sports-accent); }
 .news-section[id="shows"]::before { background: var(--shows-accent); }
+.news-section[id="amazon"]::before { background: var(--amazon-accent); }
+.news-section[id="gadgets"]::before { background: var(--gadgets-accent); }
 
 .news-section .section-header { max-width: 1000px; margin: 0 auto 20px; }
 .news-section .section-title {
@@ -315,6 +319,8 @@ img { max-width: 100%; height: auto; display: block; }
 .news-section[id="worldNews"] .section-title { color: var(--world-accent); }
 .news-section[id="sports"] .section-title { color: var(--sports-accent); }
 .news-section[id="shows"] .section-title { color: var(--shows-accent); }
+.news-section[id="amazon"] .section-title { color: var(--amazon-accent); }
+.news-section[id="gadgets"] .section-title { color: var(--gadgets-accent); }
 
 .news-cards {
     display: grid;

@@ -75,6 +75,19 @@ For EACH data source below, use web search to find the latest information:
 - For each: title, 2-3 sentence summary IN HEBREW, source URL, og:image URL
 - Sources: Reuters, BBC, AP News, CNN, Al Jazeera, The Guardian, NY Times
 
+#### 3.4d Amazon Seller News (always)
+- Search: "Amazon seller news today" and "Amazon FBA news" and "Amazon marketplace changes 2026" and "חדשות אמזון מוכרים"
+- Find UP TO 10 stories relevant to Amazon sellers: policy changes, fee updates, new tools, algorithm changes, FBA updates, advertising changes, marketplace trends, competitor moves, Buy Box changes, category restrictions
+- Also search: "Amazon earnings", "Amazon logistics news", "Amazon AI tools sellers"
+- For each: title, 2-3 sentence summary IN HEBREW, source URL, og:image URL
+- Sources: SellerCentral news, Jungle Scout blog, Helium 10 blog, CNBC, TechCrunch, ecommercebytes.com
+
+#### 3.4e Tech & Gadgets (always)
+- Search: "new gadgets 2026" and "tech gadgets news today" and "cool new technology products"
+- Find UP TO 10 interesting gadget/tech stories: new phone launches, wearables, smart home, drones, EVs, cool Kickstarter/Indiegogo products, product reviews
+- For each: title, 2-3 sentence summary IN HEBREW, source URL, og:image URL
+- Sources: The Verge, TechCrunch, Engadget, Wired, Tom's Guide, GSMArena, 9to5Mac
+
 #### 3.5 Sports (only if news exists)
 - Search: "Danny Avdia NBA news today" and "Lionel Messi news today"
 - Only include if there are actual news/games/stats

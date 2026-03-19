@@ -17,6 +17,8 @@ sections:
   israel_politics: true
   war_security: true
   world_news: true
+  amazon_seller: true
+  tech_gadgets: true
   calendar: true
   sports:
     enabled: true
