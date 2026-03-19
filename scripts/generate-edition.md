@@ -92,10 +92,19 @@ For EACH data source below, use web search to find the latest information:
 - Only include if actual news exists
 
 #### 3.8 Calendar
+**Israeli holidays:**
 - Search: "Jewish holidays today Israel" and "Israeli national events today"
-- Check Hebrew calendar for holidays/events
-- Morning: Today's events. Evening: Tomorrow's events too.
-- Note: Google Calendar integration requires API key in config
+- Check Hebrew calendar via Hebcal for holidays/events
+
+**Google Calendar - REAL meetings:**
+- Use the `gcal_list_events` MCP tool to get today's (morning) or tomorrow's (evening) events
+- Check BOTH calendars: "primary" (info@jaygptpro.com) AND "jmargaliot@gmail.com"
+- Also check "iw.jewish#holiday@group.v.calendar.google.com" for Israeli holidays
+- Morning: `gcal_list_events(timeMin="TODAY 00:00", timeMax="TODAY 23:59", timeZone="Asia/Jerusalem")`
+- Evening: Also include `gcal_list_events(timeMin="TOMORROW 00:00", timeMax="TOMORROW 23:59", timeZone="Asia/Jerusalem")`
+- For each event, show: time, title, and attendee count
+- Generate HTML like: `<div class="calendar-event"><span class="event-time">09:00</span><span class="event-title">Meeting name</span></div>`
+- If the MCP tool is not available, show a message to connect Google Calendar
 
 #### 3.9 Daily Surprise
 - Rotate type each day (use day-of-year % 6):
