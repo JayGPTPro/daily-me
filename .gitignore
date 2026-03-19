@@ -5,3 +5,4 @@ generated_images/
 *.pyc
 __pycache__/
 COPY_THIS_ENV_FILE_TO_NEW_FOLDERS.env
+assets:jay-reference.jpg.jpg
