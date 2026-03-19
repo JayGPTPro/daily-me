@@ -17,7 +17,12 @@
       "Bash(gh repo:*)",
       "Bash(gh api:*)",
       "Bash(find /Users/jacobmargaliot/Downloads/Claude/ -maxdepth 2 -name *jay* -o -name *daily*me* -type f)",
-      "Bash(\"/Users/jacobmargaliot/Downloads/Claude/הדיילי מי/docs/archive/editions.json\")"
+      "Bash(\"/Users/jacobmargaliot/Downloads/Claude/הדיילי מי/docs/archive/editions.json\")",
+      "Bash(python3 -c \":*)",
+      "mcp__scheduled-tasks__list_scheduled_tasks",
+      "WebFetch(domain:ppc.land)",
+      "WebFetch(domain:www.gearpatrol.com)",
+      "WebFetch(domain:techstartups.com)"
     ]
   }
 }
