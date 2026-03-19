@@ -1,0 +1,7 @@
+node_modules/
+.DS_Store
+.env
+generated_images/
+*.pyc
+__pycache__/
+COPY_THIS_ENV_FILE_TO_NEW_FOLDERS.env

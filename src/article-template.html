@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ARTICLE_TITLE}} - Daily Me</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" type="image/svg+xml" href="../assets/logo.svg">
+</head>
+<body data-theme="light">
+    <header class="header">
+        <div class="header-inner">
+            <div class="header-right">
+                <a href="../index.html" class="back-link">→ חזרה לדשבורד</a>
+            </div>
+            <div class="header-left">
+                <button class="theme-toggle" id="themeToggle" aria-label="החלף ערכת נושא">
+                    <span class="theme-toggle-icon" id="themeIcon">☀️</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="article-main">
+        <article class="article">
+            <div class="article-meta">
+                <span class="article-category">{{ARTICLE_CATEGORY}}</span>
+                <span class="article-date">{{ARTICLE_DATE}}</span>
+            </div>
+            <h1 class="article-title">{{ARTICLE_TITLE}}</h1>
+            {{#ARTICLE_IMAGE}}
+            <div class="article-image-wrap">
+                <img src="{{ARTICLE_IMAGE}}" alt="{{ARTICLE_TITLE}}" class="article-image" loading="lazy">
+            </div>
+            {{/ARTICLE_IMAGE}}
+            <div class="article-body">
+                {{ARTICLE_BODY}}
+            </div>
+            <div class="article-source">
+                <a href="{{SOURCE_URL}}" target="_blank" rel="noopener" class="source-link">למקור המלא ↗</a>
+            </div>
+            <div class="article-back">
+                <a href="../index.html" class="back-button">← חזרה לדשבורד</a>
+            </div>
+        </article>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-inner">
+            <p class="footer-text">Daily Me · My world, every day.</p>
+        </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>

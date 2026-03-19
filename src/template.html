@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Me - {{EDITION_TITLE}}</title>
+    <meta name="description" content="Daily Me - My world, every day.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/svg+xml" href="assets/logo.svg">
+</head>
+<body data-theme="light">
+    <!-- Header -->
+    <header class="header">
+        <div class="header-inner">
+            <div class="header-right">
+                <img src="assets/logo.svg" alt="Daily Me" class="header-logo">
+                <div class="header-info">
+                    <h1 class="header-title">Daily Me</h1>
+                    <span class="header-subtitle">{{EDITION_LABEL}} · {{DATE_HEBREW}}</span>
+                </div>
+            </div>
+            <div class="header-left">
+                <span class="header-update-time">עודכן {{UPDATE_TIME}}</span>
+                <button class="theme-toggle" id="themeToggle" aria-label="החלף ערכת נושא">
+                    <span class="theme-toggle-icon" id="themeIcon">☀️</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <!-- Hero: Greeting + Surprise -->
+        <section class="hero" id="hero">
+            <div class="hero-inner">
+                <h2 class="hero-greeting">{{GREETING}}</h2>
+                <div class="hero-surprise">
+                    <span class="surprise-label">{{SURPRISE_LABEL}}</span>
+                    <p class="surprise-content">{{SURPRISE_CONTENT}}</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quick Info Bar: Weather + Dollar -->
+        <section class="quick-bar" id="quickBar">
+            <div class="quick-bar-inner">
+                <!-- Weather -->
+                <div class="quick-card weather-card">
+                    <div class="quick-card-icon">{{WEATHER_ICON}}</div>
+                    <div class="quick-card-info">
+                        <span class="quick-card-value">{{TEMPERATURE}}°</span>
+                        <span class="quick-card-label">{{WEATHER_DESC}}</span>
+                    </div>
+                    <div class="weather-recommendation">{{CLOTHING_REC}}</div>
+                </div>
+                <!-- Dollar -->
+                <div class="quick-card dollar-card">
+                    <div class="quick-card-icon">💵</div>
+                    <div class="quick-card-info">
+                        <span class="quick-card-value">₪{{DOLLAR_RATE}}</span>
+                        <span class="quick-card-label quick-card-change {{DOLLAR_DIRECTION}}">{{DOLLAR_CHANGE}}</span>
+                    </div>
+                    <canvas class="sparkline" id="dollarSparkline" width="100" height="40"></canvas>
+                </div>
+            </div>
+        </section>
+
+        <!-- Calendar -->
+        <section class="section-block" id="calendar">
+            <div class="section-header">
+                <span class="section-icon">📅</span>
+                <h2 class="section-title">{{CALENDAR_TITLE}}</h2>
+            </div>
+            {{#HOLIDAY}}
+            <div class="holiday-banner">
+                <span class="holiday-icon">{{HOLIDAY_ICON}}</span>
+                <span class="holiday-name">{{HOLIDAY_NAME}}</span>
+            </div>
+            {{/HOLIDAY}}
+            <div class="calendar-events">
+                {{CALENDAR_EVENTS}}
+            </div>
+        </section>
+
+        <!-- News Grid -->
+        <div class="news-grid">
+            <!-- AI News -->
+            <section class="section-block news-section" id="aiNews">
+                <div class="section-header">
+                    <span class="section-icon">🤖</span>
+                    <h2 class="section-title">חדשות AI</h2>
+                </div>
+                <div class="news-cards">
+                    {{AI_NEWS_CARDS}}
+                </div>
+            </section>
+
+            <!-- Israel Politics -->
+            <section class="section-block news-section" id="politics">
+                <div class="section-header">
+                    <span class="section-icon">🏛️</span>
+                    <h2 class="section-title">פוליטיקה ישראלית</h2>
+                </div>
+                <div class="news-cards">
+                    {{POLITICS_CARDS}}
+                </div>
+            </section>
+
+            <!-- War & Security -->
+            <section class="section-block news-section" id="warSecurity">
+                <div class="section-header">
+                    <span class="section-icon">⚔️</span>
+                    <h2 class="section-title">מלחמה וביטחון</h2>
+                </div>
+                <div class="news-cards">
+                    {{WAR_SECURITY_CARDS}}
+                </div>
+            </section>
+
+            <!-- World News -->
+            <section class="section-block news-section" id="worldNews">
+                <div class="section-header">
+                    <span class="section-icon">🌍</span>
+                    <h2 class="section-title">חדשות העולם</h2>
+                </div>
+                <div class="news-cards">
+                    {{WORLD_NEWS_CARDS}}
+                </div>
+            </section>
+
+            <!-- Sports (conditional) -->
+            {{#SPORTS}}
+            <section class="section-block news-section" id="sports">
+                <div class="section-header">
+                    <span class="section-icon">⚽</span>
+                    <h2 class="section-title">ספורט</h2>
+                </div>
+                <div class="news-cards">
+                    {{SPORTS_CARDS}}
+                </div>
+            </section>
+            {{/SPORTS}}
+
+            <!-- Shows (conditional) -->
+            {{#SHOWS}}
+            <section class="section-block news-section" id="shows">
+                <div class="section-header">
+                    <span class="section-icon">📺</span>
+                    <h2 class="section-title">סדרות ובידור</h2>
+                </div>
+                <div class="news-cards">
+                    {{SHOWS_CARDS}}
+                </div>
+            </section>
+            {{/SHOWS}}
+
+            <!-- Gal Gadot (conditional) -->
+            {{#GADOT}}
+            <section class="section-block news-section" id="gadot">
+                <div class="section-header">
+                    <span class="section-icon">⭐</span>
+                    <h2 class="section-title">גל גדות</h2>
+                </div>
+                <div class="news-cards">
+                    {{GADOT_CARDS}}
+                </div>
+            </section>
+            {{/GADOT}}
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-inner">
+            <p class="footer-text">Daily Me · My world, every day.</p>
+            <a href="https://github.com" class="footer-link" target="_blank" rel="noopener">GitHub ↗</a>
+        </div>
+    </footer>
+
+    <script>
+        // Sparkline data injected by update script
+        const dollarHistory = {{DOLLAR_HISTORY_JSON}};
+    </script>
+    <script src="js/script.js"></script>
+</body>
+</html>

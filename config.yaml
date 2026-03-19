@@ -1,0 +1,76 @@
+# Daily Me - Configuration
+# My world, every day.
+
+name: "ג'יי"
+language: "he"
+
+# Location
+weather:
+  city: "Ra'anana"
+  country: "IL"
+
+# Content Sections
+sections:
+  weather: true
+  dollar: true
+  ai_news: true
+  israel_politics: true
+  war_security: true
+  world_news: true
+  calendar: true
+  sports:
+    enabled: true
+    players:
+      - "Danny Avdia"
+      - "Lionel Messi"
+  shows:
+    enabled: true
+    list:
+      - "הישרדות"
+      - "Survivor US"
+      - "Beast Games"
+      - "The Traitors"
+      - "Squid Game"
+      - "Squid Game: The Challenge"
+      - "Friends"
+      - "הכוכב הבא"
+      - "רוקדים עם כוכבים"
+      - "בריג'רטון"
+  celebrities:
+    enabled: true
+    list:
+      - "גל גדות"
+
+# Preferred news sources
+sources:
+  israel:
+    - "mako.co.il"
+    - "walla.co.il"
+    - "ynet.co.il"
+    - "kan.org.il"
+    - "haaretz.co.il"
+    - "israelhayom.co.il"
+    - "maariv.co.il"
+  international:
+    - "techcrunch.com"
+    - "theverge.com"
+    - "arstechnica.com"
+    - "reuters.com"
+    - "bbc.com"
+    - "wired.com"
+    - "espn.com"
+    - "nba.com"
+
+# Google Calendar
+google_calendar:
+  enabled: true
+  calendar_id: "primary"
+
+# Display
+theme:
+  default: "light"
+
+# Schedule
+schedule:
+  morning: "06:00"
+  evening: "18:00"

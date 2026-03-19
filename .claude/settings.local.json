@@ -1,0 +1,19 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(grep -E \"\\\\.\\(yaml|yml|json|html|css|js|md\\)$\")",
+      "Bash(grep -r \"GEMINI_API_KEY\\\\|OPENAI_API_KEY\\\\|ANTHROPIC_API_KEY\" ~/Downloads/Claude --include=.env*)",
+      "Bash(grep -E \"\\\\.\\(html|css|js|yaml|yml\\)$\")",
+      "Bash(rm -rf node_modules package.json package-lock.json)",
+      "Bash(rm -f daily-me-spec.docx daily-me-claude-prompt.docx)",
+      "WebSearch",
+      "mcp__Claude_Preview__preview_start",
+      "WebFetch(domain:www.timeanddate.com)",
+      "WebFetch(domain:www.timesofisrael.com)",
+      "WebFetch(domain:www.aljazeera.com)",
+      "WebFetch(domain:www.newsweek.com)",
+      "WebFetch(domain:www.cbsnews.com)",
+      "WebFetch(domain:www.cnn.com)"
+    ]
+  }
+}
