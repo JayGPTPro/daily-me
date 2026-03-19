@@ -136,6 +136,17 @@
         }, { passive: true });
     }
 
+    // ---- Hero Image Rotation ----
+    var heroEl = document.querySelector('.hero-bg');
+    if (heroEl) {
+        var HERO_COUNT = 23;
+        var now = new Date();
+        var dayOfYear = Math.floor((now - new Date(now.getFullYear(), 0, 0)) / 86400000);
+        var editionIndex = dayOfYear * 2 + (now.getHours() >= 14 ? 1 : 0);
+        var heroNum = (editionIndex % HERO_COUNT) + 1;
+        heroEl.style.backgroundImage = "url('assets/hero/hero-" + heroNum + ".png')";
+    }
+
     // ---- Scroll Position Memory ----
     // Restore scroll position when coming back from article
     var savedScroll = sessionStorage.getItem('dailyme-scroll');
