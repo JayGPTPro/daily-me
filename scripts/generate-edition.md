@@ -217,7 +217,15 @@ Copy to `docs/`:
 6. **Real data only** - Don't make up news, quotes, or stats
 7. **OG Images** - Try to get og:image from source articles for visual richness
 8. **Translate, don't transliterate** - Natural Hebrew, not word-by-word translation
-9. **ONLY TODAY'S NEWS** - Only include news from the last 24 hours. Never pad with old stories. If there's lots of news, the dashboard can be longer. If there's nothing, that section should be shorter or hidden. Don't force old content. CRITICAL: Always verify the publish date of every article. If the article is older than 24 hours, DO NOT include it. Check the URL, the page date, and any timestamps. When in doubt, skip it.
+9. **STRICTLY TODAY'S NEWS ONLY** - This is the #1 rule of Daily Me. The whole point is a FRESH newspaper.
+   - Morning edition: news from the last ~12 hours (overnight + early morning)
+   - Evening edition: news from today only (since morning)
+   - NEVER include stories from 2+ days ago, even if they're interesting
+   - If a story broke 3 days ago but has a new development TODAY, only cover the new development
+   - ALWAYS check the publish date of every article before including it
+   - If you can't verify the date, DON'T include it
+   - If a category has no fresh news → hide the entire section, don't pad with old stories
+   - Old news belongs in the archive, not in today's edition
 10. **Dynamic length** - The dashboard length should reflect how much actually happened. Busy news day = more cards. Quiet day = fewer cards. Never add filler.
 11. **EVERY ITEM MUST HAVE A SOURCE** - Every single piece of information must link to its original source. No exceptions. News cards must have "קרא עוד" linking to an article page, and every article page must have "למקור המלא" linking to the original source URL. Weather must link to the weather service. Dollar rate must link to the exchange rate source. Even the daily surprise should cite its source. The user needs to be able to verify everything.
 12. **No unverifiable claims** - If you can't find a source URL for a piece of information, don't include it. Credibility is everything.

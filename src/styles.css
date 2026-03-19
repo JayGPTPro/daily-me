@@ -237,13 +237,33 @@ img { max-width: 100%; height: auto; display: block; }
 .event-time { font-weight: 700; font-size: 0.95rem; min-width: 50px; color: var(--accent); }
 .event-title { font-weight: 500; font-size: 0.95rem; }
 
-/* ---- News Grid ---- */
+/* ---- News Grid (single column) ---- */
 .news-grid {
-    max-width: 1200px; margin: 40px auto; padding: 0 24px;
-    display: grid; grid-template-columns: 1fr 1fr; gap: 32px;
+    max-width: 900px; margin: 0 auto; padding: 0;
+    display: flex; flex-direction: column; gap: 0;
 }
-.news-section { margin: 0; padding: 0; }
-.news-cards { display: flex; flex-direction: column; gap: 16px; }
+.news-section {
+    margin: 0; padding: 40px 24px;
+    border-bottom: 1px solid var(--border);
+}
+.news-section:last-child { border-bottom: none; }
+
+/* Section alternating backgrounds */
+.news-section:nth-child(odd) { background: var(--bg-primary); }
+.news-section:nth-child(even) { background: var(--bg-secondary); }
+
+/* Section accent left border */
+.news-section { border-right: 4px solid transparent; }
+.news-section[id="warSecurity"] { border-right-color: var(--war-accent); }
+.news-section[id="aiNews"] { border-right-color: var(--ai-accent); }
+.news-section[id="politics"] { border-right-color: var(--politics-accent); }
+.news-section[id="worldNews"] { border-right-color: var(--world-accent); }
+.news-section[id="sports"] { border-right-color: var(--sports-accent); }
+.news-section[id="shows"] { border-right-color: var(--shows-accent); }
+.news-section[id="gadot"] { border-right-color: #E91E63; }
+
+.news-section .section-header { max-width: 900px; margin: 0 auto 20px; }
+.news-cards { display: flex; flex-direction: column; gap: 16px; max-width: 900px; margin: 0 auto; }
 
 /* ---- News Card ---- */
 .news-card {
@@ -392,7 +412,6 @@ img { max-width: 100%; height: auto; display: block; }
 
 /* ---- Responsive ---- */
 @media (max-width: 1199px) {
-    .news-grid { grid-template-columns: 1fr 1fr; gap: 24px; }
     .hero-greeting { font-size: 1.8rem; }
 }
 
@@ -408,7 +427,7 @@ img { max-width: 100%; height: auto; display: block; }
     .quick-card { padding: 16px 18px; }
     .weather-recommendation { display: none; }
     .section-block { margin: 24px auto; padding: 0 16px; }
-    .news-grid { grid-template-columns: 1fr; gap: 24px; padding: 0 16px; }
+    .news-section { padding: 28px 16px; }
     .card-image { height: 160px; }
     .card-content { padding: 14px 16px 16px; }
     .article-title { font-size: 1.5rem; }
