@@ -15,7 +15,8 @@
       "WebFetch(domain:www.cbsnews.com)",
       "WebFetch(domain:www.cnn.com)",
       "Bash(gh repo:*)",
-      "Bash(gh api:*)"
+      "Bash(gh api:*)",
+      "Bash(find /Users/jacobmargaliot/Downloads/Claude/ -maxdepth 2 -name *jay* -o -name *daily*me* -type f)"
     ]
   }
 }
