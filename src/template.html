@@ -143,31 +143,18 @@
             </section>
             {{/SPORTS}}
 
-            <!-- Shows (conditional) -->
-            {{#SHOWS}}
+            <!-- Shows & Entertainment (includes celebrities like Gal Gadot) -->
+            {{#ENTERTAINMENT}}
             <section class="section-block news-section" id="shows">
                 <div class="section-header">
                     <span class="section-icon">📺</span>
                     <h2 class="section-title">סדרות ובידור</h2>
                 </div>
                 <div class="news-cards">
-                    {{SHOWS_CARDS}}
+                    {{ENTERTAINMENT_CARDS}}
                 </div>
             </section>
-            {{/SHOWS}}
-
-            <!-- Gal Gadot (conditional) -->
-            {{#GADOT}}
-            <section class="section-block news-section" id="gadot">
-                <div class="section-header">
-                    <span class="section-icon">⭐</span>
-                    <h2 class="section-title">גל גדות</h2>
-                </div>
-                <div class="news-cards">
-                    {{GADOT_CARDS}}
-                </div>
-            </section>
-            {{/GADOT}}
+            {{/ENTERTAINMENT}}
         </div>
     </main>
 

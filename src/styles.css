@@ -82,32 +82,35 @@ a { color: var(--accent); text-decoration: none; transition: color var(--transit
 a:hover { color: var(--accent-light); }
 img { max-width: 100%; height: auto; display: block; }
 
-/* ---- Breaking News Banner ---- */
+/* ---- Breaking News Ticker ---- */
 .breaking-banner {
     background: var(--breaking-bg);
     color: var(--breaking-text);
-    padding: 10px 24px;
-    text-align: center;
-    font-weight: 700;
-    font-size: 0.95rem;
-    animation: breakingPulse 2s ease-in-out infinite;
+    overflow: hidden;
     position: relative;
     z-index: 101;
+    height: 38px;
+    line-height: 38px;
 }
-.breaking-banner a { color: var(--breaking-text); text-decoration: underline; }
-@keyframes breakingPulse {
-    0%, 100% { opacity: 1; }
-    50% { opacity: 0.85; }
+.ticker-wrap {
+    width: 100%;
+    overflow: hidden;
 }
-.breaking-label {
-    display: inline-block;
-    background: rgba(255,255,255,0.2);
-    padding: 2px 10px;
-    border-radius: 4px;
-    margin-left: 8px;
-    font-size: 0.8rem;
-    letter-spacing: 0.05em;
+.ticker {
+    display: inline-flex;
+    white-space: nowrap;
+    animation: tickerScroll 60s linear infinite;
 }
+.ticker-item {
+    padding: 0 40px;
+    font-weight: 600;
+    font-size: 0.88rem;
+}
+@keyframes tickerScroll {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+}
+.ticker:hover { animation-play-state: paused; }
 
 /* ---- Header ---- */
 .header {

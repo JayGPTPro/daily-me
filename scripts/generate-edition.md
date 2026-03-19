@@ -79,6 +79,7 @@ For EACH data source below, use web search to find the latest information:
 - Search: "Danny Avdia NBA news today" and "Lionel Messi news today"
 - Only include if there are actual news/games/stats
 - If nothing significant, skip this section entirely
+- VIRAL EXCEPTION: If there's a sports story the ENTIRE world is talking about (e.g., World Cup final, Olympics record, legendary retirement), include it even if it's not about Avdija/Messi. Label it as "🔥 כל העולם מדבר על זה"
 
 #### 3.6 Shows & Entertainment (only if news exists)
 - IMPORTANT: Search EACH show and celebrity INDIVIDUALLY by name
@@ -229,3 +230,5 @@ Copy to `docs/`:
 10. **Dynamic length** - The dashboard length should reflect how much actually happened. Busy news day = more cards. Quiet day = fewer cards. Never add filler.
 11. **EVERY ITEM MUST HAVE A SOURCE** - Every single piece of information must link to its original source. No exceptions. News cards must have "קרא עוד" linking to an article page, and every article page must have "למקור המלא" linking to the original source URL. Weather must link to the weather service. Dollar rate must link to the exchange rate source. Even the daily surprise should cite its source. The user needs to be able to verify everything.
 12. **No unverifiable claims** - If you can't find a source URL for a piece of information, don't include it. Credibility is everything.
+13. **VIRAL EXCEPTION** - In ANY category, if there's a story the entire world is talking about (trending #1, viral moment, historic event), include it even if it's not in Jay's configured interests. Label these with "🔥 כל העולם מדבר על זה". This applies to sports, entertainment, world news, tech, anything.
+14. **Daily surprise from REAL sources** - The daily surprise (quote/joke/trivia) must come from a real, verifiable source. Search for "famous quote of the day", "best joke today", "interesting trivia today" etc. Always include attribution (who said it, where it's from). Never make up quotes or jokes.
