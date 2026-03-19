@@ -136,6 +136,23 @@
         }, { passive: true });
     }
 
+    // ---- Scroll Position Memory ----
+    // Restore scroll position when coming back from article
+    var savedScroll = sessionStorage.getItem('dailyme-scroll');
+    if (savedScroll && document.querySelector('.news-grid')) {
+        setTimeout(function() {
+            window.scrollTo(0, parseInt(savedScroll));
+            sessionStorage.removeItem('dailyme-scroll');
+        }, 100);
+    }
+
+    // Save scroll position when clicking "read more"
+    document.querySelectorAll('.read-more').forEach(function(link) {
+        link.addEventListener('click', function() {
+            sessionStorage.setItem('dailyme-scroll', window.scrollY.toString());
+        });
+    });
+
     // ---- Rating System ----
     var RATINGS_KEY = 'dailyme-ratings';
 

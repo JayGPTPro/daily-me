@@ -39,6 +39,13 @@
             <div class="article-body">
                 {{ARTICLE_BODY}}
             </div>
+            <div class="article-rating" style="margin-top: 32px; display: flex; align-items: center; gap: 12px;">
+                <span style="font-size: 0.95rem; color: var(--text-secondary); font-weight: 600;">מה חשבת?</span>
+                <div class="rating-buttons">
+                    <button class="rating-btn" data-article-id="{{ARTICLE_ID}}" data-rating="up" data-category="{{ARTICLE_CATEGORY}}" title="מעניין">👍</button>
+                    <button class="rating-btn" data-article-id="{{ARTICLE_ID}}" data-rating="down" data-category="{{ARTICLE_CATEGORY}}" title="פחות מעניין">👎</button>
+                </div>
+            </div>
             <div class="article-source">
                 <a href="{{SOURCE_URL}}" target="_blank" rel="noopener" class="source-link">למקור המלא ↗</a>
             </div>
