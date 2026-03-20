@@ -25,7 +25,18 @@
       "WebFetch(domain:techstartups.com)",
       "WebFetch(domain:ca.sports.yahoo.com)",
       "WebFetch(domain:www.algemeiner.com)",
-      "WebFetch(domain:www.imdb.com)"
+      "WebFetch(domain:www.imdb.com)",
+      "WebFetch(domain:thehayride.com)",
+      "WebFetch(domain:www.xe.com)",
+      "WebFetch(domain:techcrunch.com)",
+      "WebFetch(domain:www.jpost.com)",
+      "WebFetch(domain:fortune.com)",
+      "WebFetch(domain:www.globenewswire.com)",
+      "WebFetch(domain:sports.yahoo.com)",
+      "WebFetch(domain:worldsoccertalk.com)",
+      "WebFetch(domain:www.npr.org)",
+      "WebFetch(domain:jewishinsider.com)",
+      "WebFetch(domain:llm-stats.com)"
     ]
   }
 }

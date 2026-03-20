@@ -26,8 +26,11 @@ Generate a beautiful, information-rich HTML dashboard by:
 For EACH data source below, use web search to find the latest information:
 
 #### 3.1 Weather (always)
-- Search: "weather in Ra'anana Israel today"
-- Extract: temperature, conditions, min/max, rain chance
+- Search: "weather in Ra'anana Israel today forecast"
+- Extract: TODAY'S FULL RANGE - minimum and maximum temperature for the day, not just current temp
+- Display as: "שמשי ונעים, 15°-22°" (min-max range)
+- Current temp shown as the big number
+- Also check rain probability for clothing recommendation
 - Generate clothing recommendation based on Jay's ACTUAL wardrobe:
   - Hot (>26°): "👕 חולצה קצרה"
   - Warm (20-26°): "👕 חולצה קצרה, אולי סוודר לערב"
@@ -40,10 +43,13 @@ For EACH data source below, use web search to find the latest information:
   - Never suggest items he doesn't have (no scarves, no hats, no sunglasses, etc.)
 
 #### 3.2 Dollar Rate (always)
-- Search: "dollar shekel exchange rate today"
-- Get current rate and yesterday's rate
-- Calculate change percentage
-- Try to find last 7 days rates for sparkline
+- Search: "dollar shekel exchange rate today Bank of Israel" or "שער דולר שקל היום בנק ישראל"
+- Get the OFFICIAL Bank of Israel representative rate (שער יציג) - this is the most accurate
+- Also check xe.com or Google for live rate
+- Get yesterday's rate to calculate daily change percentage
+- Show: current rate (e.g., ₪3.62), change (e.g., ↑ 0.3% or ↓ 0.5%)
+- Try to find last 7 days rates for sparkline chart
+- IMPORTANT: The rate must be real and verifiable. Include the source.
 
 #### 3.3 AI News (always)
 - Search: "biggest AI news today" and "AI announcements today"
@@ -227,6 +233,14 @@ Copy to `docs/`:
 2. Save article pages in `docs/articles/`
 3. **Archive this edition:**
    - Copy `docs/index.html` to `docs/archive/YYYY-MM-DD-morning.html` or `docs/archive/YYYY-MM-DD-evening.html`
+   - IMPORTANT: Fix all relative paths in the archive copy! Since archive files are in a subdirectory, change:
+     - `css/` → `../css/`
+     - `js/` → `../js/`
+     - `assets/` → `../assets/`
+     - `articles/` → `../articles/`
+     - `archive/` → `../archive/`
+     - `index.html` → `../index.html`
+     - `manifest.json` → `../manifest.json`
    - Create/update `docs/archive/editions.json` with the list of all archived editions:
      ```json
      [
