@@ -211,6 +211,22 @@ Use this to:
 - Search less for low/negative-score categories (fewer stories)
 - If a category has a negative score, consider hiding it or showing only 1-2 items
 
+### Step 4d: Category Filter Bar
+ALWAYS include this HTML before the news-grid div:
+```html
+<div class="category-filter">
+    <button class="filter-btn active" data-filter="all">הכל</button>
+    <button class="filter-btn" data-filter="warSecurity">⚔️ מלחמה</button>
+    <button class="filter-btn" data-filter="politics">🏛️ פוליטיקה</button>
+    <button class="filter-btn" data-filter="aiNews">🤖 AI</button>
+    <button class="filter-btn" data-filter="worldNews">🌍 עולם</button>
+    <button class="filter-btn" data-filter="amazon">📦 אמזון</button>
+    <button class="filter-btn" data-filter="gadgets">📱 גאדג'טים</button>
+    <button class="filter-btn" data-filter="sports">⚽ ספורט</button>
+    <button class="filter-btn" data-filter="shows">📺 בידור</button>
+</div>
+```
+
 ### Step 5: Generate Main Dashboard HTML
 
 Read `src/template.html` and replace all `{{PLACEHOLDERS}}`:

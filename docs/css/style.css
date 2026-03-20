@@ -343,30 +343,43 @@ img { max-width: 100%; height: auto; display: block; }
 .category-filter {
     max-width: 1080px;
     margin: 20px auto 0;
-    padding: 0 32px;
+    padding: 12px 32px;
     display: flex;
-    gap: 4px;
+    gap: 6px;
     flex-wrap: wrap;
+    position: sticky;
+    top: 56px;
+    z-index: 90;
+    background: var(--bg-primary);
+    border-bottom: 1px solid var(--border);
 }
 .filter-btn {
-    padding: 6px 14px;
-    border-radius: 3px;
-    border: 1px solid var(--border);
-    background: transparent;
+    padding: 7px 16px;
+    border-radius: 20px;
+    border: 1.5px solid var(--border);
+    background: var(--bg-secondary);
     font-family: var(--font-body);
-    font-size: 0.72rem;
+    font-size: 0.74rem;
     font-weight: 600;
-    color: var(--text-tertiary);
+    color: var(--text-secondary);
     cursor: pointer;
     transition: all var(--transition);
     letter-spacing: 0.01em;
 }
-.filter-btn:hover { background: var(--bg-tertiary); color: var(--text-primary); }
+.filter-btn:hover { border-color: var(--text-tertiary); color: var(--text-primary); transform: translateY(-1px); }
 .filter-btn.active {
-    background: var(--text-primary);
-    color: var(--bg-primary);
-    border-color: var(--text-primary);
+    color: #fff;
+    border-color: transparent;
 }
+.filter-btn[data-filter="all"].active { background: var(--text-primary); }
+.filter-btn[data-filter="warSecurity"].active { background: var(--war-accent); }
+.filter-btn[data-filter="aiNews"].active { background: var(--ai-accent); }
+.filter-btn[data-filter="amazon"].active { background: var(--amazon-accent); }
+.filter-btn[data-filter="politics"].active { background: var(--politics-accent); }
+.filter-btn[data-filter="worldNews"].active { background: var(--world-accent); }
+.filter-btn[data-filter="gadgets"].active { background: var(--gadgets-accent); }
+.filter-btn[data-filter="sports"].active { background: var(--sports-accent); }
+.filter-btn[data-filter="shows"].active { background: var(--shows-accent); }
 .news-section.hidden-by-filter { display: none; }
 
 /* ---- Share Button ---- */
@@ -456,9 +469,22 @@ img { max-width: 100%; height: auto; display: block; }
 }
 .news-section .section-title {
     font-family: var(--font-display);
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     font-weight: 900;
     letter-spacing: -0.03em;
+}
+.news-section .section-header {
+    position: relative;
+    padding-bottom: 16px;
+    margin-bottom: 28px;
+}
+.news-section .section-header::after {
+    content: '';
+    position: absolute;
+    bottom: 0; right: 0;
+    width: 100%; height: 1px;
+    background: linear-gradient(to left, currentColor 40px, transparent 40px);
+    opacity: 0.2;
 }
 .news-section[id="warSecurity"] .section-title { color: var(--war-accent); }
 .news-section[id="aiNews"] .section-title { color: var(--ai-accent); }
@@ -522,12 +548,39 @@ img { max-width: 100%; height: auto; display: block; }
     box-shadow: var(--shadow-hover);
     transform: translateY(-4px);
 }
+/* Category-colored hover glow */
+[id="warSecurity"] .news-card:hover { border-color: rgba(185,28,28,0.2); }
+[id="aiNews"] .news-card:hover { border-color: rgba(109,40,217,0.2); }
+[id="politics"] .news-card:hover { border-color: rgba(29,78,216,0.2); }
+[id="worldNews"] .news-card:hover { border-color: rgba(4,120,87,0.2); }
+[id="amazon"] .news-card:hover { border-color: rgba(217,119,6,0.2); }
+[id="gadgets"] .news-card:hover { border-color: rgba(8,145,178,0.2); }
+[id="sports"] .news-card:hover { border-color: rgba(180,83,9,0.2); }
+[id="shows"] .news-card:hover { border-color: rgba(190,24,93,0.2); }
 .card-image {
     width: 100%; height: 200px; object-fit: cover;
     background: var(--bg-tertiary);
     transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
 }
 .news-card:hover .card-image { transform: scale(1.03); }
+
+/* Category gradient fallback when no image */
+.news-card:not(:has(.card-image)) .card-content::before,
+.news-card .card-image[style*="display: none"] ~ .card-content::before {
+    content: '';
+    display: block;
+    height: 6px;
+    margin: -18px -20px 16px;
+    border-radius: var(--card-radius) var(--card-radius) 0 0;
+}
+[id="warSecurity"] .news-card:not(:has(.card-image)) .card-content::before { background: linear-gradient(90deg, var(--war-accent), #f87171); }
+[id="aiNews"] .news-card:not(:has(.card-image)) .card-content::before { background: linear-gradient(90deg, var(--ai-accent), #a78bfa); }
+[id="politics"] .news-card:not(:has(.card-image)) .card-content::before { background: linear-gradient(90deg, var(--politics-accent), #60a5fa); }
+[id="worldNews"] .news-card:not(:has(.card-image)) .card-content::before { background: linear-gradient(90deg, var(--world-accent), #34d399); }
+[id="amazon"] .news-card:not(:has(.card-image)) .card-content::before { background: linear-gradient(90deg, var(--amazon-accent), #fbbf24); }
+[id="gadgets"] .news-card:not(:has(.card-image)) .card-content::before { background: linear-gradient(90deg, var(--gadgets-accent), #22d3ee); }
+[id="sports"] .news-card:not(:has(.card-image)) .card-content::before { background: linear-gradient(90deg, var(--sports-accent), #fbbf24); }
+[id="shows"] .news-card:not(:has(.card-image)) .card-content::before { background: linear-gradient(90deg, var(--shows-accent), #f472b6); }
 
 .card-content { padding: 18px 20px; flex: 1; display: flex; flex-direction: column; }
 .card-category {
