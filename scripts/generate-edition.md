@@ -129,15 +129,47 @@ For EACH data source below, use web search to find the latest information:
 - Generate HTML like: `<div class="calendar-event"><span class="event-time">09:00</span><span class="event-title">Meeting name</span></div>`
 - If the MCP tool is not available, show a message to connect Google Calendar
 
-#### 3.9 Daily Surprise
+#### 3.9 Daily Surprise (in hero)
 - Rotate type each day (use day-of-year % 6):
-  - 0: Inspirational quote (ציטוט מעורר השראה)
-  - 1: Joke (בדיחה)
-  - 2: Trivia (טריוויה)
-  - 3: Interesting fact (עובדה מעניינת)
-  - 4: Today in history (היום בהיסטוריה)
-  - 5: Riddle (חידה)
-- All in Hebrew!
+  - 0: Inspirational quote (ציטוט מעורר השראה) — from real source with attribution
+  - 1: Joke (בדיחה) — from real joke site with source
+  - 2: Trivia (טריוויה) — verifiable fact with source
+  - 3: Interesting fact (עובדה מעניינת) — with source
+  - 4: Today in history (היום בהיסטוריה) — what happened today in history
+  - 5: Riddle (חידה) — brain teaser with answer hidden
+- All in Hebrew! Every surprise must cite its source.
+
+#### 3.10 Daily Extras (separate section after news)
+These appear at the bottom of the dashboard in a special "פינות" (corners) section:
+
+**a) ציטוט השראה יומי**
+- Search: "inspirational quote of the day" or "ציטוט השראה"
+- Must include: the quote, who said it, source URL
+- In Hebrew (translate if needed)
+
+**b) המלצת פודקאסט (בעברית בלבד)**
+- Search: "פודקאסט בעברית חדש פרק" or "best Hebrew podcast episode today"
+- One episode that came out today or this week
+- Include: podcast name, episode title, short description, link
+- MUST be in Hebrew only
+
+**c) מילה באנגלית ליום**
+- Pick an interesting English word
+- Show: the word in English, pronunciation, Hebrew explanation of meaning
+- Example: "Serendipity (סרנדיפיטי) — גילוי מקרי ומשמח של דבר שלא חיפשת. 'I found this amazing restaurant by pure serendipity.'"
+- Goal: improve Jay's English vocabulary
+
+**d) חידה יומית**
+- Search: "riddle of the day" or "חידה יומית"
+- A brain teaser or trivia question
+- Show question, then answer in a spoiler/collapsed section
+- Must cite source
+
+**e) ציוץ ויראלי**
+- Search: "viral tweet today" or "most liked tweet today" or "trending post today"
+- The single most viral/discussed post from Twitter/X today
+- Include: who posted it, the content (translated to Hebrew), engagement numbers, link
+- Can be funny, political, surprising — whatever went most viral
 
 ### Step 4: Generate Article Pages
 

@@ -63,6 +63,14 @@ sources:
     - "espn.com"
     - "nba.com"
 
+# Daily Extras
+extras:
+  daily_quote: true
+  hebrew_podcast: true
+  english_word: true
+  daily_riddle: true
+  viral_tweet: true
+
 # Google Calendar
 google_calendar:
   enabled: true
