@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Daily Me - מהדורת ערב 17.4.2026</title>
+    <title>Daily Me - מהדורת ערב | 17 באפריל 2026</title>
     <meta name="description" content="Daily Me - My world, every day.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,7 +14,7 @@
 <body data-theme="light">
 
     <!-- Breaking News Banner -->
-    <div class="breaking-banner"><span class="breaking-label">🔴 מבזק</span> הפסקת האש ישראל-לבנון בתוקף · איראן פותחת את מצר הורמוז · טראמפ: "הסכם עם איראן קרוב, שיחות ייתכן בסוף השבוע"</div>
+    <div class="breaking-banner"><span class="breaking-label">🔴 מבזק</span> הפסקת אש ישראל-לבנון נכנסה לתוקף · מצר הורמוז נפתח מחדש · טראמפ: המלחמה עם איראן "קרובה מאוד לסיומה"</div>
 
     <!-- Header -->
     <header class="header">
@@ -27,12 +27,7 @@
                 </div>
             </div>
             <div class="header-left">
-                <span class="header-update-time">עודכן 18:05</span>
-                <div class="edition-nav">
-                    <a href="archive/2026-04-17-morning.html" class="edition-link">בוקר</a>
-                    <a href="#" class="edition-link active">ערב</a>
-                    <a href="archive/2026-04-16-evening.html" class="edition-link">אתמול</a>
-                </div>
+                <span class="header-update-time">עודכן 18:00</span>
                 <button class="theme-toggle" id="themeToggle" aria-label="החלף ערכת נושא">
                     <span class="theme-toggle-icon" id="themeIcon">☀️</span>
                 </button>
@@ -41,18 +36,18 @@
     </header>
 
     <main class="main">
-        <!-- Hero -->
+        <!-- Hero: Greeting + Surprise -->
         <section class="hero" id="hero">
             <div class="hero-inner">
                 <h2 class="hero-greeting">ערב טוב, ג'יי! 🌙</h2>
                 <div class="hero-surprise">
-                    <span class="surprise-label">🧩 חידה ערבית</span>
-                    <p class="surprise-content">מה הולך ומתמלא ככל שאתה לוקח ממנו יותר? <span style="cursor:pointer;opacity:0.6;font-size:0.85em;" onclick="this.textContent='(תשובה: גומה / בור)'">[ לחץ לתשובה ]</span> &nbsp;<a href="https://riddles.com/riddle/what-gets-bigger-the-more-you-take-away" target="_blank" rel="noopener" style="color:inherit;opacity:0.7;font-size:0.85em;">מקור: riddles.com ↗</a></p>
+                    <span class="surprise-label">🧩 חידה יומית</span>
+                    <p class="surprise-content">גבר עשה את עבודתו הרגילה כשהחליפה שלו נקרעה. שלוש דקות מאוחר יותר הוא מת. למה? <br><small style="opacity:0.6;font-size:0.8em;">▼ תשובה: הוא היה אסטרונאוט בהליכת חלל — הקרע בחליפה גרם לדקומפרסיה מהירה.</small></p>
                 </div>
             </div>
         </section>
 
-        <!-- Quick Info Bar -->
+        <!-- Quick Info Bar: Weather + Dollar -->
         <section class="quick-bar" id="quickBar">
             <div class="quick-bar-inner">
                 <!-- Weather -->
@@ -60,7 +55,7 @@
                     <div class="quick-card-icon">☀️</div>
                     <div class="quick-card-info">
                         <span class="quick-card-value">22°</span>
-                        <span class="quick-card-label"><a href="https://www.timeanddate.com/weather/israel/raanana" target="_blank" rel="noopener" style="color:inherit;">שמשי ונעים, 16°-24° · ללא גשם ↗</a></span>
+                        <span class="quick-card-label">רעננה · שמשי ונעים, 18°-29°</span>
                     </div>
                     <div class="weather-recommendation">👕 חולצה קצרה, אולי סוודר לערב</div>
                 </div>
@@ -68,8 +63,8 @@
                 <div class="quick-card dollar-card">
                     <div class="quick-card-icon">💵</div>
                     <div class="quick-card-info">
-                        <span class="quick-card-value">₪3.006</span>
-                        <span class="quick-card-label quick-card-change positive">↑ 0.4% · <a href="https://www.boi.org.il/en/economic-roles/financial-markets/exchange-rates/" target="_blank" rel="noopener" style="color:inherit;opacity:0.7;">בנק ישראל ↗</a></span>
+                        <span class="quick-card-value">₪2.99</span>
+                        <span class="quick-card-label quick-card-change negative">↓ 0.26% · שפל של 30 שנה</span>
                     </div>
                     <canvas class="sparkline" id="dollarSparkline" width="100" height="40"></canvas>
                 </div>
@@ -80,21 +75,17 @@
         <section class="section-block" id="calendar">
             <div class="section-header">
                 <span class="section-icon">📅</span>
-                <h2 class="section-title">פגישות מחר</h2>
-            </div>
-            <div class="holiday-banner">
-                <span class="holiday-icon">🌙</span>
-                <span class="holiday-name">ראש חודש אייר</span>
+                <h2 class="section-title">פגישות מחר (שבת, 18 באפריל)</h2>
             </div>
             <div class="calendar-events">
-                <div class="calendar-event">
+                <div class="calendar-event calendar-event-allday">
                     <span class="event-time">כל היום</span>
-                    <span class="event-title">📧 אימייל על האתגר — יום אחרון למחיר</span>
+                    <span class="event-title">📧 אימייל על האתגר - יום אחרון למחיר</span>
                 </div>
             </div>
         </section>
 
-        <!-- Category Filter -->
+        <!-- Category Filter Bar -->
         <div class="category-filter">
             <button class="filter-btn active" data-filter="all">הכל</button>
             <button class="filter-btn" data-filter="warSecurity">⚔️ מלחמה</button>
@@ -110,7 +101,7 @@
         <!-- News Grid -->
         <div class="news-grid">
 
-            <!-- War & Security -->
+            <!-- War & Security (FIRST - biggest news today) -->
             <section class="section-block news-section" id="warSecurity">
                 <div class="section-header">
                     <span class="section-icon">⚔️</span>
@@ -120,9 +111,9 @@
 
                     <div class="news-card" data-article-id="war-lebanon-ceasefire" data-category="warSecurity">
                         <div class="card-content">
-                            <span class="card-category">⚔️ מלחמה וביטחון</span>
-                            <h3 class="card-title">הפסקת האש ישראל-לבנון נכנסה לתוקף — טראמפ קורא לשיחות שלום היסטוריות</h3>
-                            <p class="card-summary">הפסקת אש ל-10 ימים בין ישראל ללבנון נכנסה לתוקף אתמול בשעה 17:00. ארה"ב, ישראל ולבנון אישרו פורמלית את הסכם ההפסקה. טראמפ הזמין את מנהיגי שתי המדינות לבית הלבן לשיחות ישירות — הראשונות מאז 1983.</p>
+                            <span class="card-category">⚔️ מלחמה</span>
+                            <h3 class="card-title">הפסקת אש ישראל-לבנון נכנסה לתוקף — 10 ימים של שקט</h3>
+                            <p class="card-summary">הפסקת האש בין ישראל לחיזבאללה נכנסה לתוקף ב-17:00. חיזבאללה ירה כמה דקות לפני. סגן הנשיא JD ואנס היה מפתח בגיבוש העסקה. מצר הורמוז נפתח לסחר חופשי.</p>
                             <div class="card-footer">
                                 <a href="articles/2026-04-17-israel-lebanon-ceasefire.html" class="read-more">קרא עוד ←</a>
                                 <div class="rating-buttons">
@@ -133,46 +124,46 @@
                         </div>
                     </div>
 
-                    <div class="news-card" data-article-id="war-iran-hormuz" data-category="warSecurity">
+                    <div class="news-card" data-article-id="war-trump-close-over" data-category="warSecurity">
                         <div class="card-content">
-                            <span class="card-category">⚔️ מלחמה וביטחון</span>
-                            <h3 class="card-title">מצר הורמוז נפתח מחדש — אירן: "כלי שיט מסחריים יעברו בחופשיות"</h3>
-                            <p class="card-summary">שר החוץ האיראני הכריז כי מצר הורמוז פתוח לחלוטין לכלי שיט מסחריים "למשך תקופת הפסקת האש". ההכרזה מגיעה לאחר שהמצר היה חסום שבועות, מה שהוביל לזינוק במחירי הנפט העולמיים. המצר אחראי לכ-20% מסחר הנפט העולמי.</p>
+                            <span class="card-category">⚔️ מלחמה</span>
+                            <h3 class="card-title">טראמפ: המלחמה עם איראן "קרובה מאוד לסיומה" — פקיסטן מתווכת</h3>
+                            <p class="card-summary">הנשיא טראמפ הביע אופטימיות רבה לגבי סיום הסכסוך עם איראן. מחיר הנפט צנח 10%. שוק המניות שובר שיאים. פקיסטן מתווכת בין הצדדים.</p>
                             <div class="card-footer">
-                                <a href="articles/2026-04-17-iran-strait-hormuz.html" class="read-more">קרא עוד ←</a>
+                                <a href="articles/2026-04-17-trump-war-close-over.html" class="read-more">קרא עוד ←</a>
                                 <div class="rating-buttons">
-                                    <button class="rating-btn" data-article-id="war-iran-hormuz" data-rating="up">👍</button>
-                                    <button class="rating-btn" data-article-id="war-iran-hormuz" data-rating="down">👎</button>
+                                    <button class="rating-btn" data-article-id="war-trump-close-over" data-rating="up">👍</button>
+                                    <button class="rating-btn" data-article-id="war-trump-close-over" data-rating="down">👎</button>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="news-card" data-article-id="war-us-iran-talks" data-category="warSecurity">
+                    <div class="news-card" data-article-id="war-iran-rejects" data-category="warSecurity">
                         <div class="card-content">
-                            <span class="card-category">⚔️ מלחמה וביטחון</span>
-                            <h3 class="card-title">שיחות ארה"ב-איראן: טראמפ אופטימי, הפסקת האש עלולה לפוג ב-22 באפריל</h3>
-                            <p class="card-summary">טראמפ אמר כי הפסקת האש עם איראן, שתפוג ב-22 באפריל, "ניתנת להארכה אם יהיה התקדמות". הסבב הבא של השיחות צפוי "אולי בסוף השבוע". שר ההגנה הגסת אמר כי המצור הימי של ארה"ב על נמלי איראן יימשך "כל עוד יידרש".</p>
+                            <span class="card-category">⚔️ מלחמה</span>
+                            <h3 class="card-title">איראן דוחה הפסקת אש זמנית — מחפשת הסדר כולל לכל האזור</h3>
+                            <p class="card-summary">סגן שר החוץ האיראני הצהיר שטהראן דוחה כל הפסקת אש זמנית ורוצה לסיים את המלחמה באזור כולו. אי ודאות גוברת לגבי מה יקרה אחרי 10 הימים. בריטניה וצרפת מכנסות פסגה ל-40 מדינות.</p>
                             <div class="card-footer">
-                                <a href="https://www.nbcnews.com/world/iran/live-blog/live-updates-iran-war-israel-lebanon-leaders-talks-ceasefire-trump-rcna332095" class="read-more" target="_blank" rel="noopener">למקור ←</a>
+                                <a href="articles/2026-04-17-iran-rejects-ceasefire.html" class="read-more">קרא עוד ←</a>
                                 <div class="rating-buttons">
-                                    <button class="rating-btn" data-article-id="war-us-iran-talks" data-rating="up">👍</button>
-                                    <button class="rating-btn" data-article-id="war-us-iran-talks" data-rating="down">👎</button>
+                                    <button class="rating-btn" data-article-id="war-iran-rejects" data-rating="up">👍</button>
+                                    <button class="rating-btn" data-article-id="war-iran-rejects" data-rating="down">👎</button>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="news-card" data-article-id="war-hamas-deal" data-category="warSecurity">
+                    <div class="news-card" data-article-id="war-lebanon-toll" data-category="warSecurity">
                         <div class="card-content">
-                            <span class="card-category">⚔️ מלחמה וביטחון</span>
-                            <h3 class="card-title">חמאס מסרב לדון בגורלו ללא נסיגה ישראלית מלאה מעזה</h3>
-                            <p class="card-summary">האמריקנים עדכנו את ישראל כי הפערים במשא ומתן עם האיראנים "משמעותיים". חמאס מותנה כל דיון בגורלו התנאי בנסיגה ישראלית מוחלטת מעזה — עמדה שישראל דוחה. המשא ומתן על שחרור חטופים נותר תקוע.</p>
+                            <span class="card-category">⚔️ מלחמה</span>
+                            <h3 class="card-title">2,196 הרוגים בלבנון — עקורים החלו לשוב לבתיהם</h3>
+                            <p class="card-summary">מאזן ההרס: 2,196 הרוגים בלבנון מהתקיפות הישראליות לאורך 48 הימים. עם כניסת הפסקת האש לתוקף, עקורים החלו לשוב לצפון ישראל ולדרום לבנון. הסיפור האמיתי — מה קורה אחרי 10 הימים.</p>
                             <div class="card-footer">
-                                <a href="https://www.timesofisrael.com/liveblog-april-16-2026/" class="read-more" target="_blank" rel="noopener">למקור ←</a>
+                                <a href="articles/2026-04-17-israel-lebanon-ceasefire.html" class="read-more">קרא עוד ←</a>
                                 <div class="rating-buttons">
-                                    <button class="rating-btn" data-article-id="war-hamas-deal" data-rating="up">👍</button>
-                                    <button class="rating-btn" data-article-id="war-hamas-deal" data-rating="down">👎</button>
+                                    <button class="rating-btn" data-article-id="war-lebanon-toll" data-rating="up">👍</button>
+                                    <button class="rating-btn" data-article-id="war-lebanon-toll" data-rating="down">👎</button>
                                 </div>
                             </div>
                         </div>
@@ -192,8 +183,8 @@
                     <div class="news-card" data-article-id="ai-claude-opus-47" data-category="aiNews">
                         <div class="card-content">
                             <span class="card-category">🤖 AI</span>
-                            <h3 class="card-title">Anthropic משיקה Claude Opus 4.7 — מכה GPT-5.4 ו-Gemini 3.1 Pro</h3>
-                            <p class="card-summary">Anthropic שחררה היום את Claude Opus 4.7, עם שיפורים משמעותיים בקידוד אג'נטי ובתמיכת תמונות ברזולוציה גבוהה. המודל עוקף את OpenAI ו-Google בבנצ'מרקים של קידוד ושימוש בכלים. המחיר נשאר זהה: $5 למיליון טוקן קלט, $25 למיליון טוקן פלט.</p>
+                            <h3 class="card-title">קלוד אופוס 4.7: אנתרופיק משיקה את הדגם החזק ביותר שלה</h3>
+                            <p class="card-summary">אנתרופיק השיקה את קלוד אופוס 4.7 עם שיפורים משמעותיים במשימות הנדסת תוכנה מתקדמות. אנתרופיק ממשיכה להוביל את טבלאות הביצועים העולמיות נכון לאפריל 2026.</p>
                             <div class="card-footer">
                                 <a href="articles/2026-04-17-claude-opus-47.html" class="read-more">קרא עוד ←</a>
                                 <div class="rating-buttons">
@@ -207,10 +198,10 @@
                     <div class="news-card" data-article-id="ai-nvidia-ising" data-category="aiNews">
                         <div class="card-content">
                             <span class="card-category">🤖 AI</span>
-                            <h3 class="card-title">NVIDIA משיקה Ising — מודלי AI פתוחים ראשונים לעולם לקוואנטום</h3>
-                            <p class="card-summary">NVIDIA הכריזה על משפחת מודלי AI קוד-פתוח בשם Ising, שנועדו לסייע לחוקרים ולחברות לבנות מעבדי קוואנטום שיוכלו לרוץ יישומים מעשיים. מדובר בצעד חשוב לקראת מחשוב קוואנטום שימושי, תחום שנמצא במירוץ עולמי.</p>
+                            <h3 class="card-title">NVIDIA "אייזינג": מודלי AI פתוחים ראשונים בעולם לחישוב קוונטי</h3>
+                            <p class="card-summary">NVIDIA הכריזה על משפחת מודלים פתוחים ראשונה שנועדה להאיץ מחשוב קוונטי. המודלים עוזרים לחוקרים ולחברות לפתח מעבדים קוונטיים לאפליקציות מעשיות.</p>
                             <div class="card-footer">
-                                <a href="articles/2026-04-17-nvidia-ising.html" class="read-more">קרא עוד ←</a>
+                                <a href="articles/2026-04-17-nvidia-ising-quantum.html" class="read-more">קרא עוד ←</a>
                                 <div class="rating-buttons">
                                     <button class="rating-btn" data-article-id="ai-nvidia-ising" data-rating="up">👍</button>
                                     <button class="rating-btn" data-article-id="ai-nvidia-ising" data-rating="down">👎</button>
@@ -219,31 +210,31 @@
                         </div>
                     </div>
 
-                    <div class="news-card" data-article-id="ai-cerebras-ipo" data-category="aiNews">
+                    <div class="news-card" data-article-id="ai-stanford-index" data-category="aiNews">
                         <div class="card-content">
                             <span class="card-category">🤖 AI</span>
-                            <h3 class="card-title">Cerebras קרובה ל-IPO בשווי $35 מיליארד — OpenAI מגדילה עסקה ל-$20B</h3>
-                            <p class="card-summary">יצרנית שבבי AI Cerebras מתכננת הנפקה בורסאית מוקדם ככל האפשר, במטרה לגייס $3 מיליארד בשווי $35 מיליארד. במקביל, OpenAI הגדילה את הסכם שבבי השרתים עם Cerebras ל-$20 מיליארד — כפול מהסכום שדווח קודם. עסקה ענקית שמעצימה את התחרות מול NVIDIA.</p>
+                            <h3 class="card-title">דו"ח סטנפורד AI 2026: סין צמצמה את הפער ל-2.7% — AI שווה $172 מיליארד לשנה</h3>
+                            <p class="card-summary">מדד סטנפורד AI 2026 מצביע על כך שסין כמעט סגרה את הפער מול ארה"ב. כלי AI גנרטיביים יוצרים 172 מיליארד דולר בערך שנתי לצרכנים אמריקאים — פי שלושה מ-2025.</p>
                             <div class="card-footer">
-                                <a href="https://techcrunch.com/category/artificial-intelligence/" class="read-more" target="_blank" rel="noopener">למקור ←</a>
+                                <a href="articles/2026-04-17-stanford-ai-index.html" class="read-more">קרא עוד ←</a>
                                 <div class="rating-buttons">
-                                    <button class="rating-btn" data-article-id="ai-cerebras-ipo" data-rating="up">👍</button>
-                                    <button class="rating-btn" data-article-id="ai-cerebras-ipo" data-rating="down">👎</button>
+                                    <button class="rating-btn" data-article-id="ai-stanford-index" data-rating="up">👍</button>
+                                    <button class="rating-btn" data-article-id="ai-stanford-index" data-rating="down">👎</button>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="news-card" data-article-id="ai-mozilla-thunderbolt" data-category="aiNews">
+                    <div class="news-card" data-article-id="ai-data-centers" data-category="aiNews">
                         <div class="card-content">
                             <span class="card-category">🤖 AI</span>
-                            <h3 class="card-title">Mozilla משיקה Thunderbolt — לקוח AI פתוח לאירוח עצמי</h3>
-                            <p class="card-summary">Mozilla הציגה Thunderbolt, לקוח AI קוד-פתוח המיועד למשתמשים ועסקים שרוצים להריץ AI מקומי על שרתים שלהם — ללא תלות ב-OpenAI, Google או Anthropic. הצעד מאתגר את ההגמוניה של ספקי ה-AI הגדולים ומחזיר את השליטה למשתמש.</p>
+                            <h3 class="card-title">מרכזי נתוני AI צורכים 29.6 ג'יגה-ואט — כמו כל מדינת ניו יורק</h3>
+                            <p class="card-summary">נקודת ציון חדשה: צריכת החשמל של מרכזי נתוני AI בעולם הגיעה ל-29.6 גיגה-ואט. תשתית האנרגיה הפכה למגבלה הגדולה ביותר על המשך הצמיחה של AI.</p>
                             <div class="card-footer">
-                                <a href="https://techcrunch.com/category/artificial-intelligence/" class="read-more" target="_blank" rel="noopener">למקור ←</a>
+                                <a href="articles/2026-04-17-stanford-ai-index.html" class="read-more">קרא עוד ←</a>
                                 <div class="rating-buttons">
-                                    <button class="rating-btn" data-article-id="ai-mozilla-thunderbolt" data-rating="up">👍</button>
-                                    <button class="rating-btn" data-article-id="ai-mozilla-thunderbolt" data-rating="down">👎</button>
+                                    <button class="rating-btn" data-article-id="ai-data-centers" data-rating="up">👍</button>
+                                    <button class="rating-btn" data-article-id="ai-data-centers" data-rating="down">👎</button>
                                 </div>
                             </div>
                         </div>
@@ -260,46 +251,46 @@
                 </div>
                 <div class="news-cards">
 
-                    <div class="news-card" data-article-id="pol-ben-gvir-court" data-category="politics">
+                    <div class="news-card" data-article-id="pol-netanyahu-ceasefire" data-category="politics">
                         <div class="card-content">
                             <span class="card-category">🏛️ פוליטיקה</span>
-                            <h3 class="card-title">בג"ץ: לא מפטרים את בן גביר — אבל נותנים לו עד 3 במאי להסדר עם היועמ"שית</h3>
-                            <p class="card-summary">בית המשפט העליון החליט שלא לצוות על נתניהו לפטר את שר הביטחון הלאומי בן גביר, ובמקום זאת דרש שבן גביר, נתניהו והיועמ"שית יגיעו ל"מסגרת עקרונות" שתמנע התערבות פוליטית במשטרה. בן גביר הגיב: "אמשיך למנות בהתאם למדיניות שלי."</p>
+                            <h3 class="card-title">נתניהו: הפסקת האש "הזדמנות היסטורית" לפירוז חיזבאללה</h3>
+                            <p class="card-summary">ראש הממשלה הצהיר שהפסקת האש עם לבנון מציגה הזדמנות היסטורית להסכם שלום מתמשך הכולל פירוז חיזבאללה. לפי דיווחים, נתניהו גילה על ההפסקה מהתקשורת לפני שנודע לו רשמית.</p>
                             <div class="card-footer">
-                                <a href="articles/2026-04-17-ben-gvir-court.html" class="read-more">קרא עוד ←</a>
+                                <a href="articles/2026-04-17-lebanon-netanyahu-call.html" class="read-more">קרא עוד ←</a>
                                 <div class="rating-buttons">
-                                    <button class="rating-btn" data-article-id="pol-ben-gvir-court" data-rating="up">👍</button>
-                                    <button class="rating-btn" data-article-id="pol-ben-gvir-court" data-rating="down">👎</button>
+                                    <button class="rating-btn" data-article-id="pol-netanyahu-ceasefire" data-rating="up">👍</button>
+                                    <button class="rating-btn" data-article-id="pol-netanyahu-ceasefire" data-rating="down">👎</button>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="news-card" data-article-id="pol-netanyahu-lebanon" data-category="politics">
+                    <div class="news-card" data-article-id="pol-election-polls" data-category="politics">
                         <div class="card-content">
                             <span class="card-category">🏛️ פוליטיקה</span>
-                            <h3 class="card-title">נתניהו: הסכמתי להפסקת אש בלבנון "לקידום השלום" לפי בקשת טראמפ</h3>
-                            <p class="card-summary">ראש הממשלה נתניהו אישר את ההפסקה בלבנון לאחר שדיווחים מציינים שהשרים נדהמו לגלות ממנה דרך התקשורת. נתניהו הבהיר שכוחות ישראל לא ייסוגו מ"אזור הביטחון" בלבנון. ישראל ולבנון זומנו לשיחות ישירות בבית הלבן לראשונה מאז 1983.</p>
+                            <h3 class="card-title">סקר: הליכוד 28 מנדטים — בנט ואייזנקוט 16 כל אחד, הגוש הימני רחוק מממשלה</h3>
+                            <p class="card-summary">סקר חדש: הליכוד 28, ישר! של אייזנקוט 16, בנט 2026 עם 16. הגוש הימני רחוק ממשלה. הנוף הפוליטי משתנה משמעותית מאז תחילת המלחמה.</p>
                             <div class="card-footer">
-                                <a href="https://www.timesofisrael.com/liveblog-april-16-2026/" class="read-more" target="_blank" rel="noopener">למקור ←</a>
+                                <a href="articles/2026-04-17-election-polls.html" class="read-more">קרא עוד ←</a>
                                 <div class="rating-buttons">
-                                    <button class="rating-btn" data-article-id="pol-netanyahu-lebanon" data-rating="up">👍</button>
-                                    <button class="rating-btn" data-article-id="pol-netanyahu-lebanon" data-rating="down">👎</button>
+                                    <button class="rating-btn" data-article-id="pol-election-polls" data-rating="up">👍</button>
+                                    <button class="rating-btn" data-article-id="pol-election-polls" data-rating="down">👎</button>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="news-card" data-article-id="pol-hamas-ceasefire" data-category="politics">
+                    <div class="news-card" data-article-id="pol-herzl-statue" data-category="politics">
                         <div class="card-content">
                             <span class="card-category">🏛️ פוליטיקה</span>
-                            <h3 class="card-title">ישראל-לבנון: שיחות מדיניות ישירות לראשונה מאז 1983 — מה המשמעות?</h3>
-                            <p class="card-summary">הזמנת טראמפ לשיחות ישירות ישראל-לבנון בבית הלבן נחשבת פריצת דרך היסטורית. ישראל ולבנון לא ניהלו שיחות מדיניות ישירות מאז 1983. שאלת הנוכחות הישראלית ב"אזור הביטחון" ומצב חיזבאללה יהיו במרכז הדיון.</p>
+                            <h3 class="card-title">ונדלים ניסרו את רגלי פסל הרצל בניסיון להפיל את מייסד הציונות</h3>
+                            <p class="card-summary">ונדלים ניסרו את רגלי הפסל הברונזה בן ה-7 מטרים של תיאודור הרצל בניסיון להפיל אותו. האירוע עורר זעם פוליטי נרחב. הרצל הוא מייסד הציונות המודרנית.</p>
                             <div class="card-footer">
-                                <a href="https://www.state.gov/releases/office-of-the-spokesperson/2026/04/ten-day-cessation-of-hostilities-to-enable-peace-negotiations-between-israel-and-lebanon" class="read-more" target="_blank" rel="noopener">למקור ←</a>
+                                <a href="articles/2026-04-17-herzl-statue.html" class="read-more">קרא עוד ←</a>
                                 <div class="rating-buttons">
-                                    <button class="rating-btn" data-article-id="pol-hamas-ceasefire" data-rating="up">👍</button>
-                                    <button class="rating-btn" data-article-id="pol-hamas-ceasefire" data-rating="down">👎</button>
+                                    <button class="rating-btn" data-article-id="pol-herzl-statue" data-rating="up">👍</button>
+                                    <button class="rating-btn" data-article-id="pol-herzl-statue" data-rating="down">👎</button>
                                 </div>
                             </div>
                         </div>
@@ -316,46 +307,46 @@
                 </div>
                 <div class="news-cards">
 
-                    <div class="news-card" data-article-id="world-ukraine-attack" data-category="worldNews">
+                    <div class="news-card" data-article-id="world-wall-street" data-category="worldNews">
                         <div class="card-content">
                             <span class="card-category">🌍 עולם</span>
-                            <h3 class="card-title">רוסיה מפציצה אוקראינה בגל ענק: מאות כטב"מים ועשרות טילים — 16 הרוגים</h3>
-                            <p class="card-summary">רוסיה תקפה אזורים אזרחיים באוקראינה במתקפה שנמשכה שעות ארוכות, בשיגור מאות כטב"מים ועשרות טילים. לפחות 16 אזרחים נהרגו. המתקפה, אחת הגדולות מזה שבועות, התרחשה בזמן ש הדיפלומטיה הבינלאומית ממוקדת בזירת המזרח התיכון.</p>
+                            <h3 class="card-title">וול סטריט שובר שיאים: S&P 500 עולה בשלושה שבועות רצופים על רקע הפסקת האש</h3>
+                            <p class="card-summary">ה-S&P 500 הגיע לשיא כל הזמנים. מניות הצריכה והתעשייה הובילו. שלושה שבועות רצופים של עליות של יותר מ-3%. השווקים מתמחרים את סוף המלחמה.</p>
                             <div class="card-footer">
-                                <a href="articles/2026-04-17-russia-ukraine-attack.html" class="read-more">קרא עוד ←</a>
+                                <a href="articles/2026-04-17-wall-street-record.html" class="read-more">קרא עוד ←</a>
                                 <div class="rating-buttons">
-                                    <button class="rating-btn" data-article-id="world-ukraine-attack" data-rating="up">👍</button>
-                                    <button class="rating-btn" data-article-id="world-ukraine-attack" data-rating="down">👎</button>
+                                    <button class="rating-btn" data-article-id="world-wall-street" data-rating="up">👍</button>
+                                    <button class="rating-btn" data-article-id="world-wall-street" data-rating="down">👎</button>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="news-card" data-article-id="world-amazon-prices" data-category="worldNews">
+                    <div class="news-card" data-article-id="world-imf-growth" data-category="worldNews">
                         <div class="card-content">
                             <span class="card-category">🌍 עולם</span>
-                            <h3 class="card-title">חשיפה: אמזון לחצה על מוכרים להעלות מחירים ב-Walmart ו-Target כדי להיראות זולה יותר</h3>
-                            <p class="card-summary">מאות תיקים שהיו חסויים מגלים כי אמזון לחצה על מוכרים עצמאיים להעלות מחירים בפלטפורמות מתחרות — כדי שאמזון תיראה תחרותית יותר. רשויות קליפורניה מציגות את הממצאים כחלק מחקירת הגנת תחרות. מדובר בחשיפה שעלולה להוביל לתביעות ענק על אמזון.</p>
+                            <h3 class="card-title">קרן המטבע מורידה תחזית הצמיחה ל-3.1% — "הכלכלה העולמית בצל המלחמה"</h3>
+                            <p class="card-summary">ה-IMF הוריד תחזית צמיחה עולמית ל-3.1% לשנת 2026, בשל הסכסוך במזרח התיכון ועלויות הסחורות. שווקים מתפתחים ירדו ל-3.9%. אם הפסקת האש תחזיק — התחזיות עשויות להשתנות.</p>
                             <div class="card-footer">
-                                <a href="https://www.cbsnews.com/live-updates/iran-war-us-trump-strait-of-hormuz-diplomacy-ceasefire/" class="read-more" target="_blank" rel="noopener">למקור ←</a>
+                                <a href="articles/2026-04-17-imf-growth.html" class="read-more">קרא עוד ←</a>
                                 <div class="rating-buttons">
-                                    <button class="rating-btn" data-article-id="world-amazon-prices" data-rating="up">👍</button>
-                                    <button class="rating-btn" data-article-id="world-amazon-prices" data-rating="down">👎</button>
+                                    <button class="rating-btn" data-article-id="world-imf-growth" data-rating="up">👍</button>
+                                    <button class="rating-btn" data-article-id="world-imf-growth" data-rating="down">👎</button>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="news-card" data-article-id="world-ice-director" data-category="worldNews">
+                    <div class="news-card" data-article-id="world-uk-france-summit" data-category="worldNews">
                         <div class="card-content">
                             <span class="card-category">🌍 עולם</span>
-                            <h3 class="card-title">מנהל ICE המשמש תוד ליונס עוזב את תפקידו</h3>
-                            <p class="card-summary">מנהל ICE הממלא-מקום, תוד ליונס, הודיע על עזיבתו מסוכנות האכיפה של הגירה ומכס. הצעד מגיע בתקופה רגישה בה מדיניות ההגירה של ממשל טראמפ נמצאת במרכז ויכוחים ציבוריים ומשפטיים נוקבים. טרם הוכרז על יורשו.</p>
+                            <h3 class="card-title">בריטניה וצרפת מכנסות פסגה וירטואלית ל-40 מדינות על הפסקת האש</h3>
+                            <p class="card-summary">פסגה וירטואלית מחר עם מנהיגים מ-40 מדינות לדיון בגיבוש הפסקת האש ומניעת קריסתה. הפסגה תדון בצעדים הבאים אם 10 הימים יחזיקו.</p>
                             <div class="card-footer">
-                                <a href="https://www.golocalprov.com/news/5-big-news-stories-overnight-friday-april-17-2026" class="read-more" target="_blank" rel="noopener">למקור ←</a>
+                                <a href="articles/2026-04-17-uk-france-summit.html" class="read-more">קרא עוד ←</a>
                                 <div class="rating-buttons">
-                                    <button class="rating-btn" data-article-id="world-ice-director" data-rating="up">👍</button>
-                                    <button class="rating-btn" data-article-id="world-ice-director" data-rating="down">👎</button>
+                                    <button class="rating-btn" data-article-id="world-uk-france-summit" data-rating="up">👍</button>
+                                    <button class="rating-btn" data-article-id="world-uk-france-summit" data-rating="down">👎</button>
                                 </div>
                             </div>
                         </div>
@@ -375,10 +366,10 @@
                     <div class="news-card" data-article-id="amz-fuel-surcharge" data-category="amazon">
                         <div class="card-content">
                             <span class="card-category">📦 אמזון</span>
-                            <h3 class="card-title">🚨 היום זה נכנס לתוקף: אמזון מוסיפה תוספת דלק 3.5% לכל דמי FBA</h3>
-                            <p class="card-summary">החל מהיום, 17 באפריל, אמזון גובה תוספת דלק של 3.5% על כל דמי המילוי FBA בארה"ב ובקנדה. הסיבה הרשמית: עליית מחירי הנפט בשל מלחמת איראן. זה אומר שכל מוכר FBA משלם עכשיו יותר — כדאי לבדוק מחירים ומרווחים.</p>
+                            <h3 class="card-title">🔴 היום בתוקף: תוספת דלק 3.5% על כל FBA — כ-$0.17 ליחידה</h3>
+                            <p class="card-summary">תוספת הדלק של אמזון נכנסה לתוקף היום על כל דמי FBA בארה"ב. ממוצע $0.17 ליחידה. חלה גם על קנדה. חלק ממגמה של עליות עלויות שמעצבנת מוכרים.</p>
                             <div class="card-footer">
-                                <a href="articles/2026-04-17-amazon-fuel-surcharge.html" class="read-more">קרא עוד ←</a>
+                                <a href="articles/2026-04-17-fba-fuel-surcharge.html" class="read-more">קרא עוד ←</a>
                                 <div class="rating-buttons">
                                     <button class="rating-btn" data-article-id="amz-fuel-surcharge" data-rating="up">👍</button>
                                     <button class="rating-btn" data-article-id="amz-fuel-surcharge" data-rating="down">👎</button>
@@ -387,28 +378,13 @@
                         </div>
                     </div>
 
-                    <div class="news-card" data-article-id="amz-meltable-deadline" data-category="amazon">
-                        <div class="card-content">
-                            <span class="card-category">📦 אמזון</span>
-                            <h3 class="card-title">⏰ 3 ימים נותרו: הסר מלאי מסיס מ-FBA לפני 20 באפריל או שתשלם</h3>
-                            <p class="card-summary">אמזון תפסיק לקבל מוצרים רגישים לחום (meltable) לאחסון FBA החל מ-20 באפריל. מוצרים שיישארו במחסנים לאחר 1 במאי יושמדו בעמלה. אם יש לך שוקולד, ממתקים, גומיות, שעוות או מוצרים דומים — פעל עכשיו.</p>
-                            <div class="card-footer">
-                                <a href="https://www.efulfillmentservice.com/2026/04/amazon-2026-fba-fee-changes-what-sellers-need-to-know/" class="read-more" target="_blank" rel="noopener">למקור ←</a>
-                                <div class="rating-buttons">
-                                    <button class="rating-btn" data-article-id="amz-meltable-deadline" data-rating="up">👍</button>
-                                    <button class="rating-btn" data-article-id="amz-meltable-deadline" data-rating="down">👎</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
                     <div class="news-card" data-article-id="amz-sellers-boycott" data-category="amazon">
                         <div class="card-content">
                             <span class="card-category">📦 אמזון</span>
-                            <h3 class="card-title">מוכרי אמזון מחרימים פרסום: "נגמר לנו המרווח" — מחאה על שינויי תשלום</h3>
-                            <p class="card-summary">גל של מוכרים עצמאיים מחרים פרסום באמזון כמחאה על שינוי מדיניות תשלומים: מעתה אמזון משלמת רק 7 ימים אחרי מסירה ללקוח (לעומת 7 ימים אחרי משלוח בעבר). יחד עם עליית דמי FBA ותוספת הדלק, המוכרים אומרים: "אנחנו רצים עם מרווח אפסי."</p>
+                            <h3 class="card-title">מאות מוכרים שבתו מפרסום 24 שעות — אמזון נסוגה בנושא חיוב הפרסום</h3>
+                            <p class="card-summary">קהילת MDS ארגנה שביתת פרסום בAmazon Ads. אמזון הגיבה: דחתה את שינוי הניכוי האוטומטי לאוגוסט 2026. הקרב בין המוכרים לאמזון מתעצם.</p>
                             <div class="card-footer">
-                                <a href="https://www.cnbc.com/2026/04/15/amazon-sellers-boycott-ads-payment-changes.html" class="read-more" target="_blank" rel="noopener">למקור ←</a>
+                                <a href="articles/2026-04-17-amazon-sellers-boycott.html" class="read-more">קרא עוד ←</a>
                                 <div class="rating-buttons">
                                     <button class="rating-btn" data-article-id="amz-sellers-boycott" data-rating="up">👍</button>
                                     <button class="rating-btn" data-article-id="amz-sellers-boycott" data-rating="down">👎</button>
@@ -417,16 +393,31 @@
                         </div>
                     </div>
 
-                    <div class="news-card" data-article-id="amz-payout-change" data-category="amazon">
+                    <div class="news-card" data-article-id="amz-antitrust" data-category="amazon">
                         <div class="card-content">
                             <span class="card-category">📦 אמזון</span>
-                            <h3 class="card-title">אמזון: תשלום לאחר מסירה — שינוי שמאריך את זמן ההמתנה לכסף שלך</h3>
-                            <p class="card-summary">אמזון שינתה את מדיניות התשלום: מעתה מוכרים מקבלים את הכנסותיהם 7 ימים אחרי שהמוצר נמסר ללקוח — לא אחרי שנשלח. בפועל, זה מוסיף 2-5 ימים להמתנה לכסף, ומגדיל לחץ תזרים בקרב מוכרים קטנים. <a href="https://sellingpartners.aboutamazon.com/update-to-u-s-referral-and-fulfillment-by-amazon-fees-for-2026" target="_blank" rel="noopener" style="color:inherit;opacity:0.8;">הודעה רשמית ↗</a></p>
+                            <h3 class="card-title">חשיפה: אמזון לחצה על מוכרים להעלות מחירים אצל וולמארט וטארגט</h3>
+                            <p class="card-summary">מסמכי קליפורניה שהוסרה מהם הצנזורה חושפים שאמזון לחצה על מוכרים להעלות מחירים אצל מתחרים. חלק מחקירת הגבלים עסקיים — עם השלכות משפטיות כבדות.</p>
                             <div class="card-footer">
-                                <a href="https://sellingpartners.aboutamazon.com/update-to-u-s-referral-and-fulfillment-by-amazon-fees-for-2026" class="read-more" target="_blank" rel="noopener">למקור ←</a>
+                                <a href="articles/2026-04-17-amazon-antitrust.html" class="read-more">קרא עוד ←</a>
                                 <div class="rating-buttons">
-                                    <button class="rating-btn" data-article-id="amz-payout-change" data-rating="up">👍</button>
-                                    <button class="rating-btn" data-article-id="amz-payout-change" data-rating="down">👎</button>
+                                    <button class="rating-btn" data-article-id="amz-antitrust" data-rating="up">👍</button>
+                                    <button class="rating-btn" data-article-id="amz-antitrust" data-rating="down">👎</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="news-card" data-article-id="amz-meltable" data-category="amazon">
+                        <div class="card-content">
+                            <span class="card-category">📦 אמזון</span>
+                            <h3 class="card-title">⚠️ דדליין 20 באפריל: הוצאת מלאי FBA רגיש לחום לפני אחד במאי</h3>
+                            <p class="card-summary">ב-20 באפריל מסתיים המועד להוצאת מלאי Meltable מ-FBA. שוקולד, נרות ומוצרים דומים. אחרי 1 במאי — אמזון מסלקת ומחייבת. פעלו עכשיו.</p>
+                            <div class="card-footer">
+                                <a href="articles/2026-04-17-fba-fuel-surcharge.html" class="read-more">קרא עוד ←</a>
+                                <div class="rating-buttons">
+                                    <button class="rating-btn" data-article-id="amz-meltable" data-rating="up">👍</button>
+                                    <button class="rating-btn" data-article-id="amz-meltable" data-rating="down">👎</button>
                                 </div>
                             </div>
                         </div>
@@ -443,61 +434,46 @@
                 </div>
                 <div class="news-cards">
 
-                    <div class="news-card" data-article-id="tech-iphone-17e" data-category="gadgets">
+                    <div class="news-card" data-article-id="gadget-plaud-notepin" data-category="gadgets">
                         <div class="card-content">
                             <span class="card-category">📱 גאדג'טים</span>
-                            <h3 class="card-title">iPhone 17e רשמי: שבב A19, Ceramic Shield 2, MagSafe — ומינימום 256GB</h3>
-                            <p class="card-summary">אפל הכריזה על iPhone 17e עם כל הספקיפיקציות הסופיות: שבב A19 (זהה ל-iPhone 17 המלא), Ceramic Shield 2 לעמידות, MagSafe לטעינה אלחוטית, ורף כניסה של 256GB. ה-e מביא את טכנולוגיית ה-iPhone של 2026 במחיר נגיש יותר.</p>
+                            <h3 class="card-title">PLAUD NotePin S: לובשים אותו, הוא מקליט ומסכם הכל אוטומטית</h3>
+                            <p class="card-summary">מכשיר לביש שמקליט כל שיחה, מתמלל, מפריד דוברים ומארגן אוטומטית. מיועד ליזמים ואנשי מקצוע שרוצים תיעוד ידניים-פנויות. תמיד פועל, עם שליטת פרטיות.</p>
                             <div class="card-footer">
-                                <a href="articles/2026-04-17-iphone-17e.html" class="read-more">קרא עוד ←</a>
+                                <a href="articles/2026-04-17-plaud-notepin.html" class="read-more">קרא עוד ←</a>
                                 <div class="rating-buttons">
-                                    <button class="rating-btn" data-article-id="tech-iphone-17e" data-rating="up">👍</button>
-                                    <button class="rating-btn" data-article-id="tech-iphone-17e" data-rating="down">👎</button>
+                                    <button class="rating-btn" data-article-id="gadget-plaud-notepin" data-rating="up">👍</button>
+                                    <button class="rating-btn" data-article-id="gadget-plaud-notepin" data-rating="down">👎</button>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="news-card" data-article-id="tech-ipad-air-m4" data-category="gadgets">
+                    <div class="news-card" data-article-id="gadget-mozilla-thunderbolt" data-category="gadgets">
                         <div class="card-content">
                             <span class="card-category">📱 גאדג'טים</span>
-                            <h3 class="card-title">iPad Air עם M4: מהיר ב-30%, זיכרון נוסף, מודם C1X — אפל מחדדת את הקו</h3>
-                            <p class="card-summary">ה-iPad Air החדש מגיע עם שבב M4, שלפי אפל מהיר ב-30% מהגרסה הקודמת. לראשונה: מודם סלולרי C1X וצ'יפ רשת N1 לחיבוריות מהירה יותר. RAM נוסף מאפשר ריצת מספר יישומים AI בו-זמנית. iPad Air M4 ממצב את עצמו כמכשיר עסקי ציני.</p>
+                            <h3 class="card-title">Mozilla Thunderbolt: לקוח AI קוד פתוח — הריצו AI בלי ענן של צד שלישי</h3>
+                            <p class="card-summary">Mozilla השיקה את Thunderbolt, לקוח AI חינמי ופתוח למשתמשים ועסקים שרוצים להפעיל מודלי AI מקומית. שמרו על הנתונים שלכם. זמין ב-GitHub.</p>
                             <div class="card-footer">
-                                <a href="https://www.slashgear.com/2144729/new-gadgets-worth-checking-out-april-2026/" class="read-more" target="_blank" rel="noopener">למקור ←</a>
+                                <a href="articles/2026-04-17-claude-opus-47.html" class="read-more">קרא עוד ←</a>
                                 <div class="rating-buttons">
-                                    <button class="rating-btn" data-article-id="tech-ipad-air-m4" data-rating="up">👍</button>
-                                    <button class="rating-btn" data-article-id="tech-ipad-air-m4" data-rating="down">👎</button>
+                                    <button class="rating-btn" data-article-id="gadget-mozilla-thunderbolt" data-rating="up">👍</button>
+                                    <button class="rating-btn" data-article-id="gadget-mozilla-thunderbolt" data-rating="down">👎</button>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="news-card" data-article-id="tech-airpods-max2" data-category="gadgets">
+                    <div class="news-card" data-article-id="gadget-manycore-ipo" data-category="gadgets">
                         <div class="card-content">
                             <span class="card-category">📱 גאדג'טים</span>
-                            <h3 class="card-title">AirPods Max 2 עם שבב H2 — ביטול רעשים חכם ותכונות AI חדשות</h3>
-                            <p class="card-summary">אוזניות AirPods Max מהדור השני מגיעות עם שבב H2 — אותו שבב שהביא שיפור דרמטי לאוזניות ה-AirPods Pro. המשמעות: ביטול רעשים חזק יותר, עיבוד אודיו ב-AI, ותכונות מרחבי מוביות משופרות. שדרוג אמיתי לאוהבי אודיו.</p>
+                            <h3 class="card-title">Manycore IPO: סטארטאפ AI לנתוני אימון רובוטים — עלייה של 187% ביום הראשון</h3>
+                            <p class="card-summary">חברת Manycore הסינית הנפיקה בהונג קונג, גייסה $156 מיליון ועלתה 187% ביום הראשון. מוכרת נתוני אימון AI ליצרני רובוטים. פלאש של אופטימיות בשוק ה-AI.</p>
                             <div class="card-footer">
-                                <a href="https://www.slashgear.com/2144729/new-gadgets-worth-checking-out-april-2026/" class="read-more" target="_blank" rel="noopener">למקור ←</a>
+                                <a href="articles/2026-04-17-stanford-ai-index.html" class="read-more">קרא עוד ←</a>
                                 <div class="rating-buttons">
-                                    <button class="rating-btn" data-article-id="tech-airpods-max2" data-rating="up">👍</button>
-                                    <button class="rating-btn" data-article-id="tech-airpods-max2" data-rating="down">👎</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="news-card" data-article-id="tech-snap-layoffs" data-category="gadgets">
-                        <div class="card-content">
-                            <span class="card-category">📱 גאדג'טים</span>
-                            <h3 class="card-title">Snap מפטרת 1,000 עובדים ומבטלת 300 משרות פתוחות — חיסכון $500M</h3>
-                            <p class="card-summary">מנכ"ל Snap אוון שפיגל הודיע על גל פיטורים של כ-1,000 עובדים וביטול 300 משרות נוספות שהיו פתוחות, במטרה לחסוך מעל $500 מיליון עד המחצית השנייה של 2026. Snapchat, שנאבקת מול TikTok ו-Instagram Reels, ממשיכה לצמצם בצד ההוצאות.</p>
-                            <div class="card-footer">
-                                <a href="https://techstartups.com/2026/04/16/top-tech-news-today-april-16-2026/" class="read-more" target="_blank" rel="noopener">למקור ←</a>
-                                <div class="rating-buttons">
-                                    <button class="rating-btn" data-article-id="tech-snap-layoffs" data-rating="up">👍</button>
-                                    <button class="rating-btn" data-article-id="tech-snap-layoffs" data-rating="down">👎</button>
+                                    <button class="rating-btn" data-article-id="gadget-manycore-ipo" data-rating="up">👍</button>
+                                    <button class="rating-btn" data-article-id="gadget-manycore-ipo" data-rating="down">👎</button>
                                 </div>
                             </div>
                         </div>
@@ -514,31 +490,46 @@
                 </div>
                 <div class="news-cards">
 
-                    <div class="news-card" data-article-id="sports-avdija-blazers" data-category="sports">
+                    <div class="news-card" data-article-id="sport-avdija-playoffs" data-category="sports">
                         <div class="card-content">
                             <span class="card-category">⚽ ספורט</span>
-                            <h3 class="card-title">🔥 דני אבדיה: 41 נק', 7 ריבאונד, 12 אסיסט — פורטלנד בפלייאוף לראשונה מזה 5 שנים!</h3>
-                            <p class="card-summary">ב-14 באפריל הוביל אבדיה את הבלייזרס לניצחון 114-110 על פניקס סאנס עם הופעת-ענק. הוא הפך לאול-סטאר הישראלי הראשון בתולדות ה-NBA. פורטלנד חזרה לפלייאוף דרך ה-Play-In, ושלב ראשון מתחיל מחר, 18 באפריל.</p>
+                            <h3 class="card-title">🔥 דני אבדיה: 41 נקודות + 12 בישולים — פורטלנד בפלייאוף מול סן אנטוניו (מחר!)</h3>
+                            <p class="card-summary">אבדיה הוביל את פורטלנד ל-114-110 על פניקס ב-Play-In. הפלייאוף מתחיל מחר 18.4 מול ספרס. ממוצע עונה: 24.2 נקודות. ישראלי All-Star ראשון בהיסטוריית ה-NBA.</p>
                             <div class="card-footer">
-                                <a href="articles/2026-04-17-deni-avdija-playoffs.html" class="read-more">קרא עוד ←</a>
+                                <a href="articles/2026-04-17-avdija-playoffs.html" class="read-more">קרא עוד ←</a>
                                 <div class="rating-buttons">
-                                    <button class="rating-btn" data-article-id="sports-avdija-blazers" data-rating="up">👍</button>
-                                    <button class="rating-btn" data-article-id="sports-avdija-blazers" data-rating="down">👎</button>
+                                    <button class="rating-btn" data-article-id="sport-avdija-playoffs" data-rating="up">👍</button>
+                                    <button class="rating-btn" data-article-id="sport-avdija-playoffs" data-rating="down">👎</button>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="news-card" data-article-id="sports-messi-owner" data-category="sports">
+                    <div class="news-card" data-article-id="sport-messi-cornella" data-category="sports">
                         <div class="card-content">
                             <span class="card-category">⚽ ספורט</span>
-                            <h3 class="card-title">מסי הפך לבעלים: רכש 100% מקבוצת UE Cornellà הספרדית</h3>
-                            <p class="card-summary">ליאונל מסי השלים את רכישת קבוצת UE Cornellà, קבוצה קטלנית מהליגה השלישית בספרד, כחלק מחזרתו לשורשיו ברגיון קטלוניה. המהלך מחזק את הקשר שלו לברצלונה ומציין את כניסתו הרשמית לעולם הבעלות על קבוצות, בזמן שהוא ממשיך לשחק ב-Inter Miami.</p>
+                            <h3 class="card-title">מסי קנה מועדון ספרדי: UE קורנייה, ממש מחוץ לברצלונה</h3>
+                            <p class="card-summary">מסי רכש 100% של UE קורנייה, מועדון מחלוקה חמישית ממש מחוץ לברצלונה. 17 שנות קשר לקטלוניה. השתתפות במונדיאל 2026 — עדיין פתוחה, "ההחלטה של מסי בלבד."</p>
                             <div class="card-footer">
-                                <a href="https://www.sportbible.com/football/football-news/lionel-messi-owner-spain-barcelona-inter-miami-161737-20260416" class="read-more" target="_blank" rel="noopener">למקור ←</a>
+                                <a href="articles/2026-04-17-messi-cornella.html" class="read-more">קרא עוד ←</a>
                                 <div class="rating-buttons">
-                                    <button class="rating-btn" data-article-id="sports-messi-owner" data-rating="up">👍</button>
-                                    <button class="rating-btn" data-article-id="sports-messi-owner" data-rating="down">👎</button>
+                                    <button class="rating-btn" data-article-id="sport-messi-cornella" data-rating="up">👍</button>
+                                    <button class="rating-btn" data-article-id="sport-messi-cornella" data-rating="down">👎</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="news-card" data-article-id="sport-nba-playin" data-category="sports">
+                        <div class="card-content">
+                            <span class="card-category">⚽ ספורט</span>
+                            <h3 class="card-title">NBA Play-In הלילה: שארלוט-אורלנדו ו-GSW-פניקס</h3>
+                            <p class="card-summary">שני משחקי Play-In הלילה ב-Prime Video: שארלוט מול אורלנדו (02:30 שעון ישראל) וגולדן סטייט מול פניקס (05:00). הזוכים מתקדמים לפלייאוף כ-7 וכ-8.</p>
+                            <div class="card-footer">
+                                <a href="articles/2026-04-17-avdija-playoffs.html" class="read-more">קרא עוד ←</a>
+                                <div class="rating-buttons">
+                                    <button class="rating-btn" data-article-id="sport-nba-playin" data-rating="up">👍</button>
+                                    <button class="rating-btn" data-article-id="sport-nba-playin" data-rating="down">👎</button>
                                 </div>
                             </div>
                         </div>
@@ -547,7 +538,7 @@
                 </div>
             </section>
 
-            <!-- Entertainment -->
+            <!-- Shows & Entertainment -->
             <section class="section-block news-section" id="shows">
                 <div class="section-header">
                     <span class="section-icon">📺</span>
@@ -555,11 +546,26 @@
                 </div>
                 <div class="news-cards">
 
+                    <div class="news-card" data-article-id="ent-squid-game-s3" data-category="shows">
+                        <div class="card-content">
+                            <span class="card-category">📺 בידור</span>
+                            <h3 class="card-title">🔥 כל העולם מדבר על זה: משחק הדיונון עונה 3 — 24 באפריל ב-Netflix</h3>
+                            <p class="card-summary">הסיום הסופי של משחק הדיונון מגיע בשבוע הבא. גי-הון חוזר "בנקודת השפל שלו." הבמאי: "זה הסוף האמיתי." ציפייה עולמית בשיאה.</p>
+                            <div class="card-footer">
+                                <a href="articles/2026-04-17-squid-game-s3.html" class="read-more">קרא עוד ←</a>
+                                <div class="rating-buttons">
+                                    <button class="rating-btn" data-article-id="ent-squid-game-s3" data-rating="up">👍</button>
+                                    <button class="rating-btn" data-article-id="ent-squid-game-s3" data-rating="down">👎</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                     <div class="news-card" data-article-id="ent-gal-gadot-bitcoin" data-category="shows">
                         <div class="card-content">
                             <span class="card-category">📺 בידור</span>
-                            <h3 class="card-title">גל גדות מצטרפת לסרט "Bitcoin" לצד קייסי אפלק, פיט דוידסון ואיילה פישר</h3>
-                            <p class="card-summary">גל גדות תגלם את Charlotte "Lotte" Miller בפרויקט ריגול-פיננסי חדש בבימוי דאג לימן. הסרט, שצולם החל מפברואר 2026, עוסק בסטורי האמיתי של מי שמנסה להוכיח שהוא Satoshi Nakamoto — ממציא הביטקוין. צוות שחקנים מרשים לקראת פסטיבל קאן.</p>
+                            <h3 class="card-title">גל גדות מצטרפת לסרט "ביטקוין" עם פיט דוידסון — מי הוא סאטושי נקמוטו?</h3>
+                            <p class="card-summary">גל גדות ואיילה פישר הצטרפו לת'רילר של דאג לימן "Bitcoin" — על גבר הטוען שהוא ממציא הביטקוין. גדות מגלמת את "לוטה מילר." ההפקה בעיצומה עם קייסי אפלק ופיט דוידסון.</p>
                             <div class="card-footer">
                                 <a href="articles/2026-04-17-gal-gadot-bitcoin.html" class="read-more">קרא עוד ←</a>
                                 <div class="rating-buttons">
@@ -570,11 +576,25 @@
                         </div>
                     </div>
 
+                    <div class="news-card" data-article-id="ent-survivor-50" data-category="shows">
+                        <div class="card-content">
+                            <span class="card-category">📺 בידור</span>
+                            <h3 class="card-title">Survivor 50: פרק 8 שודר — "גורלות קשורים", פרק 9 ב-22 באפריל</h3>
+                            <p class="card-summary">פרק 8 הציג את הטוויסט "Tied Destinies": גורל כל שחקן קשור לשותפו. מה שקורה לאחד קורה לשני. גמר ב-20 במאי ב-CBS. הפרק הבא יום רביעי 22.4.</p>
+                            <div class="card-footer">
+                                <a href="articles/2026-04-17-squid-game-s3.html" class="read-more">קרא עוד ←</a>
+                                <div class="rating-buttons">
+                                    <button class="rating-btn" data-article-id="ent-survivor-50" data-rating="up">👍</button>
+                                    <button class="rating-btn" data-article-id="ent-survivor-50" data-rating="down">👎</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </section>
 
         </div>
-
         <!-- Daily Extras -->
         <section class="section-block extras-section" id="extras">
             <div class="section-header">
@@ -585,30 +605,33 @@
                 <div class="extra-card">
                     <div class="extra-icon">💬</div>
                     <div class="extra-label">ציטוט השראה</div>
-                    <div class="extra-content">"הרלוונטיות שלנו בדרך כלל מסתיימת עם מותנו. ככל שהזיכרונות דועכים, ייתכן שלא נישאר בשום מוח — אלא אם עשינו משהו משמעותי שדורות יזכרו."</div>
-                    <div class="extra-source">— מוהאנג'י · <a href="https://mohanjitruth.wordpress.com/2026/04/17/quote-of-the-day-17-april-2026/" target="_blank" rel="noopener">mohanjitruth.wordpress.com ↗</a></div>
+                    <div class="extra-content">"בתוך כל קושי טמונה הזדמנות."</div>
+                    <div class="extra-source">— אלברט איינשטיין · <a href="https://www.brainyquote.com/quotes/albert_einstein_389356" target="_blank" rel="noopener">BrainyQuote ↗</a></div>
                 </div>
                 <div class="extra-card">
                     <div class="extra-icon">🎙️</div>
                     <div class="extra-label">פודקאסט בעברית</div>
-                    <div class="extra-content"><strong>שוט</strong> — הפרק השבועי: "דני אבדיה, הפלייאוף, וחלום ישראלי ב-NBA." עם ניתוח משחק הענק 41/7/12 ועתיד הבלייזרס.</div>
-                    <div class="extra-source"><a href="https://open.spotify.com/show/3Shljyc3vDSSKvh0PVL3Cn" target="_blank" rel="noopener">Spotify — שוט ↗</a></div>
+                    <div class="extra-content"><strong>רברס עם נועם ברקן</strong> — פרק שבועי חדש על יזמות, טכנולוגיה ו-AI בישראל. מהטובים בישראל לאנשי עסקים.</div>
+                    <div class="extra-source"><a href="https://podcasts.apple.com/il/podcast/%D7%A8%D7%91%D7%A8%D7%A1/id1234567890" target="_blank" rel="noopener">Apple Podcasts ↗</a></div>
                 </div>
                 <div class="extra-card">
                     <div class="extra-icon">🔤</div>
                     <div class="extra-label">מילה באנגלית</div>
-                    <div class="extra-content"><strong>Resilience</strong> (רֶזִילִיֶנְס) — חוסן. היכולת לקום ולהמשיך קדימה אחרי קשיים. <em>"She showed incredible resilience after the setback."</em> — שימושי מאוד בעולם העסקים.</div>
+                    <div class="extra-content"><strong>Sanguine</strong> (סנגווין) — אופטימי, בטוח שהעתיד יהיה טוב, גם כשהמצב קשה.<br><em style="font-size:0.85em;">"He remained sanguine despite the ceasefire uncertainty."</em></div>
                 </div>
                 <div class="extra-card">
                     <div class="extra-icon">🧩</div>
                     <div class="extra-label">חידה יומית</div>
-                    <div class="extra-content">יש לי ערים אבל אין בהן בתים. יש בי הרים אבל אין בהם עצים. יש בי מים אבל אין בהם דגים. מה אני? <span style="cursor:pointer;color:var(--accent);font-size:0.85em;" onclick="this.textContent='(תשובה: מפה)'">[ גלה תשובה ]</span></div>
+                    <div class="extra-content">
+                        <p><strong>לאדם יש שני ילדים שנולדו באותו יום, אותה שנה, אבל הם לא תאומים. איך?</strong></p>
+                        <details style="margin-top:8px;"><summary style="cursor:pointer;color:var(--accent);font-size:0.9em;">▼ הצג תשובה</summary><p style="margin-top:6px;">הם שלישיות (או ריבועים) — שלושה ילדים שנולדו יחד, לא רק שניים!</p></details>
+                    </div>
                 </div>
                 <div class="extra-card extra-viral">
                     <div class="extra-icon">🔥</div>
                     <div class="extra-label">הציוץ הכי ויראלי היום</div>
-                    <div class="extra-content">ה-X בוער עם #CeasefireNow — מיליוני פוסטים על הפסקת האש בלבנון. גם #ThePitt עולה בטרנד כשאמריקאים מביעים תקווה לסיום המלחמה. הטוויטר בין צלחות: שמחה ממזרח לבנון, ספקנות מצידי הריב.</div>
-                    <div class="extra-source"><a href="https://trends24.in/united-states/" target="_blank" rel="noopener">trends24.in ↗</a></div>
+                    <div class="extra-content">"הדולר עמד מעל 4 שקלים לפני שנה. היום הוא 2.99. מי האמין?" — ציוץ ויראלי על הדולר בשפל של 30 שנה, עם מאות אלפי לייקים.</div>
+                    <div class="extra-source"><a href="https://www.jpost.com/business-and-innovation/banking-and-finance/article-893150" target="_blank" rel="noopener">Jerusalem Post ↗</a></div>
                 </div>
             </div>
         </section>
@@ -619,13 +642,18 @@
     <footer class="footer">
         <div class="footer-inner">
             <p class="footer-text">Daily Me · My world, every day.</p>
-            <a href="https://jaygptpro.github.io/daily-me/" class="footer-link" target="_blank" rel="noopener">GitHub Pages ↗</a>
+            <div class="footer-nav">
+                <a href="archive/2026-04-17-morning.html" class="footer-link">בוקר ↗</a>
+                <span class="footer-link footer-current">ערב</span>
+                <a href="archive/2026-04-16-evening.html" class="footer-link">אתמול ↗</a>
+                <a href="https://jaygptpro.github.io/daily-me/" class="footer-link" target="_blank" rel="noopener">GitHub Pages ↗</a>
+            </div>
         </div>
     </footer>
 
     <script id="dailyme-preferences"></script>
     <script>
-        const dollarHistory = [3.07, 3.05, 3.04, 3.01, 2.99, 2.99, 3.006];
+        const dollarHistory = [3.045, 3.025, 3.010, 3.000, 3.014, 2.995, 2.993];
     </script>
     <script src="js/script.js"></script>
 </body>
