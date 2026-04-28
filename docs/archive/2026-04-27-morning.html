@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Me - מהדורת בוקר · 27 באפריל 2026</title>
+    <meta name="description" content="Daily Me - My world, every day.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" type="image/svg+xml" href="../assets/logo.svg">
+</head>
+<body data-theme="light">
+
+    <!-- Breaking News Banner -->
+    <div class="breaking-banner"><span class="breaking-label">🔴 מבזק</span> מצרי הורמוז סגור לחלוטין: המצור האמריקאי הקשיח בלילה. נפט קפץ 4.1% | ירי בארוחת WHCD בוושינגטון: סוכן חשאי נפצע, החשוד נעצר | אבדיה ספג 3-1 לספרס. משחק 5 ביציאה הלילה</div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="header-inner">
+            <div class="header-right">
+                <img src="../assets/logo.svg" alt="Daily Me" class="header-logo">
+                <div class="header-info">
+                    <h1 class="header-title">Daily Me</h1>
+                    <span class="header-subtitle">מהדורת בוקר ☀️ · יום שני, 27 באפריל 2026</span>
+                </div>
+            </div>
+            <div class="header-left">
+                <span class="header-update-time">עודכן 06:15</span>
+                <button class="theme-toggle" id="themeToggle" aria-label="החלף ערכת נושא">
+                    <span class="theme-toggle-icon" id="themeIcon">☀️</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <!-- Hero: Greeting + Surprise -->
+        <section class="hero" id="hero">
+            <div class="hero-inner">
+                <h2 class="hero-greeting">בוקר טוב, ג'יי! ☀️</h2>
+                <div class="hero-surprise">
+                    <span class="surprise-label">📜 היום בהיסטוריה</span>
+                    <p class="surprise-content">היום לפני 32 שנה, ב-27 באפריל 1994, אזרחי דרום אפריקה מכל הגזעים השתתפו לראשונה בבחירות כלליות. נלסון מנדלה נבחר לנשיא, וזה היה סוף רשמי של האפרטהייד. כיום זה יום החופש (Freedom Day) בדרום אפריקה. גם ב-1810 בטהובן הלחין באותו יום את "לאליז" (Für Elise). <em style="font-size:0.85em; opacity:0.7;">מקור: <a href="https://www.britannica.com/on-this-day/April-27" target="_blank" rel="noopener" style="color:inherit;text-decoration:underline;">Britannica On This Day</a></em></p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quick Info Bar: Weather + Dollar -->
+        <section class="quick-bar" id="quickBar">
+            <div class="quick-bar-inner">
+                <!-- Weather -->
+                <div class="quick-card weather-card">
+                    <div class="quick-card-icon">☀️</div>
+                    <div class="quick-card-info">
+                        <span class="quick-card-value">19°</span>
+                        <span class="quick-card-label">שמשי ובהיר, 18°-29° · <a href="https://www.timeanddate.com/weather/israel/raanana" target="_blank" rel="noopener" style="color:inherit;text-decoration:underline;opacity:0.7;font-size:0.8em">מקור</a></span>
+                    </div>
+                    <div class="weather-recommendation">👕 חולצה קצרה</div>
+                </div>
+                <!-- Dollar -->
+                <div class="quick-card dollar-card">
+                    <div class="quick-card-icon">💵</div>
+                    <div class="quick-card-info">
+                        <span class="quick-card-value">₪2.99</span>
+                        <span class="quick-card-label quick-card-change positive">↑ 0.03% · <a href="https://www.boi.org.il/roles/markets/exchangerates/usdollar/" target="_blank" rel="noopener" style="color:inherit;text-decoration:underline;opacity:0.7;font-size:0.8em">בנק ישראל</a></span>
+                    </div>
+                    <canvas class="sparkline" id="dollarSparkline" width="100" height="40"></canvas>
+                </div>
+            </div>
+        </section>
+
+        <!-- Calendar -->
+        <section class="section-block" id="calendar">
+            <div class="section-header">
+                <span class="section-icon">📅</span>
+                <h2 class="section-title">פגישות היום</h2>
+            </div>
+            <div class="calendar-events">
+                <div class="calendar-event"><span class="event-time">כל היום</span><span class="event-title">🚀 Challenge EN - Round 2 (יום 1 מתוך 5)</span></div>
+                <div class="calendar-event"><span class="event-time">26.4–30.4</span><span class="event-title">כנס בסופיה (סופיה, בולגריה)</span></div>
+            </div>
+        </section>
+
+        <!-- Category Filter -->
+        <div class="category-filter">
+            <button class="filter-btn active" data-filter="all">הכל</button>
+            <button class="filter-btn" data-filter="warSecurity">⚔️ מלחמה</button>
+            <button class="filter-btn" data-filter="politics">🏛️ פוליטיקה</button>
+            <button class="filter-btn" data-filter="aiNews">🤖 AI</button>
+            <button class="filter-btn" data-filter="worldNews">🌍 עולם</button>
+            <button class="filter-btn" data-filter="amazon">📦 אמזון</button>
+            <button class="filter-btn" data-filter="gadgets">📱 גאדג'טים</button>
+            <button class="filter-btn" data-filter="sports">⚽ ספורט</button>
+            <button class="filter-btn" data-filter="shows">📺 בידור</button>
+        </div>
+
+        <!-- News Grid -->
+        <div class="news-grid">
+
+            <!-- War & Security -->
+            <section class="section-block news-section" id="warSecurity">
+                <div class="section-header">
+                    <span class="section-icon">⚔️</span>
+                    <h2 class="section-title">מלחמה וביטחון</h2>
+                </div>
+                <div class="news-cards">
+                    <div class="news-card" data-article-id="mor-hormuz-shut" data-category="warSecurity">
+                        <div class="card-content">
+                            <span class="card-category">⚔️ מלחמה וביטחון</span>
+                            <h3 class="card-title">מצרי הורמוז סגור לחלוטין: מצור אמריקאי קשיח, איראן לא מזיזה את החסימה</h3>
+                            <p class="card-summary">צ'וקפוינט הימי החשוב בעולם משותק. שיירות נפט תקועות. הסכם הפסקת אש בתוקף, אבל אף צד לא הסיר את החסימה. הנפט הברנט קפץ 4.1% למעלה.</p>
+                            <div class="card-footer">
+                                <a href="../articles/2026-04-27-war-hormuz-shut.html" class="read-more">קרא עוד ←</a>
+                                <div class="rating-buttons">
+                                    <button class="rating-btn" data-article-id="mor-hormuz-shut" data-rating="up" data-category="warSecurity">👍</button>
+                                    <button class="rating-btn" data-article-id="mor-hormuz-shut" data-rating="down" data-category="warSecurity">👎</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="news-card" data-article-id="mor-iran-fm-moscow" data-category="warSecurity">
+                        <div class="card-content">
+                            <span class="card-category">⚔️ מלחמה וביטחון</span>
+                            <h3 class="card-title">שר החוץ האיראני נחת במוסקבה. ניסיון אחרון להציל את שיחות הגרעין</h3>
+                            <p class="card-summary">עראקצ'י עבר בעומאן ובפקיסטן בסוף השבוע, ועכשיו אצל פוטין. אחרי שטראמפ ביטל את נסיעת ויטקוף וקושנר, איראן מנסה למצוא ערוץ עוקף. הקרמלין: "נתמוך בפתרון מדיני".</p>
+                            <div class="card-footer">
+                                <a href="../articles/2026-04-27-war-iran-fm-moscow.html" class="read-more">קרא עוד ←</a>
+                                <div class="rating-buttons">
+                                    <button class="rating-btn" data-article-id="mor-iran-fm-moscow" data-rating="up" data-category="warSecurity">👍</button>
+                                    <button class="rating-btn" data-article-id="mor-iran-fm-moscow" data-rating="down" data-category="warSecurity">👎</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="news-card" data-article-id="mor-lebanon-ceasefire-extended" data-category="warSecurity">
+                        <div class="card-content">
+                            <span class="card-category">⚔️ מלחמה וביטחון</span>
+                            <h3 class="card-title">הפסקת האש עם חיזבאללה הוארכה ב-3 שבועות. אבל ההפרות נמשכות</h3>
+                            <p class="card-summary">טראמפ הודיע אמש על הארכת ההפסקה בלבנון. שני הצדדים מאשימים זה את זה בהפרות. סוגיית הפירוק מהנשק של חיזבאללה עומדת על הפרק, וארגון הטרור מסרב.</p>
+                            <div class="card-footer">
+                                <a href="../articles/2026-04-27-war-lebanon-extended.html" class="read-more">קרא עוד ←</a>
+                                <div class="rating-buttons">
+                                    <button class="rating-btn" data-article-id="mor-lebanon-ceasefire-extended" data-rating="up" data-category="warSecurity">👍</button>
+                                    <button class="rating-btn" data-article-id="mor-lebanon-ceasefire-extended" data-rating="down" data-category="warSecurity">👎</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="news-card" data-article-id="mor-gaza-six-months" data-category="warSecurity">
+                        <div class="card-content">
+                            <span class="card-category">⚔️ מלחמה וביטחון</span>
+                            <h3 class="card-title">6 חודשים להסכם הפסקת האש בעזה: 738 הרוגים בתקופת ההפסקה</h3>
+                            <p class="card-summary">סיכום אלג'זירה: בין 10 באוקטובר 2025 ל-10 באפריל 2026 נהרגו 738 פלסטינים בעזה למרות הפסקת האש. ישראל ממשיכה להגיב לאיומים על כוחותיה. חמאס מסרב לפירוק מהנשק.</p>
+                            <div class="card-footer">
+                                <a href="../articles/2026-04-27-war-gaza-six-months.html" class="read-more">קרא עוד ←</a>
+                                <div class="rating-buttons">
+                                    <button class="rating-btn" data-article-id="mor-gaza-six-months" data-rating="up" data-category="warSecurity">👍</button>
+                                    <button class="rating-btn" data-article-id="mor-gaza-six-months" data-rating="down" data-category="warSecurity">👎</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- AI News -->
+            <section class="section-block news-section" id="aiNews">
+                <div class="section-header">
+                    <span class="section-icon">🤖</span>
+                    <h2 class="section-title">חדשות AI</h2>
+                </div>
+                <div class="news-cards">
+                    <div class="news-card" data-article-id="mor-google-anthropic-40b" data-category="aiNews">
+                        <div class="card-content">
+                            <span class="card-category">🤖 AI</span>
+                            <h3 class="card-title">גוגל משקיעה עד 40 מיליארד דולר באנת'רופיק. השווי קופץ ל-380 מיליארד</h3>
+                            <p class="card-summary">10 מיליארד עכשיו, ועד 30 מיליארד נוספים בהשגת אבני דרך. ההסכם מצרף לעצמו הרחבת השותפות עם Broadcom ל-Compute. גוגל מפזרת הימורים ב-AI מעבר ל-Gemini. מניית גוגל קפצה 2.7%.</p>
+                            <div class="card-footer">
+                                <a href="../articles/2026-04-27-ai-google-anthropic-40b.html" class="read-more">קרא עוד ←</a>
+                                <div class="rating-buttons">
+                                    <button class="rating-btn" data-article-id="mor-google-anthropic-40b" data-rating="up" data-category="aiNews">👍</button>
+                                    <button class="rating-btn" data-article-id="mor-google-anthropic-40b" data-rating="down" data-category="aiNews">👎</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="news-card" data-article-id="mor-deepseek-huawei" data-category="aiNews">
+                        <div class="card-content">
+                            <span class="card-category">🤖 AI</span>
+                            <h3 class="card-title">DeepSeek V4 שוחרר עם שותפות חוואי. "הכי טוב באגנטיק קוד" במודלים פתוחים</h3>
+                            <p class="card-summary">הסטארטאפ הסיני שזעזע את עולם ה-AI חוזר עם דגם פלגשיפ חדש. חוואי מספקת סופר-נודים עם שבבי Ascend 950. DeepSeek טוענים: "יכולת הסקה ברמה עולמית". מניות הצ'יפים האמריקאים נחתכו 2-3%.</p>
+                            <div class="card-footer">
+                                <a href="../articles/2026-04-27-ai-deepseek-v4.html" class="read-more">קרא עוד ←</a>
+                                <div class="rating-buttons">
+                                    <button class="rating-btn" data-article-id="mor-deepseek-huawei" data-rating="up" data-category="aiNews">👍</button>
+                                    <button class="rating-btn" data-article-id="mor-deepseek-huawei" data-rating="down" data-category="aiNews">👎</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="news-card" data-article-id="mor-openai-workspace" data-category="aiNews">
+                        <div class="card-content">
+                            <span class="card-category">🤖 AI</span>
+                            <h3 class="card-title">OpenAI משחררת Workspace Agents ב-ChatGPT לעסקים. סוכנים בכל Slack ו-Gmail</h3>
+                            <p class="card-summary">צוותים יכולים לבנות סוכני AI שמבצעים משימות אוטומטית בכלים השונים. זמין במהדורות Business, Enterprise ו-Education. מהלך משלים ל-GPT-5.5 כ"סופר-אפ". מתחרה ישיר ל-Claude Agent SDK.</p>
+                            <div class="card-footer">
+                                <a href="../articles/2026-04-27-ai-openai-workspace.html" class="read-more">קרא עוד ←</a>
+                                <div class="rating-buttons">
+                                    <button class="rating-btn" data-article-id="mor-openai-workspace" data-rating="up" data-category="aiNews">👍</button>
+                                    <button class="rating-btn" data-article-id="mor-openai-workspace" data-rating="down" data-category="aiNews">👎</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="news-card" data-article-id="mor-novo-openai" data-category="aiNews">
+                        <div class="card-content">
+                            <span class="card-category">🤖 AI</span>
+                            <h3 class="card-title">נובו נורדיסק חתמה עם OpenAI: AI בכל שרשרת התרופות. מגילוי תרופות עד שיווק</h3>
+                            <p class="card-summary">ענקית התרופות הדנית, יצרנית אוזמפיק, תשלב AI בגילוי תרופות, ניסויים קליניים, ייצור ושיווק. פריסה מלאה עד סוף 2026. רמז לשבר במודל הפיתוח התרופתי הקלאסי.</p>
+                            <div class="card-footer">
+                                <a href="../articles/2026-04-27-ai-novo-openai.html" class="read-more">קרא עוד ←</a>
+                                <div class="rating-buttons">
+                                    <button class="rating-btn" data-article-id="mor-novo-openai" data-rating="up" data-category="aiNews">👍</button>
+                                    <button class="rating-btn" data-article-id="mor-novo-openai" data-rating="down" data-category="aiNews">👎</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Israel Politics -->
+            <section class="section-block news-section" id="politics">
+                <div class="section-header">
+                    <span class="section-icon">🏛️</span>
+                    <h2 class="section-title">פוליטיקה ישראלית</h2>
+                </div>
+                <div class="news-cards">
+                    <div class="news-card" data-article-id="mor-bennett-lapid-monday" data-category="politics">
+                        <div class="card-content">
+                            <span class="card-category">🏛️ פוליטיקה</span>
+                            <h3 class="card-title">ישיבה ראשונה למפלגה החדשה של בנט-לפיד היום. אייזנקוט עוד מתלבט</h3>
+                            <p class="card-summary">בנט: "עידן הפילוג נגמר". לפיד מקבל מקום שני וייעוד שר חוץ. אייזנקוט הוזמן להצטרף, החלטה צפויה השבוע. בליכוד דובר על "סקר חולף".</p>
+                            <div class="card-footer">
+                                <a href="../articles/2026-04-27-politics-bennett-lapid-monday.html" class="read-more">קרא עוד ←</a>
+                                <div class="rating-buttons">
+                                    <button class="rating-btn" data-article-id="mor-bennett-lapid-monday" data-rating="up" data-category="politics">👍</button>
+                                    <button class="rating-btn" data-article-id="mor-bennett-lapid-monday" data-rating="down" data-category="politics">👎</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="news-card" data-article-id="mor-cabinet-tourism-north" data-category="politics">
+                        <div class="card-content">
+                            <span class="card-category">🏛️ פוליטיקה</span>
+                            <h3 class="card-title">הקבינט מתכנס היום: מינויים בכירים, צעדי ביטחון ופרויקט תיירות בצפון</h3>
+                            <p class="card-summary">ישיבת קבינט שבועית עמוסה. על שולחן הדיונים: תקציב שיקום הצפון, מינוי קצין מורם בצה"ל, ופרויקט תיירות חדש בקריית שמונה ובמטולה. צפויות החלטות תקציביות חוצות מערכות.</p>
+                            <div class="card-footer">
+                                <a href="../articles/2026-04-27-politics-cabinet-meeting.html" class="read-more">קרא עוד ←</a>
+                                <div class="rating-buttons">
+                                    <button class="rating-btn" data-article-id="mor-cabinet-tourism-north" data-rating="up" data-category="politics">👍</button>
+                                    <button class="rating-btn" data-article-id="mor-cabinet-tourism-north" data-rating="down" data-category="politics">👎</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="news-card" data-article-id="mor-guterres-study" data-category="politics">
+                        <div class="card-content">
+                            <span class="card-category">🏛️ פוליטיקה</span>
+                            <h3 class="card-title">מחקר חדש: יחס מפלה של מזכ"ל האו"ם גוטרש כלפי ישראל. 1,100 הצהרות נבחנו</h3>
+                            <p class="card-summary">המכון לתכנון מדיניות העם היהודי מצא דפוס עקבי של יחס יוצא דופן בין 2017 לאפריל 2026. הדו"ח חושף את ההבדלים בין נוסח התגובות של גוטרש לאירועים באוקראינה לעומת ישראל.</p>
+                            <div class="card-footer">
+                                <a href="../articles/2026-04-27-politics-guterres-study.html" class="read-more">קרא עוד ←</a>
+                                <div class="rating-buttons">
+                                    <button class="rating-btn" data-article-id="mor-guterres-study" data-rating="up" data-category="politics">👍</button>
+                                    <button class="rating-btn" data-article-id="mor-guterres-study" data-rating="down" data-category="politics">👎</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- World News -->
+            <section class="section-block news-section" id="worldNews">
+                <div class="section-header">
+                    <span class="section-icon">🌍</span>
+                    <h2 class="section-title">חדשות העולם</h2>
+                </div>
+                <div class="news-cards">
+                    <div class="news-card" data-article-id="mor-whcd-shooting" data-category="worldNews">
+                        <div class="card-content">
+                            <span class="card-category">🌍 עולם · 🔥 כל העולם מדבר על זה</span>
+                            <h3 class="card-title">ירי בארוחת WHCD בוושינגטון: סוכן חשאי נפצע, הותקף ע"י מורה בן 31 מקליפורניה</h3>
+                            <p class="card-summary">החשוד קול אלן (31), מורה ומהנדס מקליפורניה, נושא נשקים מרובים. הוא נעצר אחרי שירה בסוכן חשאי שניצל בזכות וסט מגן. הודעות לבני המשפחה מצביעות על מטרה לפגוע בבכירי הממשל.</p>
+                            <div class="card-footer">
+                                <a href="../articles/2026-04-27-world-whcd-shooting.html" class="read-more">קרא עוד ←</a>
+                                <div class="rating-buttons">
+                                    <button class="rating-btn" data-article-id="mor-whcd-shooting" data-rating="up" data-category="worldNews">👍</button>
+                                    <button class="rating-btn" data-article-id="mor-whcd-shooting" data-rating="down" data-category="worldNews">👎</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="news-card" data-article-id="mor-mali-attacks" data-category="worldNews">
+                        <div class="card-content">
+                            <span class="card-category">🌍 עולם</span>
+                            <h3 class="card-title">פיצוצים וירי בבירת מאלי: התקפות ג'יהאדיסטיות מתואמות הכי קשות בשנים</h3>
+                            <p class="card-summary">קבוצות ג'יהאדיסטיות ומורדים אזוריים פעלו במקביל בבמאקו ובערים נוספות. ניצול חוסר היציבות באזור הסאהל. עשרות הרוגים. ערכת ההצלה הצרפתית והאמריקאית בכוננות.</p>
+                            <div class="card-footer">
+                                <a href="../articles/2026-04-27-world-mali-attacks.html" class="read-more">קרא עוד ←</a>
+                                <div class="rating-buttons">
+                                    <button class="rating-btn" data-article-id="mor-mali-attacks" data-rating="up" data-category="worldNews">👍</button>
+                                    <button class="rating-btn" data-article-id="mor-mali-attacks" data-rating="down" data-category="worldNews">👎</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="news-card" data-article-id="mor-king-charles-visit" data-category="worldNews">
+                        <div class="card-content">
+                            <span class="card-category">🌍 עולם</span>
+                            <h3 class="card-title">המלך צ'ארלס וקמילה נחתו בארה"ב לביקור ממלכתי בן 4 ימים. מנסה לאחות את הקרע עם טראמפ</h3>
+                            <p class="card-summary">הביקור הראשון של המלך בארה"ב כראש מדינה מאז עלייתו לכס. מתח טרנס-אטלנטי הולך וגדל בעקבות מדיניות טראמפ. בלונדון מקווים שהקסם המלכותי יזיז את היחסים. סדר היום: מפגש פסגה ב-29 לחודש.</p>
+                            <div class="card-footer">
+                                <a href="../articles/2026-04-27-world-king-charles-us.html" class="read-more">קרא עוד ←</a>
+                                <div class="rating-buttons">
+                                    <button class="rating-btn" data-article-id="mor-king-charles-visit" data-rating="up" data-category="worldNews">👍</button>
+                                    <button class="rating-btn" data-article-id="mor-king-charles-visit" data-rating="down" data-category="worldNews">👎</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="news-card" data-article-id="mor-georgia-fires" data-category="worldNews">
+                        <div class="card-content">
+                            <span class="card-category">🌍 עולם</span>
+                            <h3 class="card-title">שריפות ענק בדרום-מזרח ג'ורג'יה: למעלה מ-31 מייל מרובע נשרפו</h3>
+                            <p class="card-summary">אחת משתי שריפות הענק שנמשכות במדינה כבר 5 ימים. מסוקי כיבוי וכוחות מילואים פרסים לאזור. תושבי 4 ערים פינו בתיהם. אוויר מזוהם הגיע עד פלורידה.</p>
+                            <div class="card-footer">
+                                <a href="../articles/2026-04-27-world-georgia-fires.html" class="read-more">קרא עוד ←</a>
+                                <div class="rating-buttons">
+                                    <button class="rating-btn" data-article-id="mor-georgia-fires" data-rating="up" data-category="worldNews">👍</button>
+                                    <button class="rating-btn" data-article-id="mor-georgia-fires" data-rating="down" data-category="worldNews">👎</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Amazon Seller -->
+            <section class="section-block news-section" id="amazon">
+                <div class="section-header">
+                    <span class="section-icon">📦</span>
+                    <h2 class="section-title">אמזון למוכרים</h2>
+                </div>
+                <div class="news-cards">
+                    <div class="news-card" data-article-id="mor-amazon-fuel-surcharge" data-category="amazon">
+                        <div class="card-content">
+                            <span class="card-category">📦 אמזון</span>
+                            <h3 class="card-title">תוספת דלק 3.5% נכנסת לתוקף ב-FBA: $0.17 בממוצע ליחידה</h3>
+                            <p class="card-summary">התוספת חלה החל מ-17 באפריל על כל עמלות FBA בארה"ב וקנדה. עבור Multi-Channel ו-Buy with Prime: 2 במאי. השפעה מורגשת על שוליי הרווח. נחשב לשינוי האגרסיבי הראשון בלוגיסטיקה ב-2026.</p>
+                            <div class="card-footer">
+                                <a href="../articles/2026-04-27-amazon-fuel-surcharge.html" class="read-more">קרא עוד ←</a>
+                                <div class="rating-buttons">
+                                    <button class="rating-btn" data-article-id="mor-amazon-fuel-surcharge" data-rating="up" data-category="amazon">👍</button>
+                                    <button class="rating-btn" data-article-id="mor-amazon-fuel-surcharge" data-rating="down" data-category="amazon">👎</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="news-card" data-article-id="mor-amazon-defect-fees" data-category="amazon">
+                        <div class="card-content">
+                            <span class="card-category">📦 אמזון</span>
+                            <h3 class="card-title">עמלות מזיקות עלו 30%: שלוחי איחור ושילוח לא תקין מקבלים יד קשה יותר</h3>
+                            <p class="card-summary">אמזון פישטה ב-2026 את מבנה הקנסות, אבל גובה הקנסות עצמו עלה. עמלות אחסון ארוך-טווח מתחילות עכשיו אחרי 181 יום במקום 271 יום. שינוי משמעותי לסוחרים בעונתיות.</p>
+                            <div class="card-footer">
+                                <a href="../articles/2026-04-27-amazon-defect-fees.html" class="read-more">קרא עוד ←</a>
+                                <div class="rating-buttons">
+                                    <button class="rating-btn" data-article-id="mor-amazon-defect-fees" data-rating="up" data-category="amazon">👍</button>
+                                    <button class="rating-btn" data-article-id="mor-amazon-defect-fees" data-rating="down" data-category="amazon">👎</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Tech & Gadgets -->
+            <section class="section-block news-section" id="gadgets">
+                <div class="section-header">
+                    <span class="section-icon">📱</span>
+                    <h2 class="section-title">טכנולוגיה וגאדג'טים</h2>
+                </div>
+                <div class="news-cards">
+                    <div class="news-card" data-article-id="mor-macbook-air-m5" data-category="gadgets">
+                        <div class="card-content">
+                            <span class="card-category">📱 גאדג'טים</span>
+                            <h3 class="card-title">MacBook Air 2026 עם שבב M5: ביצועי AI משופרים, אחסון 512GB בסיסי. עליית מחיר $100</h3>
+                            <p class="card-summary">אפל ריענה את ה-Air האהוב עם השבב החדש. השיפור הגדול: יכולות AI On-Device משופרות. אחסון בסיסי הוכפל ל-512GB. מחיר התחלה: $1,199. בנוסף הוצגו צגי Studio Display חדשים, כולל XDR.</p>
+                            <div class="card-footer">
+                                <a href="../articles/2026-04-27-gadgets-macbook-m5.html" class="read-more">קרא עוד ←</a>
+                                <div class="rating-buttons">
+                                    <button class="rating-btn" data-article-id="mor-macbook-air-m5" data-rating="up" data-category="gadgets">👍</button>
+                                    <button class="rating-btn" data-article-id="mor-macbook-air-m5" data-rating="down" data-category="gadgets">👎</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="news-card" data-article-id="mor-samsung-microRGB" data-category="gadgets">
+                        <div class="card-content">
+                            <span class="card-category">📱 גאדג'טים</span>
+                            <h3 class="card-title">סמסונג Micro RGB 2026: ענקיות עד 115 אינץ', The Frame Pro עם חיבורים פנימיים</h3>
+                            <p class="card-summary">השורה החדשה זמינה בגדלים 55-115. The Frame Pro מבטל את הקופסה החיצונית ומשלב הכל בלוח. צבעים עם רוחב גוונים מורחב. מחיר התחלה: $2,499 לדגם 65 אינץ'.</p>
+                            <div class="card-footer">
+                                <a href="../articles/2026-04-27-gadgets-samsung-tv.html" class="read-more">קרא עוד ←</a>
+                                <div class="rating-buttons">
+                                    <button class="rating-btn" data-article-id="mor-samsung-microRGB" data-rating="up" data-category="gadgets">👍</button>
+                                    <button class="rating-btn" data-article-id="mor-samsung-microRGB" data-rating="down" data-category="gadgets">👎</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="news-card" data-article-id="mor-yarbo-modular" data-category="gadgets">
+                        <div class="card-content">
+                            <span class="card-category">📱 גאדג'טים</span>
+                            <h3 class="card-title">Yarbo M Series: רובוט גינה אחד עם 4 פונקציות. כיסוח, פינוי שלג, ניפוח עלים וגיזום</h3>
+                            <p class="card-summary">הפלטפורמה המודולרית הופיעה ב-CES 2026 והגיעה לשוק. אחד מ-29 הגאדג'טים החדים של השנה לפי גיר פטרול. החלפת אביזרים פשוטה. מחיר התחלה: $4,500. לבעלי גינות גדולות.</p>
+                            <div class="card-footer">
+                                <a href="../articles/2026-04-27-gadgets-yarbo-mower.html" class="read-more">קרא עוד ←</a>
+                                <div class="rating-buttons">
+                                    <button class="rating-btn" data-article-id="mor-yarbo-modular" data-rating="up" data-category="gadgets">👍</button>
+                                    <button class="rating-btn" data-article-id="mor-yarbo-modular" data-rating="down" data-category="gadgets">👎</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Sports -->
+            <section class="section-block news-section" id="sports">
+                <div class="section-header">
+                    <span class="section-icon">⚽</span>
+                    <h2 class="section-title">ספורט</h2>
+                </div>
+                <div class="news-cards">
+                    <div class="news-card" data-article-id="mor-avdija-game4" data-category="sports">
+                        <div class="card-content">
+                            <span class="card-category">⚽ ספורט · 🏀 NBA</span>
+                            <h3 class="card-title">אבדיה 26 נקודות בהפסד מבזיק לספרס: בלייזרס בפיגור 1-3 בסדרה</h3>
+                            <p class="card-summary">26 נקודות ו-7 ריבאונדים לאבדיה בהפסד 114-93. הפורטלנד זרקה יתרון דו-ספרתי במחצית השנייה — דז'ה-וו ממשחק 2. הסדרה מתקדמת לסן אנטוניו. משחק 5 (אלימינציה) ביום שלישי 06:30 ישראל בערוץ ESPN.</p>
+                            <div class="card-footer">
+                                <a href="../articles/2026-04-27-sports-avdija-game4.html" class="read-more">קרא עוד ←</a>
+                                <div class="rating-buttons">
+                                    <button class="rating-btn" data-article-id="mor-avdija-game4" data-rating="up" data-category="sports">👍</button>
+                                    <button class="rating-btn" data-article-id="mor-avdija-game4" data-rating="down" data-category="sports">👎</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="news-card" data-article-id="mor-messi-revolution" data-category="sports">
+                        <div class="card-content">
+                            <span class="card-category">⚽ ספורט · ⚽ MLS</span>
+                            <h3 class="card-title">מסי ומיאמי שוב נתקעים בבית: 1-1 עם ניו אינגלנד. 0-0-3 ביציאה החדשה</h3>
+                            <p class="card-summary">מיאמי לא ניצחה ב-3 משחקיה ב-Nu Stadium החדש. גרמן ברטרמה השווה דקה 76. מסי החטיא הזדמנות מצוינת בדקה 38, חייך לעצמו בלא להאמין. מאמן הירונים: "נדבר על מונדיאל אחרי שננצח בבית פעם אחת".</p>
+                            <div class="card-footer">
+                                <a href="../articles/2026-04-27-sports-messi-draw.html" class="read-more">קרא עוד ←</a>
+                                <div class="rating-buttons">
+                                    <button class="rating-btn" data-article-id="mor-messi-revolution" data-rating="up" data-category="sports">👍</button>
+                                    <button class="rating-btn" data-article-id="mor-messi-revolution" data-rating="down" data-category="sports">👎</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Entertainment -->
+            <section class="section-block news-section" id="shows">
+                <div class="section-header">
+                    <span class="section-icon">📺</span>
+                    <h2 class="section-title">סדרות ובידור</h2>
+                </div>
+                <div class="news-cards">
+                    <div class="news-card" data-article-id="mor-gadot-bitcoin" data-category="shows">
+                        <div class="card-content">
+                            <span class="card-category">📺 בידור · 🇮🇱</span>
+                            <h3 class="card-title">גל גדות מצטרפת ל"Bitcoin" עם פיט דיווידסון וקייסי אפלק. דאג ליימן מביים</h3>
+                            <p class="card-summary">דדליין: גדות תגלם את שרלוט "לוטה" מילר בתריילר הפיננסי החדש. ההפקה התחילה בסוף פברואר. במקביל, הוצמד הבית של גדות במאליבו למכירה. מחיר מבוקש: 8.75 מיליון דולר. נרכש ב-2020 ב-5 מיליון.</p>
+                            <div class="card-footer">
+                                <a href="../articles/2026-04-27-shows-gal-gadot.html" class="read-more">קרא עוד ←</a>
+                                <div class="rating-buttons">
+                                    <button class="rating-btn" data-article-id="mor-gadot-bitcoin" data-rating="up" data-category="shows">👍</button>
+                                    <button class="rating-btn" data-article-id="mor-gadot-bitcoin" data-rating="down" data-category="shows">👎</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+
+        <!-- Daily Extras -->
+        <section class="section-block extras-section" id="extras">
+            <div class="section-header">
+                <span class="section-icon">💡</span>
+                <h2 class="section-title">הפינות של ג'יי</h2>
+            </div>
+            <div class="extras-grid">
+                <div class="extra-card">
+                    <div class="extra-icon">💬</div>
+                    <div class="extra-label">ציטוט השראה</div>
+                    <div class="extra-content">"שמור על הניצוץ הקטן באש השמימית שנקרא מצפון."</div>
+                    <div class="extra-source">— ג'ורג' וושינגטון · <a href="https://bankyourknowledge.com/365-quotes-for-every-day-of-2026/" target="_blank" rel="noopener">Bank Your Knowledge ↗</a></div>
+                </div>
+                <div class="extra-card">
+                    <div class="extra-icon">🎙️</div>
+                    <div class="extra-label">פודקאסט בעברית</div>
+                    <div class="extra-content"><strong>"הזירה הפלילית" עם אלירן מלכי</strong> — פרק חדש מנתח תיק רצח לא פתור מתל אביב. שילוב של פרופילינג, מחקר אקדמי ופענוח מקרים אמיתיים מהארץ ומהעולם.</div>
+                    <div class="extra-source"><a href="https://podcasts.apple.com/us/podcast/%D7%94%D7%96%D7%99%D7%A8%D7%94-%D7%94%D7%A4%D7%9C%D7%99%D7%9C%D7%99%D7%AA-%D7%A2%D7%9D-%D7%90%D7%9C%D7%99%D7%A8%D7%9F-%D7%9E%D7%9C%D7%9B%D7%99/id1753598262" target="_blank" rel="noopener">Apple Podcasts ↗</a></div>
+                </div>
+                <div class="extra-card">
+                    <div class="extra-icon">🔤</div>
+                    <div class="extra-label">מילה באנגלית</div>
+                    <div class="extra-content"><strong>Resilient</strong> (רזיליאנט) — חסון, גמיש שמתאושש מהר ממכה או מקושי. <em>"After two failed launches, his resilient mindset got the product to market."</em></div>
+                </div>
+                <div class="extra-card">
+                    <div class="extra-icon">🧩</div>
+                    <div class="extra-label">חידה יומית</div>
+                    <div class="extra-content">
+                        <p>אני נופל אבל לא נשבר. כשאני מתרחק אני יוצר זיכרונות. ככל שאני יותר רך, יותר מסוכן אני להחליק. מה אני?</p>
+                        <details>
+                            <summary style="cursor:pointer; font-weight:600; color:var(--accent)">גלה תשובה</summary>
+                            <p style="margin-top:6px;">שלג! ❄️ נופל ולא נשבר, יוצר זיכרונות לילדים, ומסוכן להחליק עליו כשהוא רך וטרי.</p>
+                        </details>
+                    </div>
+                </div>
+                <div class="extra-card extra-viral">
+                    <div class="extra-icon">🔥</div>
+                    <div class="extra-label">הכי ויראלי היום</div>
+                    <div class="extra-content">בטרנדים בארה"ב: <strong>Secret Service · WHCD · Butler · Jokic</strong>. אמריקה התעוררה לירי בארוחת WHCD בוושינגטון, וזה תפס את כל המקום ברשת. במקביל, יוקיץ' עשה טריפל-דאבל מטורף וגרר דיונים על MVP.</div>
+                    <div class="extra-source"><a href="https://us.trend-calendar.com/" target="_blank" rel="noopener">Trend Calendar US ↗</a></div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-inner">
+            <p class="footer-text">Daily Me · My world, every day.</p>
+            <div class="footer-nav">
+                <a href="#" class="footer-link active">בוקר</a>
+                <a href="../archive/2026-04-26-evening.html" class="footer-link">ערב</a>
+                <a href="../archive/2026-04-26-evening.html" class="footer-link">אתמול ↗</a>
+                <a href="https://jaygptpro.github.io/daily-me/" class="footer-link" target="_blank" rel="noopener">GitHub ↗</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const dollarHistory = [2.985, 2.977, 2.990, 3.002, 3.007, 2.987, 2.988];
+    </script>
+    <script src="../js/script.js"></script>
+</body>
+</html>

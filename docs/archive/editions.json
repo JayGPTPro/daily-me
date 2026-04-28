@@ -1,5 +1,17 @@
 [
   {
+    "date": "2026-04-28",
+    "edition": "morning",
+    "file": "2026-04-28-morning.html",
+    "label": "יום שלישי 28.4 · בוקר"
+  },
+  {
+    "date": "2026-04-27",
+    "edition": "morning",
+    "file": "2026-04-27-morning.html",
+    "label": "יום שני 27.4 · בוקר"
+  },
+  {
     "date": "2026-04-26",
     "edition": "evening",
     "file": "2026-04-26-evening.html",
