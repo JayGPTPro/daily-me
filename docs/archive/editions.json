@@ -1,6 +1,12 @@
 [
   {
     "date": "2026-04-30",
+    "edition": "evening",
+    "file": "2026-04-30-evening.html",
+    "label": "יום חמישי 30.4 · ערב"
+  },
+  {
+    "date": "2026-04-30",
     "edition": "morning",
     "file": "2026-04-30-morning.html",
     "label": "יום חמישי 30.4 · בוקר"
