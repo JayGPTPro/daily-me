@@ -1,6 +1,12 @@
 [
   {
     "date": "2026-05-12",
+    "edition": "evening",
+    "file": "2026-05-12-evening.html",
+    "label": "יום שלישי 12.5 · ערב"
+  },
+  {
+    "date": "2026-05-12",
     "edition": "morning",
     "file": "2026-05-12-morning.html"
   },
