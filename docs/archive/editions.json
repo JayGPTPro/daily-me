@@ -1,6 +1,12 @@
 [
   {
     "date": "2026-05-15",
+    "edition": "evening",
+    "file": "2026-05-15-evening.html",
+    "label": "יום שישי 15.5 · ערב"
+  },
+  {
+    "date": "2026-05-15",
     "edition": "morning",
     "file": "2026-05-15-morning.html",
     "label": "יום שישי 15.5 · בוקר"
