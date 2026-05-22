@@ -1,0 +1,47 @@
+{
+  "edition": "morning",
+  "date": "2026-05-14",
+  "date_he": "יום חמישי, 14 במאי 2026",
+  "update_time": "06:15",
+  "greeting": "בוקר טוב, ג'יי! ☀️",
+  "edition_title": "מהדורת בוקר · 14 במאי 2026",
+  "edition_label": "מהדורת בוקר ☀️",
+  "calendar_title": "פגישות היום",
+  "breaking_news": "נתניהו חשף ביקור חשאי באמירויות במלחמת איראן | טהרן מאיימת על אבו דאבי | הקואליציה הגישה הצעת חוק לפיזור הכנסת | טראמפ ושי ג'ינפינג נפגשים בבייג'ינג",
+  "calendar_events": [
+    {"time": "כל היום", "title": "🚀 אתגר Claude Code סבב 1 (יום אחרון. עם מנדי)"},
+    {"time": "כל היום", "title": "👨‍👧‍👦 עם הילדים"},
+    {"time": "12:00", "title": "Akos. Amazon, Walmart, Chewy PPC"},
+    {"time": "21:00", "title": "🎤 וובינר חינמי. Claude Code: The Complete Guide"}
+  ],
+  "weather": {
+    "current_temp": 20,
+    "min": 21,
+    "max": 30,
+    "desc_he": "בהיר ונעים, 20°-30°",
+    "icon": "☀️",
+    "clothing": "👕 חולצה קצרה",
+    "source": "https://www.meteoblue.com/en/weather/14-days/raanana_israel_293807"
+  },
+  "dollar": {
+    "rate": "2.90",
+    "change": "↓ 0.06%",
+    "direction": "negative",
+    "history": [2.94, 2.93, 2.91, 2.90, 2.90, 2.90, 2.90],
+    "source": "https://www.investing.com/currencies/usd-ils"
+  },
+  "surprise": {
+    "label": "💡 טריוויה",
+    "content": "קלאופטרה חיה קרובה יותר בזמן לנחיתת אדם על הירח (1969) מאשר לבניית הפירמידה הגדולה במצרים. הפירמידה נבנתה כ-2,500 שנה לפני זמנה. המרחק בינה לבני זמננו הוא רק 2,000 שנה. <a href='https://www.classpop.com/magazine/weird-facts' target='_blank' style='color: var(--text-secondary); font-size: 0.85em;'>(מקור: ClassPop)</a>"
+  },
+  "extras": {
+    "quote": "\"הצלחה היא לא סופית. כישלון הוא לא קטלני. מה שחשוב הוא האומץ להמשיך\".",
+    "quote_source": "ויסטון צ'רצ'יל · <a href='https://winstonchurchill.org/resources/quotes/the-most-famous-things-never-said/' target='_blank'>The Churchill Project</a>",
+    "podcast": "<strong>התשובה עם דורון פישלר</strong>. דורון עונה על שאלות גדולות וקטנות בחיים, אחרי שרשת עושים היסטוריה הודיעה על הפסקה זמנית של רן לוי.",
+    "podcast_source": "<a href='https://www.osimhistoria.com/theanswer' target='_blank'>עושים היסטוריה</a>",
+    "english_word": "<strong>Serendipity</strong> (סֶרֶנְדִיפִּיטִי). מציאה מקרית ומאושרת של דבר שלא חיפשת. <em>Meeting my business partner at that coffee shop was pure serendipity.</em>",
+    "riddle": "יש לי ערים, אבל אין לי בתים. יש לי הרים, אבל אין לי עצים. יש לי מים, אבל אין לי דגים. מי אני?<br><br><details><summary style='cursor: pointer; color: var(--brand);'>גלה את התשובה</summary>תשובה: <strong>מפה</strong>. <a href='https://www.riddles.com/riddle-of-the-day' target='_blank' style='font-size: 0.85em;'>(Riddles.com)</a></details>",
+    "viral_tweet": "החשבון הרשמי של ה-NFL פרסם שלוח המשחקים של עונת 2026 ייחשף ב-20:00 שעון מזרחי, בשידור חי ב-NFL Network, ESPN ו-NFL+. הציוץ צבר מעל 250,000 לייקים ו-45,000 שיתופים תוך שעות.",
+    "tweet_source": "<a href='https://www.cbssports.com/nfl/news/2026-nfl-schedule-leaks-rumors/' target='_blank'>@NFL Twitter / X</a>"
+  }
+}
