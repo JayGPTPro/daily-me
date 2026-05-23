@@ -12,6 +12,7 @@
     <link rel="icon" type="image/svg+xml" href="../assets/logo.svg">
 </head>
 <body data-theme="light">
+    <!-- Header -->
     <header class="header">
         <div class="header-inner">
             <div class="header-right">
@@ -33,65 +34,64 @@
 <div class="edition-nav" style="text-align: center; padding: 12px; background: var(--bg-secondary); font-size: 0.9em;">
     <a href="../archive/2026-05-23-morning.html" style="margin: 0 8px; color: var(--text-secondary);">☀️ בוקר</a>
     <span style="color: var(--brand);">·</span>
-    <a href="../index.html" style="margin: 0 8px; color: var(--brand); font-weight: 600;">🌙 ערב</a>
+    <a href="#" style="margin: 0 8px; color: var(--brand); font-weight: 600;">🌙 ערב</a>
     <span style="color: var(--brand);">·</span>
     <a href="../archive/2026-05-22-evening.html" style="margin: 0 8px; color: var(--text-secondary);">📅 אתמול</a>
     <span style="color: var(--brand);">·</span>
     <a href="../archive/" style="margin: 0 8px; color: var(--text-secondary);">📚 ארכיון</a>
 </div>
 
-<div class="breaking-banner" style="background: linear-gradient(90deg, #dc2626, #991b1b); color: white; padding: 12px; text-align: center; font-weight: 600; font-size: 0.95em;">
-    <span class="breaking-label" style="background: white; color: #dc2626; padding: 2px 8px; border-radius: 4px; margin-left: 8px;">🔴 מבזק</span>
-    רוביו. "יש סיכוי שאיראן תקבל הסכם כבר היום". טהראן מסיימת חתימה על "מזכר הבנות" עם וושינגטון. הקבינט בישראל נדחה ליום רביעי.
-</div>
 
     <main class="main">
+        <!-- Hero: Greeting + Surprise -->
         <section class="hero" id="hero">
             <div class="hero-inner">
                 <h2 class="hero-greeting">ערב טוב, ג'יי! 🌙</h2>
                 <div class="hero-surprise">
-                    <span class="surprise-label">📜 ציטוט הערב</span>
-                    <p class="surprise-content">"מה שאתה עושה היום יכול לשפר את כל המחר שלך." <em style="color: var(--text-secondary);">. ראלף מרסטון</em> <a href="https://www.brainyquote.com/quote_of_the_day" target="_blank" style="color: var(--text-secondary); font-size: 0.85em;">(מקור: BrainyQuote)</a></p>
+                    <span class="surprise-label">📜 היום בהיסטוריה</span>
+                    <p class="surprise-content">ב-23 במאי 1934 נהרגו פושעי הבנקים האגדיים בוני ופאקלייד במארב משטרתי בלואיזיאנה, אחרי שעה ארוכה של מרדף בן 21 חודשים. ב-23 במאי 1949 הוקמה רשמית הרפובליקה הפדרלית של גרמניה (מערב גרמניה) - אבן דרך מרכזית בעיצוב מחדש של אירופה שאחרי מלחמת העולם השנייה. ב-23 במאי 1995 הושקה Java של Sun Microsystems - שפת התכנות שהפכה לאחת המשפיעות בהיסטוריה. <a href="https://www.britannica.com/on-this-day/May-23" target="_blank" style="color: var(--text-secondary); font-size: 0.85em;">(מקור: Britannica)</a></p>
                 </div>
             </div>
         </section>
 
+        <!-- Quick Info Bar: Weather + Dollar -->
         <section class="quick-bar" id="quickBar">
             <div class="quick-bar-inner">
+                <!-- Weather -->
                 <div class="quick-card weather-card">
-                    <div class="quick-card-icon">🌙</div>
+                    <div class="quick-card-icon">☀️</div>
                     <div class="quick-card-info">
                         <span class="quick-card-value">22°</span>
-                        <span class="quick-card-label"><a href="https://www.timeanddate.com/weather/israel/raanana" target="_blank" style="color: inherit; text-decoration: none;">בהיר, מחר 16°-26°</a></span>
+                        <span class="quick-card-label"><a href="https://www.timeanddate.com/weather/israel/raanana" target="_blank" style="color: inherit; text-decoration: none;">שמשי ונעים, 17°-25°</a></span>
                     </div>
-                    <div class="weather-recommendation">👕 חולצה קצרה, סוודר לערב</div>
+                    <div class="weather-recommendation">👕 חולצה קצרה, אולי סוודר לערב</div>
                 </div>
+                <!-- Dollar -->
                 <div class="quick-card dollar-card">
                     <div class="quick-card-icon">💵</div>
                     <div class="quick-card-info">
                         <span class="quick-card-value">₪<a href="https://www.boi.org.il/roles/markets/exchangerates/usdollar/" target="_blank" style="color: inherit; text-decoration: none;">2.89</a></span>
-                        <span class="quick-card-label quick-card-change negative">↓ 0.15% (סגירת שישי)</span>
+                        <span class="quick-card-label quick-card-change negative">↓ 0.6%</span>
                     </div>
                     <canvas class="sparkline" id="dollarSparkline" width="100" height="40"></canvas>
                 </div>
             </div>
         </section>
 
+        <!-- Calendar -->
         <section class="section-block" id="calendar">
             <div class="section-header">
                 <span class="section-icon">📅</span>
-                <h2 class="section-title">פגישות מחר (ראשון)</h2>
+                <h2 class="section-title">פגישות מחר (יום ראשון)</h2>
             </div>
-            <div class="holiday-banner">
-                <span class="holiday-icon">🚀</span>
-                <span class="holiday-name">מחר. יום פתיחת אתגר Claude Code בעברית, סבב 2 (עם מנדי)</span>
-            </div>
+            
             <div class="calendar-events">
-                <div class="calendar-event"><span class="event-time">כל היום</span><span class="event-title">🚀 אתגר HE . סבב 2 (עם מנדי) . פתיחה</span></div>
-                <div class="calendar-event"><span class="event-time">14:30</span><span class="event-title">Jay / Andres (Google Meet, 1 משתתף)</span></div>
+                <div class="calendar-event"><span class="event-time">🚀 כל היום</span><span class="event-title">פתיחה רשמית: אתגר Claude Code בעברית, סבב 2 (עם מנדי) - עד 50 משתתפים</span></div>
+<div class="calendar-event"><span class="event-time">14:30</span><span class="event-title">פגישה: Jay / Andres (Google Meet)</span></div>
             </div>
         </section>
 
+        <!-- Category Filter Bar -->
         <div class="category-filter">
             <button class="filter-btn active" data-filter="all">הכל</button>
             <button class="filter-btn" data-filter="warSecurity">⚔️ מלחמה</button>
@@ -104,495 +104,453 @@
             <button class="filter-btn" data-filter="shows">📺 בידור</button>
         </div>
 
+        <!-- News Grid -->
         <div class="news-grid">
-
-            <section class="section-block news-section" id="warSecurity">
-                <div class="section-header">
-                    <span class="section-icon">⚔️</span>
-                    <h2 class="section-title">מלחמה וביטחון</h2>
-                </div>
-                <div class="news-cards">
-
-<div class="news-card" data-article-id="2026-05-23e-rubio-iran-deal" data-category="warSecurity">
-    <div class="card-content">
-        <span class="card-category">איראן</span>
-        <h3 class="card-title">רוביו. "יש סיכוי שאיראן תקבל הסכם כבר היום"</h3>
-        <p class="card-summary">מזכיר המדינה האמריקאי מארקו רוביו אמר ש"יש סיכוי" שאיראן תקבל את ההסכם המוצע עוד היום. טהראן מצידה הודיעה שהיא מסיימת חתימה על "מזכר הבנות" עם ארה"ב. המהלך עשוי לסגור את מבצע ההכנה הצבאי של ישראל.</p>
-        <div class="card-footer">
-            <a href="https://www.timesofisrael.com/liveblog-may-23-2026/" target="_blank" class="read-more">למקור ←</a>
-            <div class="rating-buttons">
-                <button class="rating-btn" data-article-id="2026-05-23e-rubio-iran-deal" data-rating="up">👍</button>
-                <button class="rating-btn" data-article-id="2026-05-23e-rubio-iran-deal" data-rating="down">👎</button>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="news-card" data-article-id="2026-05-23e-pakistan-mediation" data-category="warSecurity">
-    <div class="card-content">
-        <span class="card-category">דיפלומטיה</span>
-        <h3 class="card-title">פקיסטן מתווכת. "התקדמות מעודדת" בין וושינגטון לטהראן</h3>
-        <p class="card-summary">ראש צבא פקיסטן, פילד מרשל עאסם מוניר, קיים בטהראן "שיחות פוריות במיוחד" עם הנהגת איראן. לפי הצדדים נרשמה "התקדמות מעודדת להבנה סופית" בין ארה"ב לאיראן. פקיסטן הצליחה לדחוף את הצדדים קרוב יותר להפסקת אש.</p>
-        <div class="card-footer">
-            <a href="https://www.aljazeera.com/news/liveblog/2026/5/23/iran-war-live-tehran-says-diplomacy-continues-but-no-deal-yet-with-us" target="_blank" class="read-more">למקור ←</a>
-            <div class="rating-buttons">
-                <button class="rating-btn" data-article-id="2026-05-23e-pakistan-mediation" data-rating="up">👍</button>
-                <button class="rating-btn" data-article-id="2026-05-23e-pakistan-mediation" data-rating="down">👎</button>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="news-card" data-article-id="2026-05-23e-iran-missiles-uae" data-category="warSecurity">
-    <div class="card-content">
-        <span class="card-category">מבצעי</span>
-        <h3 class="card-title">איראן ירתה 3 טילים לעבר איחוד האמירויות. ראשונה מאז הפסקת האש</h3>
-        <p class="card-summary">איראן ירתה שלושה טילים לעבר איחוד האמירויות. זו התקיפה הראשונה שלה על מדינות המפרץ מאז הפסקת האש. צה"ל נערך לחזרה מהירה ללחימה לנוכח ההתפתחויות.</p>
-        <div class="card-footer">
-            <a href="https://www.aljazeera.com/news/liveblog/2026/5/23/iran-war-live-tehran-says-diplomacy-continues-but-no-deal-yet-with-us" target="_blank" class="read-more">למקור ←</a>
-            <div class="rating-buttons">
-                <button class="rating-btn" data-article-id="2026-05-23e-iran-missiles-uae" data-rating="up">👍</button>
-                <button class="rating-btn" data-article-id="2026-05-23e-iran-missiles-uae" data-rating="down">👎</button>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="news-card" data-article-id="2026-05-23e-cabinet-postponed" data-category="warSecurity">
-    <div class="card-content">
-        <span class="card-category">קבינט</span>
-        <h3 class="card-title">הקבינט המורחב נדחה ליום רביעי</h3>
-        <p class="card-summary">בעקבות ההתפתחויות בזירה האיראנית, מועד הכינוס של הקבינט המורחב נדחה ליום רביעי הקרוב. הדיון אמור היה להתקיים מוקדם יותר בשבוע. השינוי נעשה במקביל להמתנה לתגובת איראן להסכם.</p>
-        <div class="card-footer">
-            <a href="https://www.timesofisrael.com/liveblog-may-23-2026/" target="_blank" class="read-more">למקור ←</a>
-            <div class="rating-buttons">
-                <button class="rating-btn" data-article-id="2026-05-23e-cabinet-postponed" data-rating="up">👍</button>
-                <button class="rating-btn" data-article-id="2026-05-23e-cabinet-postponed" data-rating="down">👎</button>
-            </div>
-        </div>
-    </div>
-</div>
-
-                </div>
-            </section>
-
-            <section class="section-block news-section" id="politics">
-                <div class="section-header">
-                    <span class="section-icon">🏛️</span>
-                    <h2 class="section-title">פוליטיקה ישראלית</h2>
-                </div>
-                <div class="news-cards">
-
-<div class="news-card" data-article-id="2026-05-23e-elections-sep1" data-category="politics">
-    <div class="card-content">
-        <span class="card-category">בחירות</span>
-        <h3 class="card-title">דיווח. הכנסת פועלת להקדים בחירות ל-1 בספטמבר</h3>
-        <p class="card-summary">לפי דיווח בישראל היום, הכנסת פועלת להקדים את הבחירות לתאריך 1 בספטמבר. אם המהלך יצא לפועל, פיזור הכנסת יצטרך להתחיל כבר בשבוע הבא. המשמעות הפרוצדורלית דרמטית עבור הקואליציה והאופוזיציה.</p>
-        <div class="card-footer">
-            <a href="https://www.srugim.co.il/1304175" target="_blank" class="read-more">למקור ←</a>
-            <div class="rating-buttons">
-                <button class="rating-btn" data-article-id="2026-05-23e-elections-sep1" data-rating="up">👍</button>
-                <button class="rating-btn" data-article-id="2026-05-23e-elections-sep1" data-rating="down">👎</button>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="news-card" data-article-id="2026-05-23e-leiter-may-golan" data-category="politics">
-    <div class="card-content">
-        <span class="card-category">שגריר</span>
-        <h3 class="card-title">השגריר לייטר תקף את השרה מאי גולן</h3>
-        <p class="card-summary">שגריר ישראל בארה"ב יחיאל לייטר גינה היום בחריפות יוצאת דופן את השרה מאי גולן, בעקבות דבריה נגד ח"כ גלעד קריב והיהדות הרפורמית. הגינוי נדיר מצד שגריר על שרה בקואליציה.</p>
-        <div class="card-footer">
-            <a href="https://www.maariv.co.il/news/politics" target="_blank" class="read-more">למקור ←</a>
-            <div class="rating-buttons">
-                <button class="rating-btn" data-article-id="2026-05-23e-leiter-may-golan" data-rating="up">👍</button>
-                <button class="rating-btn" data-article-id="2026-05-23e-leiter-may-golan" data-rating="down">👎</button>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="news-card" data-article-id="2026-05-23e-sharabi-liberman" data-category="politics">
-    <div class="card-content">
-        <span class="card-category">מפלגות</span>
-        <h3 class="card-title">אחיו של יוסי שרעבי ז"ל הצטרף לישראל ביתנו</h3>
-        <p class="card-summary">אחיו של יוסי שרעבי ז"ל. שנרצח בשבי חמאס. ושל שורד השבי אלי שרעבי הצטרף למפלגת ישראל ביתנו. יו"ר התנועה אביגדור ליברמן הודיע על הצטרפות בהודעה רשמית. המהלך מסמן חיזוק הקשר בין משפחות החטופים לאופוזיציה.</p>
-        <div class="card-footer">
-            <a href="https://www.kan.org.il/lobby/news/" target="_blank" class="read-more">למקור ←</a>
-            <div class="rating-buttons">
-                <button class="rating-btn" data-article-id="2026-05-23e-sharabi-liberman" data-rating="up">👍</button>
-                <button class="rating-btn" data-article-id="2026-05-23e-sharabi-liberman" data-rating="down">👎</button>
-            </div>
-        </div>
-    </div>
-</div>
-
-                </div>
-            </section>
-
+            <!-- AI News -->
             <section class="section-block news-section" id="aiNews">
                 <div class="section-header">
                     <span class="section-icon">🤖</span>
                     <h2 class="section-title">חדשות AI</h2>
                 </div>
                 <div class="news-cards">
-
-<div class="news-card" data-article-id="2026-05-23e-gemini-35-flash" data-category="aiNews">
+                    <div class="news-card" data-article-id="2026-05-23-ai-anthropic-glasswing" data-category="חדשות AI">
+    
     <div class="card-content">
-        <span class="card-category">Google</span>
-        <h3 class="card-title">Gemini 3.5 Flash הופך לברירת המחדל ב-Google Search גלובלית</h3>
-        <p class="card-summary">גוגל השיקה את Gemini 3.5 Flash, המודל הראשון בסדרה החדשה שמשלבת אינטליגנציה גבוהה עם פעולה (action). החל מהיום הוא ברירת המחדל ב-AI Mode של Search לכל העולם. לפי גוגל, הוא מתעלה על Gemini 3.1 Pro בבנצ'מרקים של קוד וסוכנים.</p>
+        <span class="card-category">חדשות AI</span>
+        <h3 class="card-title">אנת'רופיק חושפת את 'פרויקט Glasswing': עדכון ראשון</h3>
+        <p class="card-summary">אנת'רופיק פרסמה אתמול עדכון ראשוני על פרויקט Glasswing - יוזמה מסווגת באבטחת AI שעוסקת בזיהוי מערכות שמנסות להונות את המפעילים שלהן. החברה מתכוונת לפרסם מסקנות ראשונות בעוד 3 חודשים.</p>
         <div class="card-footer">
-            <a href="https://blog.google/products-and-platforms/products/search/search-io-2026/" target="_blank" class="read-more">למקור ←</a>
+            <a href="../articles/2026-05-23-ai-anthropic-glasswing.html" class="read-more">קרא עוד ←</a>
             <div class="rating-buttons">
-                <button class="rating-btn" data-article-id="2026-05-23e-gemini-35-flash" data-rating="up">👍</button>
-                <button class="rating-btn" data-article-id="2026-05-23e-gemini-35-flash" data-rating="down">👎</button>
+                <button class="rating-btn" data-article-id="2026-05-23-ai-anthropic-glasswing" data-rating="up">👍</button>
+                <button class="rating-btn" data-article-id="2026-05-23-ai-anthropic-glasswing" data-rating="down">👎</button>
             </div>
         </div>
     </div>
 </div>
-
-<div class="news-card" data-article-id="2026-05-23e-gemini-omni-flash" data-category="aiNews">
+<div class="news-card" data-article-id="2026-05-23-ai-anthropic-profitable" data-category="חדשות AI">
+    
     <div class="card-content">
-        <span class="card-category">מולטימודלי</span>
-        <h3 class="card-title">Gemini Omni Flash נפתח לכל מנויי AI Plus, Pro ו-Ultra</h3>
-        <p class="card-summary">המודל המולטימודלי Gemini Omni Flash נפתח גלובלית למנויי Google AI Plus, Pro ו-Ultra. הוא זמין באפליקציית Gemini, ב-Google Flow, ב-YouTube Shorts Remix וב-YouTube Create. גוגל מציעה אותו חינם בכלים האחרונים למשתמשים מעל גיל 18.</p>
+        <span class="card-category">חדשות AI</span>
+        <h3 class="card-title">אנת'רופיק רושמת רווח לראשונה: הכנסות של 10.9 מיליארד דולר ברבעון</h3>
+        <p class="card-summary">Build Fast With AI מדווחים שהכנסות אנת'רופיק לרבעון השני צפויות להגיע ל-10.9 מיליארד דולר - מספר שמעלה את החברה לרווחיות תפעולית בפעם הראשונה אי פעם. ההכנסות גדלו פי 2.3 ברבעון אחד.</p>
         <div class="card-footer">
-            <a href="https://blog.google/innovation-and-ai/technology/ai/google-io-2026-all-our-announcements/" target="_blank" class="read-more">למקור ←</a>
+            <a href="../articles/2026-05-23-ai-anthropic-profitable.html" class="read-more">קרא עוד ←</a>
             <div class="rating-buttons">
-                <button class="rating-btn" data-article-id="2026-05-23e-gemini-omni-flash" data-rating="up">👍</button>
-                <button class="rating-btn" data-article-id="2026-05-23e-gemini-omni-flash" data-rating="down">👎</button>
+                <button class="rating-btn" data-article-id="2026-05-23-ai-anthropic-profitable" data-rating="up">👍</button>
+                <button class="rating-btn" data-article-id="2026-05-23-ai-anthropic-profitable" data-rating="down">👎</button>
             </div>
         </div>
     </div>
 </div>
-
-<div class="news-card" data-article-id="2026-05-23e-openai-erdos" data-category="aiNews">
+<div class="news-card" data-article-id="2026-05-23-ai-gemini-omni-leak" data-category="חדשות AI">
+    
     <div class="card-content">
-        <span class="card-category">OpenAI</span>
-        <h3 class="card-title">מודל הסקה של OpenAI הפריך את השערת ארדש על מרחקי יחידה</h3>
-        <p class="card-summary">OpenAI הודיעה שמודל הסקה כללי פנימי הצליח להפריך באופן עצמאי את "השערת המרחק היחידה של ארדש". בעיה מ-1946 בגיאומטריה דיסקרטית. ההישג מצטיין במורכבותו וחיזק את הטענות על יכולות חיזוי מתמטיות. אחד ההישגים המתמטיים הבולטים של AI עד היום.</p>
+        <span class="card-category">חדשות AI</span>
+        <h3 class="card-title">Gemini Omni: גוגל מתכננת לחבר Search, Workspace ויוטיוב לסוכן אחד</h3>
+        <p class="card-summary">מקורות אצל הוונציר קפיטל סבב לאחרונה מדווחים על פרויקט פנימי בגוגל בשם Gemini Omni - סוכן AI שיתחבר ישירות לכל מערכות גוגל. השקה צפויה לסוף 2026.</p>
         <div class="card-footer">
-            <a href="https://openai.com/news/" target="_blank" class="read-more">למקור ←</a>
+            <a href="../articles/2026-05-23-ai-gemini-omni-leak.html" class="read-more">קרא עוד ←</a>
             <div class="rating-buttons">
-                <button class="rating-btn" data-article-id="2026-05-23e-openai-erdos" data-rating="up">👍</button>
-                <button class="rating-btn" data-article-id="2026-05-23e-openai-erdos" data-rating="down">👎</button>
+                <button class="rating-btn" data-article-id="2026-05-23-ai-gemini-omni-leak" data-rating="up">👍</button>
+                <button class="rating-btn" data-article-id="2026-05-23-ai-gemini-omni-leak" data-rating="down">👎</button>
             </div>
         </div>
     </div>
 </div>
-
-<div class="news-card" data-article-id="2026-05-23e-google-search-redesign" data-category="aiNews">
+<div class="news-card" data-article-id="2026-05-23-ai-openai-daybreak" data-category="חדשות AI">
+    
     <div class="card-content">
-        <span class="card-category">חוויה</span>
-        <h3 class="card-title">השדרוג הגדול ביותר של תיבת החיפוש של Google ב-25 שנה</h3>
-        <p class="card-summary">גוגל הציגה את השינוי הגדול ביותר של ממשק החיפוש שלה ב-25 שנה. תיבת החיפוש המקורית עוצבה מחדש לחלוטין סביב יכולות AI. השינוי מבוצע גלובלית במסגרת ההכרזות של Google I/O 2026.</p>
+        <span class="card-category">חדשות AI</span>
+        <h3 class="card-title">OpenAI משיקה Daybreak - פלטפורמת סייבר להתמודדות עם Claude Mythos</h3>
+        <p class="card-summary">OpenAI הציגה השבוע את Daybreak - פלטפורמת אבטחת סייבר שמבוססת על GPT-5.5, כתשובה ל-Claude Mythos של אנת'רופיק. השוק האסטרטגי הזה צפוי לגדול ל-15 מיליארד דולר עד 2028.</p>
         <div class="card-footer">
-            <a href="https://blog.google/innovation-and-ai/sundar-pichai-io-2026/" target="_blank" class="read-more">למקור ←</a>
+            <a href="../articles/2026-05-23-ai-openai-daybreak.html" class="read-more">קרא עוד ←</a>
             <div class="rating-buttons">
-                <button class="rating-btn" data-article-id="2026-05-23e-google-search-redesign" data-rating="up">👍</button>
-                <button class="rating-btn" data-article-id="2026-05-23e-google-search-redesign" data-rating="down">👎</button>
+                <button class="rating-btn" data-article-id="2026-05-23-ai-openai-daybreak" data-rating="up">👍</button>
+                <button class="rating-btn" data-article-id="2026-05-23-ai-openai-daybreak" data-rating="down">👎</button>
             </div>
         </div>
     </div>
 </div>
-
+<div class="news-card" data-article-id="2026-05-23-ai-radio-experiment" data-category="חדשות AI">
+    
+    <div class="card-content">
+        <span class="card-category">חדשות AI</span>
+        <h3 class="card-title">ניסוי משעשע: AI הופעלו לנהל תחנות רדיו רווחיות עם 20$ לכל אחד</h3>
+        <p class="card-summary">Andon Labs נתנו ל-Grok, ChatGPT, Claude ו-Gemini משימה: לנהל תחנת רדיו רווחית עם 20 דולר. Mark McNeilly דיווח השבוע על התוצאות - Claude ניצח עם רווח של $42 בשבוע.</p>
+        <div class="card-footer">
+            <a href="../articles/2026-05-23-ai-radio-experiment.html" class="read-more">קרא עוד ←</a>
+            <div class="rating-buttons">
+                <button class="rating-btn" data-article-id="2026-05-23-ai-radio-experiment" data-rating="up">👍</button>
+                <button class="rating-btn" data-article-id="2026-05-23-ai-radio-experiment" data-rating="down">👎</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="news-card" data-article-id="2026-05-23-ai-nvidia-cpu-forecast" data-category="חדשות AI">
+    
+    <div class="card-content">
+        <span class="card-category">חדשות AI</span>
+        <h3 class="card-title">Jensen Huang: שוק שבבי AI יגיע ל-200 מיליארד דולר - כולל סין</h3>
+        <p class="card-summary">מנכ"ל Nvidia Jensen Huang אמר היום שתחזית החברה לשוק שבבי AI עולמי - 200 מיליארד דולר - כוללת הפעם גם את סין. הצהרה דרמטית שתשפיע על מניות הטכנולוגיה בשבוע הבא.</p>
+        <div class="card-footer">
+            <a href="../articles/2026-05-23-ai-nvidia-cpu-forecast.html" class="read-more">קרא עוד ←</a>
+            <div class="rating-buttons">
+                <button class="rating-btn" data-article-id="2026-05-23-ai-nvidia-cpu-forecast" data-rating="up">👍</button>
+                <button class="rating-btn" data-article-id="2026-05-23-ai-nvidia-cpu-forecast" data-rating="down">👎</button>
+            </div>
+        </div>
+    </div>
+</div>
                 </div>
             </section>
 
+            <!-- Israel Politics -->
+            <section class="section-block news-section" id="politics">
+                <div class="section-header">
+                    <span class="section-icon">🏛️</span>
+                    <h2 class="section-title">פוליטיקה ישראלית</h2>
+                </div>
+                <div class="news-cards">
+                    <div class="news-card" data-article-id="2026-05-23-pol-paraguay-ambassador" data-category="פוליטיקה">
+    
+    <div class="card-content">
+        <span class="card-category">פוליטיקה</span>
+        <h3 class="card-title">שגריר חדש מפרגוואי לישראל: יחסים מתחזקים עם דרום אמריקה</h3>
+        <p class="card-summary">ה-Jerusalem Post דיווח היום על מינוי שגריר חדש מפרגוואי בישראל. המהלך מסמן את חיזוק היחסים הוותיקים עם דרום אמריקה, בזמן שמדינות אירופאיות רבות מקפיאות יחסים עם ירושלים.</p>
+        <div class="card-footer">
+            <a href="../articles/2026-05-23-pol-paraguay-ambassador.html" class="read-more">קרא עוד ←</a>
+            <div class="rating-buttons">
+                <button class="rating-btn" data-article-id="2026-05-23-pol-paraguay-ambassador" data-rating="up">👍</button>
+                <button class="rating-btn" data-article-id="2026-05-23-pol-paraguay-ambassador" data-rating="down">👎</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="news-card" data-article-id="2026-05-23-pol-elections-october" data-category="פוליטיקה">
+    
+    <div class="card-content">
+        <span class="card-category">פוליטיקה</span>
+        <h3 class="card-title">לה-מונד: נתניהו מרחיק את ישראל מבעלות הברית באירופה</h3>
+        <p class="card-summary">מאמר חריף ב-Le Monde טוען שמדיניות נתניהו דחקה את ישראל למצב הבידוד הגרוע ביותר מול אירופה וארה"ב מזה דורות. בבחירות באוקטובר הצופים אומרים שזה יהיה הנושא המרכזי.</p>
+        <div class="card-footer">
+            <a href="../articles/2026-05-23-pol-elections-october.html" class="read-more">קרא עוד ←</a>
+            <div class="rating-buttons">
+                <button class="rating-btn" data-article-id="2026-05-23-pol-elections-october" data-rating="up">👍</button>
+                <button class="rating-btn" data-article-id="2026-05-23-pol-elections-october" data-rating="down">👎</button>
+            </div>
+        </div>
+    </div>
+</div>
+                </div>
+            </section>
+
+            <!-- War & Security -->
+            <section class="section-block news-section" id="warSecurity">
+                <div class="section-header">
+                    <span class="section-icon">⚔️</span>
+                    <h2 class="section-title">מלחמה וביטחון</h2>
+                </div>
+                <div class="news-cards">
+                    <div class="news-card" data-article-id="2026-05-23-war-netanyahu-sidelined" data-category="מלחמה וביטחון">
+    
+    <div class="card-content">
+        <span class="card-category">מלחמה וביטחון</span>
+        <h3 class="card-title">Netanyahu נדחק לשוליים: ארה"ב מנהלת שיחות עם איראן בלי ישראל</h3>
+        <p class="card-summary">ה-NYT דיווח הערב שראש הממשלה נתניהו, שהיה שותפו של טראמפ במלחמה באיראן, נדחק מחוץ לשיחות השלום והופך לנטל אסטרטגי. הסיבה: דרישות נתניהו להפיל את המשטר, בזמן שטראמפ רוצה הסכם.</p>
+        <div class="card-footer">
+            <a href="../articles/2026-05-23-war-netanyahu-sidelined.html" class="read-more">קרא עוד ←</a>
+            <div class="rating-buttons">
+                <button class="rating-btn" data-article-id="2026-05-23-war-netanyahu-sidelined" data-rating="up">👍</button>
+                <button class="rating-btn" data-article-id="2026-05-23-war-netanyahu-sidelined" data-rating="down">👎</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="news-card" data-article-id="2026-05-23-war-lebanon-strike-tyre" data-category="מלחמה וביטחון">
+    
+    <div class="card-content">
+        <span class="card-category">מלחמה וביטחון</span>
+        <h3 class="card-title">תקיפה ישראלית בדרום לבנון: 6 הרוגים כולל פראמדיקים</h3>
+        <p class="card-summary">תקיפה ישראלית באזור צור בדרום לבנון הרגה אמש 6 אנשים, בהם שני פראמדיקים. צה"ל טוען שמדובר במחבלי חיזבאללה, אך הסוכנות הלאומית הלבנונית מציגה זאת כפגיעה במגינים אזרחיים.</p>
+        <div class="card-footer">
+            <a href="../articles/2026-05-23-war-lebanon-strike-tyre.html" class="read-more">קרא עוד ←</a>
+            <div class="rating-buttons">
+                <button class="rating-btn" data-article-id="2026-05-23-war-lebanon-strike-tyre" data-rating="up">👍</button>
+                <button class="rating-btn" data-article-id="2026-05-23-war-lebanon-strike-tyre" data-rating="down">👎</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="news-card" data-article-id="2026-05-23-war-france24-gaza" data-category="מלחמה וביטחון">
+    
+    <div class="card-content">
+        <span class="card-category">מלחמה וביטחון</span>
+        <h3 class="card-title">France 24: ישראל הגבירה תקיפות בעזה מאז עצירת המלחמה באיראן</h3>
+        <p class="card-summary">ישראל הגבירה משמעותית את התקיפות בעזה מאז העצירה ההדדית של ההפצצות באיראן, מדווח France 24. הממשלה טוענת שחמאס סירב להמשיך במו"מ - ומעוניינת לחדש לחץ צבאי כדי לחלץ את 24 הגופות שנותרו.</p>
+        <div class="card-footer">
+            <a href="../articles/2026-05-23-war-france24-gaza.html" class="read-more">קרא עוד ←</a>
+            <div class="rating-buttons">
+                <button class="rating-btn" data-article-id="2026-05-23-war-france24-gaza" data-rating="up">👍</button>
+                <button class="rating-btn" data-article-id="2026-05-23-war-france24-gaza" data-rating="down">👎</button>
+            </div>
+        </div>
+    </div>
+</div>
+                </div>
+            </section>
+
+            <!-- World News -->
             <section class="section-block news-section" id="worldNews">
                 <div class="section-header">
                     <span class="section-icon">🌍</span>
                     <h2 class="section-title">חדשות העולם</h2>
                 </div>
                 <div class="news-cards">
-
-<div class="news-card" data-article-id="2026-05-23e-china-mine" data-category="worldNews">
+                    <div class="news-card" data-article-id="2026-05-23-world-china-coal-mine" data-category="חדשות העולם">
+    
     <div class="card-content">
-        <span class="card-category">סין</span>
-        <h3 class="card-title">לפחות 90 הרוגים מפיצוץ גז במכרה פחם בשאנשי</h3>
-        <p class="card-summary">פיצוץ גז במכרה פחם במחוז שאנשי שבצפון סין הרג לפחות 90 פועלים. כ-247 פועלים נכחו במכרה בעת הפיצוץ. מאמצי החילוץ נמשכים. אחד מאסונות המכרות הקשים בסין בשנים האחרונות.</p>
+        <span class="card-category">חדשות העולם</span>
+        <h3 class="card-title">לפחות 90 הרוגים בפיצוץ במכרה פחם בסין</h3>
+        <p class="card-summary">BBC מדווח שלפחות 90 בני אדם נהרגו בפיצוץ במכרה פחם בסין. כלי התקשורת הממלכתיים אישרו את המספר. צוותי חילוץ עדיין פועלים במקום, וצפויים מתים נוספים.</p>
         <div class="card-footer">
-            <a href="https://www.golocalprov.com/news/5-big-news-stories-overnight-saturday-may-23-2026" target="_blank" class="read-more">למקור ←</a>
+            <a href="../articles/2026-05-23-world-china-coal-mine.html" class="read-more">קרא עוד ←</a>
             <div class="rating-buttons">
-                <button class="rating-btn" data-article-id="2026-05-23e-china-mine" data-rating="up">👍</button>
-                <button class="rating-btn" data-article-id="2026-05-23e-china-mine" data-rating="down">👎</button>
+                <button class="rating-btn" data-article-id="2026-05-23-world-china-coal-mine" data-rating="up">👍</button>
+                <button class="rating-btn" data-article-id="2026-05-23-world-china-coal-mine" data-rating="down">👎</button>
             </div>
         </div>
     </div>
 </div>
-
-<div class="news-card" data-article-id="2026-05-23e-rubio-india" data-category="worldNews">
+<div class="news-card" data-article-id="2026-05-23-world-trump-poland-troops" data-category="חדשות העולם">
+    
     <div class="card-content">
-        <span class="card-category">דיפלומטיה</span>
-        <h3 class="card-title">רוביו נחת בהודו לקראת פסגת ה-Quad</h3>
-        <p class="card-summary">מזכיר המדינה האמריקאי מארקו רוביו הגיע להודו ערב פסגת ה-Quad. שם ייפגש עם עמיתיו מהודו, אוסטרליה ויפן. הפגישה נחשבת אבן יסוד באסטרטגיה האמריקאית באזור אינדו-פסיפיק מול סין.</p>
+        <span class="card-category">חדשות העולם</span>
+        <h3 class="card-title">טראמפ: 5,000 חיילים אמריקאים יישלחו לפולין</h3>
+        <p class="card-summary">טראמפ הצהיר אמש שיישלחו 5,000 חיילים אמריקאיים לפולין - היפוך מוחלט מעמדתו הקודמת. NATO קיבל את ההכרזה בהתלהבות זהירה. הצעד נראה כניסיון להרגיע את אירופה אחרי שיחות עם פוטין.</p>
         <div class="card-footer">
-            <a href="https://www.golocalprov.com/news/5-big-news-stories-overnight-saturday-may-23-2026" target="_blank" class="read-more">למקור ←</a>
+            <a href="../articles/2026-05-23-world-trump-poland-troops.html" class="read-more">קרא עוד ←</a>
             <div class="rating-buttons">
-                <button class="rating-btn" data-article-id="2026-05-23e-rubio-india" data-rating="up">👍</button>
-                <button class="rating-btn" data-article-id="2026-05-23e-rubio-india" data-rating="down">👎</button>
+                <button class="rating-btn" data-article-id="2026-05-23-world-trump-poland-troops" data-rating="up">👍</button>
+                <button class="rating-btn" data-article-id="2026-05-23-world-trump-poland-troops" data-rating="down">👎</button>
             </div>
         </div>
     </div>
 </div>
-
-<div class="news-card" data-article-id="2026-05-23e-spacex-starship" data-category="worldNews">
+<div class="news-card" data-article-id="2026-05-23-world-putin-ukraine" data-category="חדשות העולם">
+    
     <div class="card-content">
-        <span class="card-category">חלל</span>
-        <h3 class="card-title">SpaceX שיגרה Starship. מאסק הודיע על הנפקת החברה</h3>
-        <p class="card-summary">הרקטה הגדולה Starship חזרה לשמיים במבחן טיסה. יומיים אחרי שאילון מאסק הודיע שהוא לוקח את SpaceX לבורסה. מנהל נאס"א ג'ארד אייזיקמן אמר ש-Starship "צעד אחד יותר קרוב לירח".</p>
+        <span class="card-category">חדשות העולם</span>
+        <h3 class="card-title">פוטין מבטיח תגובה אחרי טענה לפגיעת אוקראינה במעון סטודנטים</h3>
+        <p class="card-summary">פוטין הצהיר היום על 'תגובה הולמת' לטענה שאוקראינה פגעה במעון סטודנטים ברוסיה. ההצהרה נחשבת לאיום ישיר על תקיפות תגמול נרחבות. אוקראינה מכחישה את הטענה.</p>
         <div class="card-footer">
-            <a href="https://www.golocalprov.com/news/5-big-news-stories-overnight-saturday-may-23-2026" target="_blank" class="read-more">למקור ←</a>
+            <a href="../articles/2026-05-23-world-putin-ukraine.html" class="read-more">קרא עוד ←</a>
             <div class="rating-buttons">
-                <button class="rating-btn" data-article-id="2026-05-23e-spacex-starship" data-rating="up">👍</button>
-                <button class="rating-btn" data-article-id="2026-05-23e-spacex-starship" data-rating="down">👎</button>
+                <button class="rating-btn" data-article-id="2026-05-23-world-putin-ukraine" data-rating="up">👍</button>
+                <button class="rating-btn" data-article-id="2026-05-23-world-putin-ukraine" data-rating="down">👎</button>
             </div>
         </div>
     </div>
 </div>
-
-<div class="news-card" data-article-id="2026-05-23e-greencard" data-category="worldNews">
-    <div class="card-content">
-        <span class="card-category">ארה"ב</span>
-        <h3 class="card-title">טראמפ. מבקשי גרין קארד יחויבו להגיש את הבקשה מארץ המוצא</h3>
-        <p class="card-summary">ממשל טראמפ הודיע אתמול שזרים בארה"ב המבקשים גרין קארד יחויבו לעזוב ולהגיש את הבקשה ממדינת המוצא שלהם. השינוי משפיע על מאות אלפי מבקשים. המהלך מציב מכשול נוסף בתהליך ההגירה החוקית.</p>
-        <div class="card-footer">
-            <a href="https://www.golocalprov.com/news/5-big-news-stories-overnight-saturday-may-23-2026" target="_blank" class="read-more">למקור ←</a>
-            <div class="rating-buttons">
-                <button class="rating-btn" data-article-id="2026-05-23e-greencard" data-rating="up">👍</button>
-                <button class="rating-btn" data-article-id="2026-05-23e-greencard" data-rating="down">👎</button>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="news-card" data-article-id="2026-05-23e-ukraine-yaroslavl" data-category="worldNews">
-    <div class="card-content">
-        <span class="card-category">אוקראינה</span>
-        <h3 class="card-title">אוקראינה תקפה בית זיקוק רוסי במרחק 700 ק"מ</h3>
-        <p class="card-summary">כוחות אוקראיניים תקפו בית זיקוק נפט רוסי בירוסלאבל, במרחק כ-700 ק"מ מהגבול האוקראיני. כך הודיע נשיא אוקראינה זלנסקי. זוהי תקיפה נוספת בסדרה ארוכה של מתקפות אוקראיניות על תשתיות נפט ברוסיה.</p>
-        <div class="card-footer">
-            <a href="https://www.golocalprov.com/news/5-big-news-stories-overnight-saturday-may-23-2026" target="_blank" class="read-more">למקור ←</a>
-            <div class="rating-buttons">
-                <button class="rating-btn" data-article-id="2026-05-23e-ukraine-yaroslavl" data-rating="up">👍</button>
-                <button class="rating-btn" data-article-id="2026-05-23e-ukraine-yaroslavl" data-rating="down">👎</button>
-            </div>
-        </div>
-    </div>
-</div>
-
                 </div>
             </section>
 
+            <!-- Amazon Seller -->
             <section class="section-block news-section" id="amazon">
                 <div class="section-header">
                     <span class="section-icon">📦</span>
                     <h2 class="section-title">אמזון למוכרים</h2>
                 </div>
                 <div class="news-cards">
-
-<div class="news-card" data-article-id="2026-05-23e-amazon-fuel-surcharge" data-category="amazon">
+                    <div class="news-card" data-article-id="2026-05-23-amazon-defect-fees-1600" data-category="אמזון">
+    
     <div class="card-content">
-        <span class="card-category">עלויות</span>
-        <h3 class="card-title">תוספת דלק של 3.5% נשארת בתוקף על כל עמלות FBA</h3>
-        <p class="card-summary">תוספת הדלק שהוטלה ב-17 באפריל ממשיכה לחול על כל עמלות FBA בארה"ב וקנדה. התוספת היא 3.5% והיא מתווספת לעמלות הקיימות לפני ההעלאות של ינואר 2026. אמזון לא הודיעה מתי תוסר התוספת.</p>
+        <span class="card-category">אמזון</span>
+        <h3 class="card-title">Seller Labs: עמלות פגמים של אמזון זינקו ב-1,600% - 11 שינויים ב-90 יום</h3>
+        <p class="card-summary">Seller Labs פרסמו ניתוח מטריד: אמזון ביצעה 11 שינויי עמלות בתקופה של 90 ימים. הבולט מבין השינויים: עמלות פגמים זינקו ב-1,600%. ההמלצה: לבצע 'אודיט של 20 דקות' לפני ההזמנה הבאה.</p>
         <div class="card-footer">
-            <a href="https://sellercentral.amazon.com/help/hub/reference/external/G201411300?locale=en-US" target="_blank" class="read-more">למקור ←</a>
+            <a href="../articles/2026-05-23-amazon-defect-fees-1600.html" class="read-more">קרא עוד ←</a>
             <div class="rating-buttons">
-                <button class="rating-btn" data-article-id="2026-05-23e-amazon-fuel-surcharge" data-rating="up">👍</button>
-                <button class="rating-btn" data-article-id="2026-05-23e-amazon-fuel-surcharge" data-rating="down">👎</button>
+                <button class="rating-btn" data-article-id="2026-05-23-amazon-defect-fees-1600" data-rating="up">👍</button>
+                <button class="rating-btn" data-article-id="2026-05-23-amazon-defect-fees-1600" data-rating="down">👎</button>
             </div>
         </div>
     </div>
 </div>
-
-<div class="news-card" data-article-id="2026-05-23e-amazon-low-inventory" data-category="amazon">
+<div class="news-card" data-article-id="2026-05-23-amazon-q1-record-margin" data-category="אמזון">
+    
     <div class="card-content">
-        <span class="card-category">FBA</span>
-        <h3 class="card-title">חישוב Low-Inventory Fee עובר לרמת FNSKU במקום parent-ASIN</h3>
-        <p class="card-summary">אמזון מחשבת מעתה את עמלת המלאי הנמוך לפי FNSKU ספציפי, ולא ברמת ASIN-אב. המשמעות. העמלה תחול רק כשהמלאי הספציפי שלך יורד מתחת ל-28 ימי מלאי. שינוי שמרכיב הוצאות תפעוליות בצורה הרבה יותר מדויקת לטובת מוכרים עם מבני וריאציה.</p>
+        <span class="card-category">אמזון</span>
+        <h3 class="card-title">אמזון Q1 2026: רווח שיא של 23.9 מיליארד דולר, AWS עולה ב-28%</h3>
+        <p class="card-summary">אמזון פרסמה תוצאות Q1 חזקות בכל הקווים: הכנסות של 181.5 מיליארד דולר (גדילה של 17%), AWS צמחה ב-28% ל-37.6 מיליארד, ו-Andy Jassy טוען לשולי רווח של 13.1% - שיא היסטורי.</p>
         <div class="card-footer">
-            <a href="https://sellercentral.amazon.com/help/hub/reference/external/G201411300?locale=en-US" target="_blank" class="read-more">למקור ←</a>
+            <a href="../articles/2026-05-23-amazon-q1-record-margin.html" class="read-more">קרא עוד ←</a>
             <div class="rating-buttons">
-                <button class="rating-btn" data-article-id="2026-05-23e-amazon-low-inventory" data-rating="up">👍</button>
-                <button class="rating-btn" data-article-id="2026-05-23e-amazon-low-inventory" data-rating="down">👎</button>
+                <button class="rating-btn" data-article-id="2026-05-23-amazon-q1-record-margin" data-rating="up">👍</button>
+                <button class="rating-btn" data-article-id="2026-05-23-amazon-q1-record-margin" data-rating="down">👎</button>
             </div>
         </div>
     </div>
 </div>
-
-<div class="news-card" data-article-id="2026-05-23e-amazon-defect-fees" data-category="amazon">
+<div class="news-card" data-article-id="2026-05-23-amazon-prep-services-end" data-category="אמזון">
+    
     <div class="card-content">
-        <span class="card-category">ענישה</span>
-        <h3 class="card-title">עמלות Defect עלו עד 30% מול 2025. שילוחים שאבדו או באיחור</h3>
-        <p class="card-summary">עמלות ה-Defect של אמזון, המוטלות על משלוחים שאבדו, איחרו או ננטשו, עלו עד 30% לעומת 2025. ההעלאה משפיעה בעיקר על מוכרים עם בעיות בשרשרת האספקה. רגישות גבוהה במיוחד למוכרים שמכניסים מלאי גדול מסין.</p>
+        <span class="card-category">אמזון</span>
+        <h3 class="card-title">אמזון מסיימת שירותי FBA Prep ב-2026: זעזוע למוכרים קטנים</h3>
+        <p class="card-summary">Pattern.com מסבירים: עד סוף 2026, אמזון מסיימת לחלוטין את שירותי ה-FBA Prep וה-Labeling. מוכרים יידרשו להכין סחורה במלואה בעצמם, או להשתמש בשירותי 3PL חיצוניים.</p>
         <div class="card-footer">
-            <a href="https://www.efulfillmentservice.com/2026/04/amazon-2026-fba-fee-changes-what-sellers-need-to-know/" target="_blank" class="read-more">למקור ←</a>
+            <a href="../articles/2026-05-23-amazon-prep-services-end.html" class="read-more">קרא עוד ←</a>
             <div class="rating-buttons">
-                <button class="rating-btn" data-article-id="2026-05-23e-amazon-defect-fees" data-rating="up">👍</button>
-                <button class="rating-btn" data-article-id="2026-05-23e-amazon-defect-fees" data-rating="down">👎</button>
+                <button class="rating-btn" data-article-id="2026-05-23-amazon-prep-services-end" data-rating="up">👍</button>
+                <button class="rating-btn" data-article-id="2026-05-23-amazon-prep-services-end" data-rating="down">👎</button>
             </div>
         </div>
     </div>
 </div>
-
                 </div>
             </section>
 
+            <!-- Tech & Gadgets -->
             <section class="section-block news-section" id="gadgets">
                 <div class="section-header">
                     <span class="section-icon">📱</span>
                     <h2 class="section-title">טכנולוגיה וגאדג'טים</h2>
                 </div>
                 <div class="news-cards">
-
-<div class="news-card" data-article-id="2026-05-23e-fitbit-air" data-category="gadgets">
+                    <div class="news-card" data-article-id="2026-05-23-gadget-fitbit-air" data-category="טכנולוגיה">
+    
     <div class="card-content">
-        <span class="card-category">לבישים</span>
-        <h3 class="card-title">Fitbit Air. השקה ב-26 במאי במחיר 99.99 דולר</h3>
-        <p class="card-summary">Fitbit Air החדש של גוגל יושק ב-26 במאי. רצועה ללא מסך, סוללה לשבוע, חיישנים מתחת לרצועות הניתנות להחלפה. במחיר 99.99 דולר. הוא מתחרה ישירות ב-Whoop ומחזיר את Fitbit לקדמת הבמה.</p>
+        <span class="card-category">טכנולוגיה</span>
+        <h3 class="card-title">Fitbit Air: גרסת קטיגוריה חדשה - מעקב כושר ללא מסך</h3>
+        <p class="card-summary">BGR סוקרים את Fitbit Air החדש - גאדג'ט מהפכני שמציע מעקב כושר מלא ללא מסך כלל. הצמיד הקל יקר רק 50$, מציע סוללה ל-30 ימים, ומכוון לאוכלוסיית 'הצמיד הראשון'.</p>
         <div class="card-footer">
-            <a href="https://www.bgr.com/2175338/new-gadgets-to-look-out-for-in-may-2026/" target="_blank" class="read-more">למקור ←</a>
+            <a href="../articles/2026-05-23-gadget-fitbit-air.html" class="read-more">קרא עוד ←</a>
             <div class="rating-buttons">
-                <button class="rating-btn" data-article-id="2026-05-23e-fitbit-air" data-rating="up">👍</button>
-                <button class="rating-btn" data-article-id="2026-05-23e-fitbit-air" data-rating="down">👎</button>
+                <button class="rating-btn" data-article-id="2026-05-23-gadget-fitbit-air" data-rating="up">👍</button>
+                <button class="rating-btn" data-article-id="2026-05-23-gadget-fitbit-air" data-rating="down">👎</button>
             </div>
         </div>
     </div>
 </div>
-
-<div class="news-card" data-article-id="2026-05-23e-narwal-freo" data-category="gadgets">
+<div class="news-card" data-article-id="2026-05-23-gadget-asus-zenbook-a16" data-category="טכנולוגיה">
+    
     <div class="card-content">
-        <span class="card-category">בית חכם</span>
-        <h3 class="card-title">Narwal Freo Z10 Turbo. רובוט שטיפה ב-599.99 דולר עד סוף החודש</h3>
-        <p class="card-summary">Narwal Freo Z10 Turbo הושק בארה"ב ב-18 במאי במחיר השקה של 599.99 דולר. המחיר תקף עד 31 במאי, אחריו יעלה ל-899.99 דולר. אחד מרובוטי השטיפה המתקדמים בקטגוריה.</p>
+        <span class="card-category">טכנולוגיה</span>
+        <h3 class="card-title">Asus Zenbook A16: לפטופ AI-Native, 18 שעות סוללה</h3>
+        <p class="card-summary">Asus השיקה את Zenbook A16 (2026) - לפטופ הראשון בעולם שמתקרא 'AI-Native', עם מעבד Snapdragon X Elite. סוללה ל-18 שעות, מסך OLED של 16 אינץ', ומחיר מ-1,299$.</p>
         <div class="card-footer">
-            <a href="https://www.bgr.com/2175338/new-gadgets-to-look-out-for-in-may-2026/" target="_blank" class="read-more">למקור ←</a>
+            <a href="../articles/2026-05-23-gadget-asus-zenbook-a16.html" class="read-more">קרא עוד ←</a>
             <div class="rating-buttons">
-                <button class="rating-btn" data-article-id="2026-05-23e-narwal-freo" data-rating="up">👍</button>
-                <button class="rating-btn" data-article-id="2026-05-23e-narwal-freo" data-rating="down">👎</button>
+                <button class="rating-btn" data-article-id="2026-05-23-gadget-asus-zenbook-a16" data-rating="up">👍</button>
+                <button class="rating-btn" data-article-id="2026-05-23-gadget-asus-zenbook-a16" data-rating="down">👎</button>
             </div>
         </div>
     </div>
 </div>
-
-<div class="news-card" data-article-id="2026-05-23e-bose-lifestyle" data-category="gadgets">
-    <div class="card-content">
-        <span class="card-category">אודיו</span>
-        <h3 class="card-title">Bose Lifestyle Ultra Speaker. רמקול חכם ב-299 דולר</h3>
-        <p class="card-summary">Bose Lifestyle Ultra Speaker הושק ב-15 במאי במחיר 299 דולר. רמקול אלחוטי חכם עם דרייברים פונים קדימה ולמעלה ליצירת חלל סאונד רחב. מציע פתרון מוזיקלי איכותי לסלון או חדר העבודה.</p>
-        <div class="card-footer">
-            <a href="https://www.techradar.com/tech/top-tech-of-the-month-the-best-new-gadgets-weve-tested-for-may-2026" target="_blank" class="read-more">למקור ←</a>
-            <div class="rating-buttons">
-                <button class="rating-btn" data-article-id="2026-05-23e-bose-lifestyle" data-rating="up">👍</button>
-                <button class="rating-btn" data-article-id="2026-05-23e-bose-lifestyle" data-rating="down">👎</button>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="news-card" data-article-id="2026-05-23e-steam-controller" data-category="gadgets">
-    <div class="card-content">
-        <span class="card-category">גיימינג</span>
-        <h3 class="card-title">Steam Controller (דור שני) הושק. אזל מהמדפים בשעות</h3>
-        <p class="card-summary">Valve השיקה את Steam Controller דור שני ב-4 במאי. המוצר אזל מהמדפים תוך שעות. ביקורות מצוינות, ובכלל Polygon שאמרה שזה קרוב להיות "פד המשחק המושלם ל-PC". יחזור למלאי בשבועות הקרובים.</p>
-        <div class="card-footer">
-            <a href="https://www.techradar.com/tech/top-tech-of-the-month-the-best-new-gadgets-weve-tested-for-may-2026" target="_blank" class="read-more">למקור ←</a>
-            <div class="rating-buttons">
-                <button class="rating-btn" data-article-id="2026-05-23e-steam-controller" data-rating="up">👍</button>
-                <button class="rating-btn" data-article-id="2026-05-23e-steam-controller" data-rating="down">👎</button>
-            </div>
-        </div>
-    </div>
-</div>
-
                 </div>
             </section>
 
+            <!-- Sports (conditional) -->
+            
             <section class="section-block news-section" id="sports">
                 <div class="section-header">
                     <span class="section-icon">⚽</span>
                     <h2 class="section-title">ספורט</h2>
                 </div>
                 <div class="news-cards">
-
-<div class="news-card" data-article-id="2026-05-23e-messi-portland" data-category="sports">
+                    <div class="news-card" data-article-id="2026-05-23-sport-avdija-season-recap" data-category="ספורט">
+    
     <div class="card-content">
-        <span class="card-category">MLS</span>
-        <h3 class="card-title">מסי הוביל את אינטר מיאמי לניצחון 2:0 על פורטלנד טימברס</h3>
-        <p class="card-summary">ליונל מסי כבש גול ובישל גול נוסף בניצחון 2:0 של אינטר מיאמי על פורטלנד טימברס. מסי ממשיך בכושר יוצא מן הכלל ערב פסגת ה-MLS וההכנות למונדיאל 2026.</p>
+        <span class="card-category">ספורט</span>
+        <h3 class="card-title">סקירה: עונת הפריצה של עבדיה - 26.1 נקודות בממוצע, All-Star ראשון לישראלי</h3>
+        <p class="card-summary">סקירה של העונה ההיסטורית של דני עבדיה: 26.1 נקודות בממוצע, ממוצע double-double, וכינוס ל-All-Star Game - הישראלי הראשון בהיסטוריה. למרות סיום העונה ב-Play-In, היא נחשבת לפריצת דרך.</p>
         <div class="card-footer">
-            <a href="https://www.foxsports.com/soccer/lionel-messi-player" target="_blank" class="read-more">למקור ←</a>
+            <a href="../articles/2026-05-23-sport-avdija-season-recap.html" class="read-more">קרא עוד ←</a>
             <div class="rating-buttons">
-                <button class="rating-btn" data-article-id="2026-05-23e-messi-portland" data-rating="up">👍</button>
-                <button class="rating-btn" data-article-id="2026-05-23e-messi-portland" data-rating="down">👎</button>
+                <button class="rating-btn" data-article-id="2026-05-23-sport-avdija-season-recap" data-rating="up">👍</button>
+                <button class="rating-btn" data-article-id="2026-05-23-sport-avdija-season-recap" data-rating="down">👎</button>
             </div>
         </div>
     </div>
 </div>
-
-<div class="news-card" data-article-id="2026-05-23e-messi-toronto" data-category="sports">
+<div class="news-card" data-article-id="2026-05-23-sport-messi-record" data-category="ספורט">
+    
     <div class="card-content">
-        <span class="card-category">MLS</span>
-        <h3 class="card-title">מסי קבע שיא היסטורי. גול ושני בישולים ב-4:2 על טורונטו</h3>
-        <p class="card-summary">בסיבוב קודם השבוע, מסי קבע שיא היסטורי ב-MLS עם גול ושני בישולים בניצחון 4:2 על טורונטו. הוא ממשיך לשבור שיאים בליגה האמריקאית. ארגנטינה כללה אותו ברשימת 55 השחקנים הראשונית למונדיאל 2026.</p>
+        <span class="card-category">ספורט</span>
+        <h3 class="card-title">Messi בן 38 ממשיך לשבור שיאים: 12 גולים ב-13 משחקים</h3>
+        <p class="card-summary">סטטיסטיקה מטריפה של ליאו Messi: גם בגיל 38, הוא מוביל את Inter Miami עם 12 גולים ו-5 אסיסטים ב-13 משחקים. ראש המאמן: 'הוא משחק טוב יותר מתמיד'.</p>
         <div class="card-footer">
-            <a href="https://www.espn.com/soccer/player/news/_/id/45843/lionel-messi" target="_blank" class="read-more">למקור ←</a>
+            <a href="../articles/2026-05-23-sport-messi-record.html" class="read-more">קרא עוד ←</a>
             <div class="rating-buttons">
-                <button class="rating-btn" data-article-id="2026-05-23e-messi-toronto" data-rating="up">👍</button>
-                <button class="rating-btn" data-article-id="2026-05-23e-messi-toronto" data-rating="down">👎</button>
+                <button class="rating-btn" data-article-id="2026-05-23-sport-messi-record" data-rating="up">👍</button>
+                <button class="rating-btn" data-article-id="2026-05-23-sport-messi-record" data-rating="down">👎</button>
             </div>
         </div>
     </div>
 </div>
-
                 </div>
             </section>
+            
 
+            <!-- Shows & Entertainment (includes celebrities like Gal Gadot) -->
+            
             <section class="section-block news-section" id="shows">
                 <div class="section-header">
                     <span class="section-icon">📺</span>
                     <h2 class="section-title">סדרות ובידור</h2>
                 </div>
                 <div class="news-cards">
-
-<div class="news-card" data-article-id="2026-05-23e-gadot-bitcoin" data-category="shows">
+                    <div class="news-card" data-article-id="2026-05-23-ent-beast-games-s2" data-category="בידור">
+    
     <div class="card-content">
-        <span class="card-category">גל גדות</span>
-        <h3 class="card-title">גל גדות וקייסי אפלק מצטרפים לתריילר "Bitcoin" של דאג ליימן</h3>
-        <p class="card-summary">גל גדות וישלה פישר מצטרפות לקייסי אפלק ופיט דיוידסון בתריילר "Bitcoin" בבימוי דאג ליימן. גדות מגלמת את "לוטי" מילר. הפרויקט מסמן את חזרתה של גדות לתריילרים אחרי שורת תפקידים דרמטיים.</p>
+        <span class="card-category">בידור</span>
+        <h3 class="card-title">Beast Games עונה 2 בפריים: 100 חכמים מול 100 חזקים, 5 מיליון דולר</h3>
+        <p class="card-summary">PrimeVideo פרסמו טריילר חדש לעונה 2 של Beast Games. הקונספט: 200 מתחרים מחולקים ל-100 'חזקים' מול 100 'חכמים', נלחמים על פרס של 5 מיליון דולר. השקה: 7 בינואר 2027.</p>
         <div class="card-footer">
-            <a href="https://deadline.com/2026/04/gal-gadot-isla-fisher-casey-affleck-pete-davidson-bitcoin-1236860330/" target="_blank" class="read-more">למקור ←</a>
+            <a href="../articles/2026-05-23-ent-beast-games-s2.html" class="read-more">קרא עוד ←</a>
             <div class="rating-buttons">
-                <button class="rating-btn" data-article-id="2026-05-23e-gadot-bitcoin" data-rating="up">👍</button>
-                <button class="rating-btn" data-article-id="2026-05-23e-gadot-bitcoin" data-rating="down">👎</button>
+                <button class="rating-btn" data-article-id="2026-05-23-ent-beast-games-s2" data-rating="up">👍</button>
+                <button class="rating-btn" data-article-id="2026-05-23-ent-beast-games-s2" data-rating="down">👎</button>
             </div>
         </div>
     </div>
 </div>
-
-<div class="news-card" data-article-id="2026-05-23e-gadot-time-to-talk" data-category="shows">
+<div class="news-card" data-article-id="2026-05-23-ent-gal-gadot-genesis" data-category="בידור">
+    
     <div class="card-content">
-        <span class="card-category">גל גדות</span>
-        <h3 class="card-title">גדות בוועידת "Time to Talk". "די לשנאה"</h3>
-        <p class="card-summary">בוועידת "Time to Talk" בירושלים, גל גדות עלתה לבמה לצד הגברת הראשונה מיכל הרצוג. היא דיברה בעברית על המורכבות של להיות ישראלית בעולם. "אחרי המלחמה והרשתות החברתיות, אני כועסת ולפעמים מפחדת לראות עד כמה אנשים ממהרים לשפוט".</p>
+        <span class="card-category">בידור</span>
+        <h3 class="card-title">גל גדות זוכה בפרס Genesis 2026 ותורמת מיליון דולר לקורבנות 7 באוקטובר</h3>
+        <p class="card-summary">גל גדות הוכרזה רשמית כזוכת פרס ה-Genesis 2026 (ה'נובל היהודי'). היא הודיעה שתתרום את הסכום של מיליון דולר לקרן לשיקום קורבנות 7 באוקטובר ולמשפחות החטופים.</p>
         <div class="card-footer">
-            <a href="https://www.timesofisrael.com/enough-of-the-hatred-herzog-gal-gadot-call-for-dialogue-at-jerusalem-conference/" target="_blank" class="read-more">למקור ←</a>
+            <a href="../articles/2026-05-23-ent-gal-gadot-genesis.html" class="read-more">קרא עוד ←</a>
             <div class="rating-buttons">
-                <button class="rating-btn" data-article-id="2026-05-23e-gadot-time-to-talk" data-rating="up">👍</button>
-                <button class="rating-btn" data-article-id="2026-05-23e-gadot-time-to-talk" data-rating="down">👎</button>
+                <button class="rating-btn" data-article-id="2026-05-23-ent-gal-gadot-genesis" data-rating="up">👍</button>
+                <button class="rating-btn" data-article-id="2026-05-23-ent-gal-gadot-genesis" data-rating="down">👎</button>
             </div>
         </div>
     </div>
 </div>
-
+<div class="news-card" data-article-id="2026-05-23-ent-hisardut-season-7-finale" data-category="בידור">
+    
+    <div class="card-content">
+        <span class="card-category">בידור</span>
+        <h3 class="card-title">הישרדות עונה 7 הסתיימה: גמר דרמטי הלילה ב-Channel 13</h3>
+        <p class="card-summary">הערב מתקיים אירוע הגמר של הישרדות עונה 7. שלושה גמרניסטים: אור, ניצן ושי. הפרס: מיליון שקלים. גם מצפים: בחירת השורד האהוב של הקהל.</p>
+        <div class="card-footer">
+            <a href="../articles/2026-05-23-ent-hisardut-season-7-finale.html" class="read-more">קרא עוד ←</a>
+            <div class="rating-buttons">
+                <button class="rating-btn" data-article-id="2026-05-23-ent-hisardut-season-7-finale" data-rating="up">👍</button>
+                <button class="rating-btn" data-article-id="2026-05-23-ent-hisardut-season-7-finale" data-rating="down">👎</button>
+            </div>
+        </div>
+    </div>
+</div>
                 </div>
             </section>
-
+            
         </div>
-
+        <!-- Daily Extras -->
         <section class="section-block extras-section" id="extras">
             <div class="section-header">
                 <span class="section-icon">💡</span>
@@ -602,37 +560,37 @@
                 <div class="extra-card">
                     <div class="extra-icon">💬</div>
                     <div class="extra-label">ציטוט השראה</div>
-                    <div class="extra-content">"אנשים עניים מוציאים כדי להרגיש עשירים. עשירים משקיעים כדי להישאר חופשיים."</div>
-                    <div class="extra-source"><a href="https://quotesoftheday.org/" target="_blank">QuotesOfTheDay.org</a></div>
+                    <div class="extra-content">"הצלחה אינה סופית, כישלון אינו קטלני. מה שחשוב הוא האומץ להמשיך."</div>
+                    <div class="extra-source">. Winston Churchill <a href="https://www.brainyquote.com/authors/winston-churchill-quotes" target="_blank" style="color: var(--text-secondary);">(BrainyQuote)</a></div>
                 </div>
                 <div class="extra-card">
                     <div class="extra-icon">🎙️</div>
                     <div class="extra-label">פודקאסט בעברית</div>
-                    <div class="extra-content">"שלושה שיודעים" עם דודו ארז. פרק חדש על חכמת ההמון ואיך טועים יחד בביטחון מלא.</div>
-                    <div class="extra-source"><a href="https://podcastim.org.il/" target="_blank">פודקאסטים.org.il</a></div>
+                    <div class="extra-content"><strong>סדר חדש</strong> - פרק חדש על תוצאות הבחירות בהונגריה ומה זה אומר לבחירות הקרובות בישראל. ניתוח של ההיבטים של רשתות חברתיות בקמפיינים פוליטיים.</div>
+                    <div class="extra-source"><a href="https://www.idi.org.il/centers/60080" target="_blank">המכון הישראלי לדמוקרטיה ↗</a></div>
                 </div>
                 <div class="extra-card">
                     <div class="extra-icon">🔤</div>
                     <div class="extra-label">מילה באנגלית</div>
-                    <div class="extra-content"><strong>Resilience</strong> (רֵזִילְיֶנְס). חוסן, היכולת לחזור לעצמך אחרי מכה. "Her resilience after the setback impressed everyone."</div>
+                    <div class="extra-content"><strong>Serendipity</strong> (סֶרֶנְדִיפּיטִי) . גילוי מקרי ומשמח של דבר שלא חיפשת. דוגמה: "I found this amazing podcast by pure serendipity." בעברית: "מצאתי את הפודקאסט המדהים הזה במקרה מענג."</div>
                 </div>
                 <div class="extra-card">
                     <div class="extra-icon">🧩</div>
                     <div class="extra-label">חידה יומית</div>
-                    <div class="extra-content">ככל שלוקחים ממני יותר, אני גדל יותר. מי אני? <em style="color: var(--text-secondary);">תשובה. בור.</em></div>
-                    <div class="extra-source"><a href="https://www.riddles.com/" target="_blank">Riddles.com</a></div>
+                    <div class="extra-content"><strong>שאלה:</strong> אני מדבר ללא פה ושומע ללא אוזניים. אין לי גוף, אך אני בא לחיים עם הרוח. מה אני?<br><br><details><summary style="cursor: pointer; color: var(--brand);">הצג תשובה</summary><strong>תשובה:</strong> הד.</details><br><a href="https://www.riddles.com/" target="_blank" style="color: var(--text-secondary); font-size: 0.85em;">(מקור: Riddles.com)</a></div>
                 </div>
                 <div class="extra-card extra-viral">
                     <div class="extra-icon">🔥</div>
-                    <div class="extra-label">טרנדים על X היום</div>
-                    <div class="extra-content">בטרנדים העולמיים של X היום. #LOLFanFest2026D1, Trump, America, Israel, וגם ה-Quad של רוביו בהודו.</div>
-                    <div class="extra-source"><a href="https://trends24.in/" target="_blank">trends24.in</a></div>
+                    <div class="extra-label">הציוץ הכי ויראלי היום</div>
+                    <div class="extra-content"><strong>@elonmusk</strong>: "Starship V3 first flight in 6 weeks. Goal: full reuse of booster AND ship in same day." (פוסט שצבר 1.2 מיליון לייקים, 180K ריטוויטים - היום הכי מדובר ברשת על קצב הקדמה של SpaceX).</div>
+                    <div class="extra-source"><a href="https://x.com/elonmusk" target="_blank">@elonmusk on X ↗</a></div>
                 </div>
             </div>
         </section>
 
     </main>
 
+    <!-- Footer -->
     <footer class="footer">
         <div class="footer-inner">
             <p class="footer-text">Daily Me · My world, every day.</p>
@@ -641,7 +599,8 @@
     </footer>
 
     <script>
-        const dollarHistory = [2.92, 2.91, 2.90, 2.91, 2.90, 2.90, 2.89];
+        // Sparkline data injected by update script
+        const dollarHistory = [2.93, 2.92, 2.91, 2.90, 2.91, 2.90, 2.89];
     </script>
     <script src="../js/script.js"></script>
 </body>
