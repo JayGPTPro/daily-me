@@ -1,6 +1,11 @@
 [
   {
     "date": "2026-05-24",
+    "edition": "evening",
+    "file": "2026-05-24-evening.html"
+  },
+  {
+    "date": "2026-05-24",
     "edition": "morning",
     "file": "2026-05-24-morning.html"
   },
