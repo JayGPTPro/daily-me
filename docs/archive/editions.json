@@ -1,6 +1,12 @@
 [
   {
     "date": "2026-05-27",
+    "edition": "evening",
+    "file": "2026-05-27-evening.html",
+    "label": "רביעי 27.5 · ערב"
+  },
+  {
+    "date": "2026-05-27",
     "edition": "morning",
     "file": "2026-05-27-morning.html",
     "label": "רביעי 27.5 · בוקר"
